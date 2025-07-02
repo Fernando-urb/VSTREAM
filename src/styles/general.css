@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul , ol {
+    list-style: none;
+    
+}
+body {
+  /* font-family: aqui va la fuente  */
+  width: 100%;
+  min-height: 100vh;
+
+}
