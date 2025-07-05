@@ -1,3 +1,6 @@
-:root{
-    
+:root {
+  --colorSection:#111;
+  --color-secundario: #2ecc71;
+  --color-fondo: #f5f5f5;
+  --color-texto: #333333;
 }
