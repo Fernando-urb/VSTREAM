@@ -1,21 +1,41 @@
+/* esta son la fuente de los titulos y parrafos */
+/* montserrat/titulos */
+/* bebas-neue /parrafos  */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+/* Reset  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
 }
-ul , ol {
-    list-style: none;
-    
+ul,
+ol {
+  list-style: none;
 }
 body {
-  /* font-family: aqui va la fuente  */
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+p {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+}
 
+main{
+    flex: 1;
 }
