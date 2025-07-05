@@ -1,82 +1,83 @@
-/* Hero section pegada al top */
+/* Hero section pegada al top ocupa toda la pantalla */
 .hero {
-  height: 100vh;
-  position: relative;
+  height: 90vh;
+  display: flex;
+  margin: 0 auto;
   
 }
 .div-hero {
   width: 50%;
-  position: absolute;
-  top: 40%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
+
 }
 .div-hero-carousel {
   width: 45%;
-  position: absolute;
-  top: 42%;
-  left:72%;
-  transform: translate(-50%, -50%);
-
- opacity: .5;
-
+  align-self: center;
+  margin-bottom: 10%;
+  opacity: 0.5;
 }
 
 /* Breakpoints tablet  */
 @media (max-width: 768px) {
+  .hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
   .div-hero {
-  width: 100%;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-.div-hero-carousel {
-  width: 70%;
-  position: absolute;
-  top: 70%;
-  left:50%;
-  transform: translate(-50%, -50%);
+    width: 100%;
+     img {
+      width: 150px;
+      height: 120px;
+    }
+    h2 {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 1.8rem;
+    }
+     p {
+      padding: 5px 0;
+      font-size: 1.2rem;
+    }
 
- opacity: .5;
- 
-
-
-}
+  }
+  .div-hero-carousel {
+    margin-top: 2rem;
+    width: 85%;
+    align-self: center;
+    opacity: 0.5;
+  }
 }
 /*Breakpoints  movil  */
 @media (max-width: 480px) {
-
+  .hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
   .div-hero {
-  width: 100%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
+    width: 100%;
+
+    img {
+      width: 120px;
+      height: 100px;
+    }
+    h2 {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 1.2rem;
+    }
+    p {
+      padding: 5px 0;
+      font-size: 1rem;
+    }
+  }
+  .div-hero-carousel {
+    margin-top: 2rem;
+    width: 90%;
+    align-self: center;
+    opacity: 0.5;
+  }
 }
-.div-hero-carousel {
-  width: 70%;
-  position: absolute;
-  top: 75%;
-  left:50%;
-  transform: translate(-50%, -50%);
-
- opacity: .5;
-  
-}
-}
-
-
-
-
-
-
-
-
-
 
 .catalogo {
   background-color: var(--colorSection);
@@ -87,6 +88,4 @@
     font-size: 2.5rem;
     margin-bottom: 2rem;
   }
-
-  
 }
