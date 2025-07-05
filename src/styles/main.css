@@ -2,14 +2,82 @@
 .hero {
   height: 100vh;
   position: relative;
+  
 }
 .div-hero {
+  width: 50%;
   position: absolute;
-  top: 50%;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.div-hero-carousel {
+  width: 45%;
+  position: absolute;
+  top: 42%;
+  left:72%;
+  transform: translate(-50%, -50%);
+
+ opacity: .5;
+
+}
+
+/* Breakpoints tablet  */
+@media (max-width: 768px) {
+  .div-hero {
+  width: 100%;
+  position: absolute;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
+.div-hero-carousel {
+  width: 70%;
+  position: absolute;
+  top: 70%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+ opacity: .5;
+ 
+
+
+}
+}
+/*Breakpoints  movil  */
+@media (max-width: 480px) {
+
+  .div-hero {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.div-hero-carousel {
+  width: 70%;
+  position: absolute;
+  top: 75%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+ opacity: .5;
+  
+}
+}
+
+
+
+
+
+
+
+
+
+
 .catalogo {
   background-color: var(--colorSection);
   height: 100vh;

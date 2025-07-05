@@ -1,21 +1,38 @@
+/* estilo principal del header  */
 
-/* Estilos base del navbar */
-.navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Cuando se hace scroll */
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+/* Estilos navbar inicio */
+.navbar-inicio {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  padding: 1rem 2rem;
   z-index: 1000;
   background-color: transparent;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  .login {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-/* Cuando se hace scroll */
-.navbar.scrolled {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.85); 
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+/* Breakpoints tablet  */
+@media (max-width: 768px) {
 }
-
-
+/*Breakpoints  movil  */
+@media (max-width: 480px) {
+  .navbar-inicio {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    .login {
+      font-size: 0.7rem;
+      margin: 0;
+    }
+  }
+}
