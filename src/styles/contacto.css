@@ -1,3 +1,7 @@
+body{
+    color: white;
+}
+
 .navbar-contacto {
   display: flex;
   justify-content: space-between;
@@ -106,10 +110,6 @@ a, .more{
     margin-bottom: 50px;
 }
 
-.completar-formulario{
-    width: 60%;
-}
-
 .formulario-row{
     margin-bottom: 25px;
 }
@@ -163,12 +163,15 @@ a, .more{
     border: none;
     padding: 5px 25px 5px 25px;
     font-weight: bold;
-    margin-bottom: 175px;
     transition: all .4s;
     &:hover{
         filter: brightness(120%);
         transform: scale(1.1);
     }
+}
+
+.contactos-container{
+    margin-left: 30px;
 }
 
 /* Breakpoints tablet  */
