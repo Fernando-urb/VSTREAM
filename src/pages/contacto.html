@@ -34,31 +34,90 @@
 
 <body class="bg-dark wrap-layout">
 
-  <header class="header sticky-top ">
+  <header class="header sticky-top">
     <!-- esta es la barra de navegación -->
-    <nav class="navbar-contacto py-3  ">
+    <nav class="navbar-contacto py-3">
       <!-- este es el logo principal -->
         <a class="px-5" href="#">
-          <img src="/src/img/logos/logo-principal.png" alt="Logo" width="70" height="50"
+          <img src="/src/img/logos/logo-principal.png" class="my-2" alt="Logo" width="70" height="50"
             class="d-inline-block align-text-top ">
         </a>
 
-        <div class="mx-4 my-3">
-            <a class=" text-light top" href="#">Inicio</a>
-            <a class=" text-light home" href="#">Ir a VStream</a>
-            <a class=" text-light more" href="#">AYUDA <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="mx-4 my-3 dropdown">
+            <button class="btn px-3 top"><a href="#">Inicio</a></button>
+            <button class="btn px-3 home"><a href="/index.html">Ir a VStream</a></button>
+
+            <button class="btn dropdown-toggle px-3 more" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ayuda</button>
+            <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-light" href="/src/pages/error404.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="/src/pages/error404.html">Resolver Problemas</a></li>
+                <li><a class="dropdown-item text-light" href="/src/pages/error404.html">Cuenta y Facturación</a></li>
+                <li><a class="dropdown-item text-light" href="/src/pages/error404.html">Tutoriales de Ayuda</a></li>
+                <li><a class="dropdown-item text-light" href="/src/pages/error404.html">Más...</a></li>
+            </ul>
         </div>
     
     </nav>
   </header>
 
   <main class="main">
-
-    <div class="container">
-        <img src="" alt="">
+    
+    <div class="banner-content">
+            <p>Bienvenido al soporte de VStream</p>
+            <h1>CENTRO DE AYUDA</h1>
+            <input type="text" name="" id="" placeholder="Buscar artículos...">
     </div>
-    
-    
+
+    <div class="banner-contacto">
+        <img src="/src/img/contactoMainBanner.jpg" class="img-banner" alt="">
+    </div>
+
+    <div class="formulario-contacto">
+        <p class="formulario-contacto-maintext">¿Necesitás más ayuda?</p>
+        <h1 class="fw-bolder">ENVÍENOS UN CORREO ELECTRÓNICO</h1>
+        <p class="formulario-contacto-description">Complete este formulario y alguien le contactará tan pronto como sea posible. Para ubicar su cuenta, todos los campos son necesarios. No envíe información de tarjeta de crédito, contraseña ni otra información personal sensible a través de este formulario.</p>
+        <form class="completar-formulario" action="enviar-correo">
+            <section class="formulario-row">
+                <label for="name">Nombre</label>
+                <input class="form-control" type="text" required>
+            </section>
+
+            <section class="formulario-row">
+                <label for="surname">Apellido</label>
+                <input class="form-control" type="text" required>
+            </section>
+
+            <section class="formulario-row">
+                <label for="email">Dirección de Email</label>
+                <input class="form-control" type="email" required>
+            </section>
+
+            <section class="formulario-row">
+                <label for="problem">Describe tu problema</label>
+                 <textarea class="form-control" rows="7" required style="resize: none;"></textarea>
+            </section>
+
+            <section class="formulario-row">
+                <label for="country">País</label>
+                  <select class="form-select form-select-sm">
+                    <option selected>Seleccione una opción</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                  </select>
+            </section>
+
+            <button type="submit" class="enviar-formulario">ENVIAR</button>
+            
+        </form>
+    </div>
 
   </main>
 

@@ -6,16 +6,169 @@
   background-color: transparent;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   .top, .home, .more {
+    border: none;
+    color: white;
     justify-content: center;
     align-items: center;
     font-weight: normal;
-    padding: 15px;
-    margin: 0 5px 0 5px;
   }
 }
 
-.navbar-contacto i{
+a, .more{
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out .2s;
+    &:hover{
+        color: rgb(85, 178, 119);
+    }
+}
+
+.navbar-contacto i {
     margin-left: 5px;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(24, 24, 25, 0.573);
+}
+
+.banner-content{
+    position: absolute;
+    width: 60%; 
+    margin: 110px 0 0 30px;
+    z-index: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.banner-content p{
+    color: rgb(194, 194, 194);
+    font-size: 1rem;
+    filter: drop-shadow(0 0 5px rgb(53, 53, 53));
+}
+
+.banner-content h1{
+    color: white;
+    margin-top: -20px;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner-content input{
+    width: 100%;
+    height: 55px;
+    border-radius: 90px;
+    border: none;
+    padding: 30px;
+    font-size: 1rem;
+    box-shadow: 0 0 15px black;
+}
+
+.banner-contacto {
+    align-items: center;
+    position: relative;
+    margin-top: -210px;
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+    z-index: 0;
+    .img-banner{
+        margin-top: -100px;
+        position: relative;
+        object-fit: cover;
+        filter: brightness(20%);
+        z-index: -1;
+    }
+}
+
+.formulario-contacto{
+    color: white;
+    position: relative;
+    width: 90%; 
+    z-index: 2;
+    text-align: left;
+    justify-self: center;
+}
+
+.formulario-contacto-maintext{
+    margin: 50px 0 40px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.formulario-contacto h1{
+    color: rgb(194, 194, 194);
+    font-size: 3.25rem;
+}
+
+.formulario-contacto-description{
+    font-size: 1.25rem;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.completar-formulario{
+    width: 60%;
+}
+
+.formulario-row{
+    margin-bottom: 25px;
+}
+
+.completar-formulario label{
+    font-size: .85rem;
+    font-weight: normal;
+    width: 100%;
+}
+
+.completar-formulario input, select{
+    color: rgb(188, 188, 188);
+    background-color: rgba(22, 22, 24, 0.784);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    &:focus{
+        color: rgb(188, 188, 188);
+        background-color: rgba(22, 22, 24, 0.784);
+    }
+}
+
+.completar-formulario textarea{
+    color: rgb(188, 188, 188);
+    background-color: rgba(22, 22, 24, 0.784);
+    border: none;
+    &:focus{
+        color: rgb(188, 188, 188);
+        background-color: rgba(22, 22, 24, 0.784);
+    }
+}
+
+.completar-formulario select{
+    color: rgb(188, 188, 188);
+    background-color: rgba(22, 22, 24, 0.784);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    &:focus{
+        color: rgb(188, 188, 188);
+        background-color: rgba(22, 22, 24, 0.784);
+    }
+}
+
+.enviar-formulario{
+    background-color: rgb(67, 131, 90);
+    border: none;
+    padding: 5px 25px 5px 25px;
+    font-weight: bold;
+    margin-bottom: 175px;
+    transition: all .4s;
+    &:hover{
+        filter: brightness(120%);
+        transform: scale(1.1);
+    }
 }
 
 /* Breakpoints tablet  */
