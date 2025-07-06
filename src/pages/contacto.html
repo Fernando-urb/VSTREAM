@@ -82,31 +82,31 @@
 
         <!-- Columna del formulario -->
         <div class="formulario-container col-lg-7">
-        <form class="completar-formulario" action="enviar-correo">
+        <form class="completar-formulario" action="/index.html">
           <section class="formulario-row mb-3">
             <label for="name" class="form-label">Nombre</label>
-            <input class="form-control" type="text" id="name" required>
+            <input class="form-control" type="text" id="name" title="Ingrese su nombre. Máximo 20 caracteres y solo letras." pattern="[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]{1,20}" maxlength="20" required>
           </section>
 
           <section class="formulario-row mb-3">
             <label for="surname" class="form-label">Apellido</label>
-            <input class="form-control" type="text" id="surname" required>
+            <input class="form-control" type="text" id="surname" title="Ingrese su apellido. Máximo 20 caracteres y solo letras." pattern="[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]{1,20}" maxlength="20" required>
           </section>
 
           <section class="formulario-row mb-3">
             <label for="email" class="form-label">Dirección de Email</label>
-            <input class="form-control" type="email" id="email" required>
+            <input class="form-control" type="email" id="email" title="Ingrese una dirección de email válida." pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" maxlength="30" required>
           </section>
 
           <section class="formulario-row mb-3">
             <label for="problem" class="form-label">Describe tu problema</label>
-            <textarea class="form-control" rows="7" id="problem" required style="resize: none;"></textarea>
+            <textarea class="form-control" rows="7" id="problem" title="Ingrese su problema. Máximo 200 caracteres." maxlength="200" required style="resize: none;"></textarea>
           </section>
 
           <section class="formulario-row mb-3">
             <label for="country" class="form-label">País</label>
-            <select class="form-select form-select-sm" id="country">
-              <option selected>Seleccione una opción</option>
+            <select class="form-select form-select-sm" id="country" required>
+              <option selected value="">Seleccione una opción</option>
               <option value="Argentina">Argentina</option>
               <option value="Bolivia">Bolivia</option>
               <option value="Brasil">Brasil</option>
@@ -139,7 +139,7 @@
             <i class="fa-solid fa-phone fs-2 text-success me-3 mt-2"></i>
             <div>
               <h3 class="text-white fs-4 mb-2">Teléfono</h3>
-              <p class="contacto-desc fs-6 mb-3">+542966212224</p>
+              <p class="contacto-desc fs-6 mb-3">+54 2966212224</p>
             </div>
           </div>
           
@@ -156,6 +156,7 @@
       </div>
 
     </div>
+
   </main>
 
   <footer class="footer bg-light">
