@@ -1,0 +1,35 @@
+.navbar-contacto {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  .top, .home, .more {
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    padding: 15px;
+    margin: 0 5px 0 5px;
+  }
+}
+
+.navbar-contacto i{
+    margin-left: 5px;
+}
+
+/* Breakpoints tablet  */
+@media (max-width: 768px) {
+}
+/*Breakpoints  movil  */
+@media (max-width: 480px) {
+  .navbar-contacto {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    .login {
+      font-size: 0.7rem;
+      margin: 0;
+    }
+  }
+}
