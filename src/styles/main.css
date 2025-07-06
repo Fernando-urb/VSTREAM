@@ -1,3 +1,4 @@
+/* estos son los estilos del main del index  */
 /* Hero section pegada al top ocupa toda la pantalla */
 .hero {
   height: 90vh;
@@ -15,7 +16,37 @@
   margin-bottom: 10%;
   opacity: 0.5;
 }
+/* estos son los estilos de los contenedores de las section  */
+.container-section{
+  background-color: var(--colorSection);
+  min-height: 100vh;
+  height: auto;
+  padding: 80px 0; 
 
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+.section-plan{
+  scroll-margin-top:80px;
+}
+/* este es el video de la page error-404  */
+.video-error-404 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+/* esta es la imagen de la page error-404 */
+.imagen-error-404 {
+    display: none;
+    
+  }
 /* Breakpoints tablet  */
 @media (max-width: 768px) {
   .hero {
@@ -77,15 +108,19 @@
     align-self: center;
     opacity: 0.5;
   }
-}
+  .video-error-404 {
+      display: none;
+  }
 
-.catalogo {
-  background-color: var(--colorSection);
-  height: 100vh;
-
-  h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+  .imagen-error-404 {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    
   }
 }
+
+
+
+
+

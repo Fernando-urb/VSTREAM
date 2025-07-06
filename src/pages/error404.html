@@ -21,59 +21,50 @@
   <!-- fonawesome  -->
 
   <script src="https://kit.fontawesome.com/7d1cc8c36e.js" crossorigin="anonymous"></script>
-  <!-- aos animation  -->
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- mis estilos  -->
 
   <link rel="shortcut icon" href="/src/img/logos/logo-principal.png" type="image/x-icon" />
   <link rel="stylesheet" href="/src/styles/styles.css" />
 
-  <title>VSTREAM</title>
+  <title>ERROR 404</title>
 </head>
 
-<body class="bg-dark wrap-layout">
+<body class="bg-dark wrap-layout overflow-hidden">
 
   <header class="header sticky-top ">
     <!-- esta es la barra de navegacio  -->
     <nav class="navbar-inicio py-3  ">
       <!-- este es el logo principal  -->
-        <a class="px-5" href="#">
-          <img src="/src/img/logos/logo-principal.png" alt="Logo" width="70" height="50"
-            class="d-inline-block align-text-top ">
-        <!-- esta es el boton de iniciar sesión -->
-        </a>
-        <a class=" text-light bg-success rounded  py-2 px-4 mx-4  login" href="/src/pages/login.html">  iniciar sesión <i class="fa-solid fa-arrow-right-to-bracket px-2 fs-4"></i></a>
-    
+      <a class="px-5" href="/index.html">
+        <img src="/src/img/logos/logo-principal.png" alt="Logo" width="70" height="50"
+          class="d-inline-block align-text-top ">
+        <!-- esta es el boton de Regresar al inicio-->
+      </a>
+      <a class=" text-light bg-success rounded  py-1 px-4 mx-3  login" href="/index.html">Regresar al inicio <i
+          class="fa-solid fa-arrow-right-to-bracket px-1 fs-5"></i></a>
+
     </nav>
   </header>
 
-  <main class="main">
-    
-    
+  <main>
+    <div class="hero">
+     <img src="/src/img/error-404/6325257.jpg" alt="" class="imagen-error-404">
+      <video class="video-error-404" autoplay muted loop>
+      <source src="/src/video/error-404/error-404.mp4" type="video/mp4">
+      
+
+    </div>
+
+
+    </video>
 
   </main>
 
-  <footer class="footer bg-light">
+  <footer class="footer bg-light ">
     <p class="text-dark">&copy; 2025 CineVerse. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- aos animation  -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script>
-    window.addEventListener('scroll', () => {
-      const navbar = document.querySelector('.header');
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-
-  </script>
 </body>
 
 </html>

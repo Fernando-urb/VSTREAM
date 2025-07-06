@@ -1,5 +1,4 @@
-/* estilo principal del header  */
-
+/* estos son los estilos del navbar del index  */
 /* Cuando se hace scroll */
 .header.scrolled {
   background-color: rgba(0, 0, 0, 0.85);
@@ -20,12 +19,12 @@
     align-items: center;
   }
 }
-
 /* Breakpoints tablet  */
 @media (max-width: 768px) {
 }
 /*Breakpoints  movil  */
 @media (max-width: 480px) {
+  /* estos son los estilos del navbar del index  */
   .navbar-inicio {
     display: flex;
     justify-content: space-around;
