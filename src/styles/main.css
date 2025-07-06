@@ -19,7 +19,9 @@
 /* estos son los estilos de los contenedores de las section  */
 .container-section{
   background-color: var(--colorSection);
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
+  padding: 80px 0; 
 
   h2 {
     text-align: center;
@@ -27,7 +29,9 @@
     margin-bottom: 2rem;
   }
 }
-
+.section-plan{
+  scroll-margin-top:80px;
+}
 /* este es el video de la page error-404  */
 .video-error-404 {
       position: fixed;
@@ -38,7 +42,11 @@
       object-fit: cover;
       z-index: -1;
     }
-
+/* esta es la imagen de la page error-404 */
+.imagen-error-404 {
+    display: none;
+    
+  }
 /* Breakpoints tablet  */
 @media (max-width: 768px) {
   .hero {
@@ -100,6 +108,19 @@
     align-self: center;
     opacity: 0.5;
   }
+  .video-error-404 {
+      display: none;
+  }
+
+  .imagen-error-404 {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    
+  }
 }
+
+
+
 
 
