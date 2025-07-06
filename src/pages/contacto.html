@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- etiquetas meta  -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=7" />
+  <meta name="canal de streaming" content="este es un sitio para ver peliculas y series " />
+  <meta name="keywords" content="series, peliculas, suscripcion" />
+  <meta name="author" content="Tu Nombre" />
+  <meta name="robots" content="index, follow" />
+  <!-- bootstraps5.3v  -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <!-- fonawesome  -->
+
+  <script src="https://kit.fontawesome.com/7d1cc8c36e.js" crossorigin="anonymous"></script>
+  <!-- aos animation  -->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- mis estilos  -->
+
+  <link rel="shortcut icon" href="/src/img/logos/logo-principal.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/src/styles/styles.css" />
+
+  <title>VSTREAM - CONTACTO</title>
+</head>
+
+<body class="bg-dark wrap-layout">
+
+  <header class="header sticky-top">
+    <!-- esta es la barra de navegación -->
+    <nav class="navbar-contacto py-3">
+      <!-- este es el logo principal -->
+        <a class="px-5" href="#">
+          <img src="/src/img/logos/logo-principal.png" class="my-2" alt="Logo" width="70" height="50"
+            class="d-inline-block align-text-top ">
+        </a>
+
+        <div class="mx-4 my-3 dropdown">
+            <button class="btn px-3 top"><a href="#">Inicio</a></button>
+            <button class="btn px-3 home"><a href="/index.html">Ir a VStream</a></button>
+
+            <button class="btn dropdown-toggle px-3 more" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ayuda</button>
+            <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-light" href="/src/pages/error404.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="/src/pages/error404.html">Resolver Problemas</a></li>
+                <li><a class="dropdown-item text-light" href="/src/pages/error404.html">Cuenta y Facturación</a></li>
+                <li><a class="dropdown-item text-light" href="/src/pages/error404.html">Tutoriales de Ayuda</a></li>
+                <li><a class="dropdown-item text-light" href="/src/pages/error404.html">Más...</a></li>
+            </ul>
+        </div>
+    
+    </nav>
+  </header>
+
+  <main class="main">
+    
+    <div class="banner-content">
+            <p>Bienvenido al soporte de VStream</p>
+            <h1>CENTRO DE AYUDA</h1>
+            <input type="text" name="" id="" placeholder="Buscar artículos...">
+    </div>
+
+    <div class="banner-contacto">
+        <img src="/src/img/contactoMainBanner.jpg" class="img-banner" alt="">
+    </div>
+
+    <div class="formulario-contacto">
+        <p class="formulario-contacto-maintext">¿Necesitás más ayuda?</p>
+        <h1 class="fw-bolder">ENVÍENOS UN CORREO ELECTRÓNICO</h1>
+        <p class="formulario-contacto-description">Complete este formulario y alguien le contactará tan pronto como sea posible. Para ubicar su cuenta, todos los campos son necesarios. No envíe información de tarjeta de crédito, contraseña ni otra información personal sensible a través de este formulario.</p>
+        <form class="completar-formulario" action="enviar-correo">
+            <section class="formulario-row">
+                <label for="name">Nombre</label>
+                <input class="form-control" type="text" required>
+            </section>
+
+            <section class="formulario-row">
+                <label for="surname">Apellido</label>
+                <input class="form-control" type="text" required>
+            </section>
+
+            <section class="formulario-row">
+                <label for="email">Dirección de Email</label>
+                <input class="form-control" type="email" required>
+            </section>
+
+            <section class="formulario-row">
+                <label for="problem">Describe tu problema</label>
+                 <textarea class="form-control" rows="7" required style="resize: none;"></textarea>
+            </section>
+
+            <section class="formulario-row">
+                <label for="country">País</label>
+                  <select class="form-select form-select-sm">
+                    <option selected>Seleccione una opción</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                  </select>
+            </section>
+
+            <button type="submit" class="enviar-formulario">ENVIAR</button>
+            
+        </form>
+    </div>
+
+  </main>
+
+  <footer class="footer bg-light">
+    <p class="text-dark">&copy; 2025 CineVerse. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- aos animation  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.header');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+  </script>
+</body>
+
+</html>
