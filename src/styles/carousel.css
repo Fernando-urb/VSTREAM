@@ -1,0 +1,92 @@
+
+ /* Estilos base para el contenedor del carrusel */
+    .container-fluid {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%; /* Ocupa toda la altura de la pantalla */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000; /* Fondo negro para mejor contraste */
+    }
+
+    .carousel-container {
+        width: 90%;
+        max-width: 800px; /* Ancho máximo para pantallas grandes */
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Estilos para el carrusel */
+    .carousel {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-inner {
+        display: flex;
+        align-items: center;
+    }
+
+    .carousel-item {
+        text-align: center;
+    }
+
+    /* Contenedor del poster/película */
+    .poster-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .poster-container {
+        width: 90%;
+        max-width: 300px; /* Tamaño máximo para móviles */
+    }
+
+    /* Estilos para las imágenes */
+    .poster-container img {
+        width: 75%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        object-fit: contain;
+    }
+
+    /* Transición suave para el carrusel */
+    .carousel-fade .carousel-item {
+        opacity: 0;
+        transition-property: opacity;
+        transform: none;
+    }
+
+    .carousel-fade .carousel-item.active {
+        opacity: 1;
+    }
+
+    /* Media queries para diferentes tamaños de pantalla */
+    @media (min-width: 576px) {
+        .poster-container {
+            max-width: 350px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .poster-container {
+            max-width: 400px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .poster-container {
+            max-width: 450px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .poster-container {
+            max-width: 500px;
+        }
+    }
