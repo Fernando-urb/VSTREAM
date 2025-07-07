@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscribirme | VStream</title>
+</head>
+<body>
+    <section>
+        <div>
+
+        <form>
+
+            <h1>Formulario de Registro</h1>
+
+                <div>
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" maxlength="20" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ]+(\s[A-Za-zÁÉÍÓÚáéíóúÑñ]+)*$" title="Ingrese su nombre completo solo con letras y espacios." required="" placeholder="Nombre">
+                </div>
+                <div>
+                    <label for="nombre"></label>
+                    <input type="text" id="apellido" name="apellido" maxlength="20" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ]+(\s[A-Za-zÁÉÍÓÚáéíóúÑñ]+)*$" title="Ingrese su nombre completo solo con letras y espacios." required="" placeholder="Apellido">
+                </div>
+                <div>
+                    <label for="mail"></label>
+                    <input type="email" id="mail" name="mail" maxlength="20" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Ingrese un mail válido" required="" placeholder="Correo Electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="contraseña"></label>
+                    <input type="password" maxlength="15" pattern="^.{8,15}$" title="Usa caracteres de cualquier tipo. Entre 8 y 15 caracteres." id="contraseña" name="contraseña" required="" placeholder="Contraseña">
+                </div>
+                <div class="form-group">
+                    <label for="contraseña2"></label>
+                    <input type="password" maxlength="15" pattern="^.{8,15}$" title="Usa caracteres de cualquier tipo. Entre 8 y 15 caracteres." id="contraseña2" name="contraseña2" required="" placeholder="Repetir Contraseña">
+                </div>
+            </div>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam est, perspiciatis ducimus accusantium inventore</p>
+            </div>
+
+            <div class="form-buttons">
+                <a href="#">Aceptar y continuar</a>                
+            </div>
+            
+        </form>
+      
+    </div>
+    </section>
+</body>
+</html>
