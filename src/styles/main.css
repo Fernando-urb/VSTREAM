@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden scroll;
+ 
  
 }
 .opacity-body{
@@ -17,10 +21,13 @@
 .hero-inicio {
   height: 100vh;
   display: flex;
+  flex-direction: column;
+
   margin: 0 auto;
 }
 .div-hero {
-  width: 50%;
+  width: 70%;
+margin: 0 auto;
 
 }
 .div-hero-carousel {
