@@ -43,6 +43,7 @@
             class="d-inline-block align-text-top ">
         </a>
 
+        <!-- Botones navbar -->
         <div class="mx-4 my-3 dropdown">
             <button class="btn px-3 top"><a href="#">Inicio</a></button>
             <button class="btn px-3 home"><a href="/index.html">Ir a VStream</a></button>
@@ -61,63 +62,111 @@
   </header>
 
   <main class="main">
-    
-    <div class="banner-content">
+
+    <!-- Banner de página -->
+    <section class="banner">
+      <div class="banner-content">
             <p>Bienvenido al soporte de VStream</p>
             <h1>CENTRO DE AYUDA</h1>
             <input type="text" name="" id="" placeholder="Buscar artículos...">
-    </div>
+      </div>
 
-    <div class="banner-contacto">
-        <img src="/src/img/contactoMainBanner.jpg" class="img-banner" alt="">
-    </div>
+      <div class="banner-contacto">
+            <img src="/src/img/contactoMainBanner.jpg" class="img-banner" alt="">
+      </div>
+    </section>
 
-    <div class="formulario-contacto">
-        <p class="formulario-contacto-maintext">¿Necesitás más ayuda?</p>
-        <h1 class="fw-bolder">ENVÍENOS UN CORREO ELECTRÓNICO</h1>
-        <p class="formulario-contacto-description">Complete este formulario y alguien le contactará tan pronto como sea posible. Para ubicar su cuenta, todos los campos son necesarios. No envíe información de tarjeta de crédito, contraseña ni otra información personal sensible a través de este formulario.</p>
-        <form class="completar-formulario" action="enviar-correo">
-            <section class="formulario-row">
-                <label for="name">Nombre</label>
-                <input class="form-control" type="text" required>
-            </section>
+    <!-- Estructura formulario de contacto -->
+    <section class="estructura-formulario">
 
-            <section class="formulario-row">
-                <label for="surname">Apellido</label>
-                <input class="form-control" type="text" required>
-            </section>
+      <div class="formulario-contacto mb-5">
 
-            <section class="formulario-row">
-                <label for="email">Dirección de Email</label>
-                <input class="form-control" type="email" required>
-            </section>
+      <!-- Títulos del formulario -->
+      <p class="formulario-contacto-maintext">¿Necesitás más ayuda?</p>
+      <h1 class="fw-bolder">ENVÍENOS UN CORREO ELECTRÓNICO</h1>
+      <p class="formulario-contacto-description">Complete este formulario y alguien le contactará tan pronto como sea posible. Para ubicar su cuenta, todos los campos son necesarios. No envíe información de tarjeta de crédito, contraseña ni otra información personal sensible a través de este formulario.</p>
 
-            <section class="formulario-row">
-                <label for="problem">Describe tu problema</label>
-                 <textarea class="form-control" rows="7" required style="resize: none;"></textarea>
-            </section>
+      <!-- Formulario -->
+      <div class="row g-4">
 
-            <section class="formulario-row">
-                <label for="country">País</label>
-                  <select class="form-select form-select-sm">
-                    <option selected>Seleccione una opción</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Bolivia">Bolivia</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Colombia">Colombia</option>
-                    <option value="Ecuador">Ecuador</option>
-                    <option value="Paraguay">Paraguay</option>
-                    <option value="Perú">Perú</option>
-                    <option value="Uruguay">Uruguay</option>
-                    <option value="Venezuela">Venezuela</option>
-                  </select>
-            </section>
+        <!-- Columna del formulario -->
+        <div class="formulario-container col-lg-7">
+        <form class="completar-formulario" action="/index.html">
+          <div class="formulario-row mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input class="form-control" type="text" id="name" title="Ingrese su nombre. Máximo 20 caracteres y solo letras." pattern="[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]{1,20}" maxlength="20" required>
+          </div>
 
-            <button type="submit" class="enviar-formulario">ENVIAR</button>
-            
+          <div class="formulario-row mb-3">
+            <label for="surname" class="form-label">Apellido</label>
+            <input class="form-control" type="text" id="surname" title="Ingrese su apellido. Máximo 20 caracteres y solo letras." pattern="[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]{1,20}" maxlength="20" required>
+          </div>
+
+          <div class="formulario-row mb-3">
+            <label for="email" class="form-label">Dirección de Email</label>
+            <input class="form-control" type="email" id="email" title="Ingrese una dirección de email válida." pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" maxlength="30" required>
+          </div>
+
+          <div class="formulario-row mb-3">
+            <label for="problem" class="form-label">Describe tu problema</label>
+            <textarea class="form-control" rows="7" id="problem" title="Ingrese su problema. Máximo 200 caracteres." maxlength="200" required style="resize: none;"></textarea>
+          </div>
+
+          <div class="formulario-row mb-3">
+            <label for="country" class="form-label">País</label>
+            <select class="form-select form-select-sm" id="country" required>
+              <option selected value="">Seleccione una opción</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Chile">Chile</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Perú">Perú</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Venezuela">Venezuela</option>
+            </select>
+          </div>
+
+          <button type="submit" class="enviar-formulario">ENVIAR</button>
         </form>
-    </div>
+        </div>
+
+        <!-- Columna de contactos -->
+        <div class="contactos-container col-lg-3">
+        <div class="p-4 h-100">
+          <div class="d-flex align-items-start mb-4">
+            <i class="fa-solid fa-at fs-2 text-success me-3 mt-2"></i>
+            <div>
+              <h3 class="text-white fs-4 mb-2">Email</h3>
+              <p class="contacto-desc fs-6 mb-3">soportevstream@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <i class="fa-solid fa-phone fs-2 text-success me-3 mt-2"></i>
+            <div>
+              <h3 class="text-white fs-4 mb-2">Teléfono</h3>
+              <p class="contacto-desc fs-6 mb-3">+54 2966212224</p>
+            </div>
+          </div>
+          
+          <div class="d-flex align-items-start">
+            <i class="fa-solid fa-earth-americas fs-2 text-success me-3 mt-2"></i>
+            <div>
+              <h3 class="text-white fs-4 mb-2">Ubicación</h3>
+              <p class="contacto-desc fs-6 mb-0">Av. San Martín 123</p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+      </div>    
+
+    </section>
 
   </main>
 
