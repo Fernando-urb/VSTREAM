@@ -335,29 +335,53 @@ body{
 /*Breakpoints  movil  */
 @media (max-width: 480px) {
 
-  .navbar-contacto {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    .login {
-      font-size: 0.7rem;
-      margin: 0;
+    /* Navbar */
+
+    .navbar-contacto {  
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .login {
+            font-size: 0.7rem;
+            margin: 0;
+      }
     }
-  }
-
-  .navbar-contacto img{
-    background-color: aqua;
-    position: absolute;
-    margin-top: 40px;
-  }
-
-  .top, .home, .more {
-      display: none;
+  
+    .navbar-contacto img{  
+        position: absolute;
     }
 
-  .open-offcanvas{
-    color: white;
-    display: inline;
-    font-size: 1.5rem;
-  }
+    .top, .home, .more {  
+        display: none;
+    }
+
+    .open-offcanvas{
+        text-align: center;
+        color: white;
+        display: inline-flex;
+        font-size: 1.5rem;
+    }
+
+    /* Offcanvas */
+
+    .offcanvas{
+        color: white;
+        background-color: rgb(33, 37, 41);
+    }
+
+    .offcanvas-title{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .offcanvas i{
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    .offcanvas li{
+        font-weight: normal;
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
 }
