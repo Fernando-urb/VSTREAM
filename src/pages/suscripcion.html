@@ -6,45 +6,36 @@
     <title>Suscribirme | VStream</title>
 </head>
 <body>
-    <section>
-        <div>
+    <main class="suscripcion">
+        <div class="container-suscripcion">        
+            <h3>Suscribete!</h3>
+            <form class="form">
+                    <label for="name">
+                    </label>
+                    <input type="text" id="name" required placeholder="Nombre">
+                    <label for="apellido">
+                    </label>
+                    <input type="text" id="apellido" required placeholder="Apellido">
+                    <label for="email">
+                    </label>
+                    <input type="email" id="email" placeholder="Correo Electrónico"> 
+                    <label for="password">
+                    </label>
+                    <input type="password" id="password" placeholder="Contraseña">     
+                    <label for="password2">
+                    </label>
+                    <input type="password2" id="mail" placeholder="Repetir Contraseña"> 
+                    <label for="terminos">Sí, me gustaría recibir comunicaciones de marketing, novedades y actualizaciones, ofertas especiales y otra información de VStream. Puedo darme de baja en cualquier momento.</label>
+                    <input type="checkbox" id="terminos">
 
-        <form>
+                    <p>Al hacer clic en "Aceptar y Continuar", usted confirma que ha leído y esta de acuerdo con los Términos de Uso y acepta nuestra Política de Privacidad.</p>
+                    
+                    <a href="#" class="boton-enviar">Aceptar y continuar</a> 
 
-            <h1>Formulario de Registro</h1>
-
-                <div>
-                    <label for="nombre"></label>
-                    <input type="text" id="nombre" name="nombre" maxlength="20" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ]+(\s[A-Za-zÁÉÍÓÚáéíóúÑñ]+)*$" title="Ingrese su nombre completo solo con letras y espacios." required="" placeholder="Nombre">
-                </div>
-                <div>
-                    <label for="nombre"></label>
-                    <input type="text" id="apellido" name="apellido" maxlength="20" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ]+(\s[A-Za-zÁÉÍÓÚáéíóúÑñ]+)*$" title="Ingrese su nombre completo solo con letras y espacios." required="" placeholder="Apellido">
-                </div>
-                <div>
-                    <label for="mail"></label>
-                    <input type="email" id="mail" name="mail" maxlength="20" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Ingrese un mail válido" required="" placeholder="Correo Electrónico">
-                </div>
-                <div class="form-group">
-                    <label for="contraseña"></label>
-                    <input type="password" maxlength="15" pattern="^.{8,15}$" title="Usa caracteres de cualquier tipo. Entre 8 y 15 caracteres." id="contraseña" name="contraseña" required="" placeholder="Contraseña">
-                </div>
-                <div class="form-group">
-                    <label for="contraseña2"></label>
-                    <input type="password" maxlength="15" pattern="^.{8,15}$" title="Usa caracteres de cualquier tipo. Entre 8 y 15 caracteres." id="contraseña2" name="contraseña2" required="" placeholder="Repetir Contraseña">
-                </div>
-            </div>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam est, perspiciatis ducimus accusantium inventore</p>
-            </div>
-
-            <div class="form-buttons">
-                <a href="#">Aceptar y continuar</a>                
-            </div>
-            
-        </form>
-      
-    </div>
-    </section>
+                    <a class="volver" href="#">
+                    ↩ Volver</a>  
+                </form>
+            </div>          
+    </main>
 </body>
 </html>
