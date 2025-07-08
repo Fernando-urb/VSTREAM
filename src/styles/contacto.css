@@ -37,6 +37,12 @@ body{
     background-color: rgba(24, 24, 25, 0.573);
 }
 
+/* Botón  offcanvas */
+
+.open-offcanvas{
+    display: none;
+}
+
 /* Banner principal */
 
 .banner{
@@ -328,6 +334,7 @@ body{
 
 /*Breakpoints  movil  */
 @media (max-width: 480px) {
+
   .navbar-contacto {
     display: flex;
     justify-content: space-around;
@@ -336,5 +343,21 @@ body{
       font-size: 0.7rem;
       margin: 0;
     }
+  }
+
+  .navbar-contacto img{
+    background-color: aqua;
+    position: absolute;
+    margin-top: 40px;
+  }
+
+  .top, .home, .more {
+      display: none;
+    }
+
+  .open-offcanvas{
+    color: white;
+    display: inline;
+    font-size: 1.5rem;
   }
 }
