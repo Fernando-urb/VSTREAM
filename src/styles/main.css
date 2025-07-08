@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden scroll;
+ 
  
 }
 .opacity-body{
@@ -15,14 +19,19 @@
 /* estos son los estilos del main del index  */
 /* Hero section pegada al top ocupa toda la pantalla */
 .hero-inicio {
+  max-height: 100vh;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+
   margin: 0 auto;
 }
 .div-hero {
-  width: 50%;
+  width: 90%;
+margin: 0 auto;
 
 }
+
 .div-hero-carousel {
   width: 45%;
   align-self: center;
@@ -45,6 +54,37 @@
 .section-plan{
   scroll-margin-top:80px;
 }
+
+.container-carousel-estrenos {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  cursor: pointer;
+   transition: transform 0.4s ease;
+}
+
+article.col-lg-2 {
+  position: relative;
+  overflow: visible; /* permite que la imagen se expanda fuera del contenedor */
+  z-index: 1;
+}
+.img-carousel  {
+  width: 100%;
+  height: auto;
+  transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transform-origin: center center;
+  z-index: 1000;
+  position: relative;
+}
+
+.img-carousel:hover {
+  transform: scale(1.4);
+
+}
+
+
+
 
 /* Breakpoints tablet  */
 @media (max-width: 768px) {
