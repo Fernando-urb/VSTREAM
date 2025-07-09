@@ -11,24 +11,6 @@ body{
     }
 }
 
-.body-contacto {
-  background-image: url(/src/img/fondos/3257640.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  max-width: 100%;
-  width: 100%;
-  overflow: hidden scroll;
-}
-
-.opacity-body {
-  width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.6); /* negro con 50% de opacidad */
-  z-index: 1;
-}
-
 /* Navbar */
 
 .navbar-contacto {
