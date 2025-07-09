@@ -1,14 +1,14 @@
 body{
     overflow-x: hidden;
     color: white;
-    background-color: #aa076b;
-    i{
+}
+
+.body-contacto i{
         color: #61045f;
         background: linear-gradient(45deg, #61045f 50%, #aa076b 50%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-    }
 }
 
 /* Navbar */
