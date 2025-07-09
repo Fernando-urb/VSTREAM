@@ -117,8 +117,7 @@ body{
     i{
         font-size: 7rem;
         margin-bottom: 50px;
-        color: #61045f;
-        background: linear-gradient(45deg, #61045f 50%, #aa076b 50%);
+        background: linear-gradient(45deg, #61045f, #aa076b);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -282,7 +281,7 @@ body{
         font-size: 7rem;
         margin-bottom: 50px;
         color: #61045f;
-        background: linear-gradient(45deg, #61045f 50%, #aa076b 50%);
+        background: linear-gradient(45deg, #61045f, #aa076b);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -457,7 +456,7 @@ body{
     .cards i{
         margin: -20px 0 20px 0;
         color: #61045f;
-        background: linear-gradient(45deg, #61045f 25%, #aa076b 25%);
+        background: linear-gradient(45deg, #61045f 10%, #aa076b 90%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
