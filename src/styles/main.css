@@ -1,27 +1,100 @@
+.body-inicio {
+  background-image: url(/src/img/fondos/3257640.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden scroll;
+}
+.opacity-body {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* negro con 50% de opacidad */
+  z-index: 1;
+}
 /* estos son los estilos del main del index  */
 /* Hero section pegada al top ocupa toda la pantalla */
-.hero {
-  height: 90vh;
-  display: flex;
+.hero-inicio {
+  max-height: 150vh;
+  height: auto;
   margin: 0 auto;
+  width: 100%;
+}
+/* contenedor del hero  */
+.div-hero {
+  width: 100%;
+  height: 90vh;
+  margin: 0 auto;
+ display:flex;
+ justify-content: center;
+ align-items: center;
   
 }
-.div-hero {
+/* texto principal */
+.item-hero:nth-child(1) {
   width: 50%;
 
+ 
 }
-.div-hero-carousel {
-  width: 45%;
-  align-self: center;
-  margin-bottom: 10%;
-  opacity: 0.5;
+/* logo principal  */
+.item-hero:nth-child(2) {
+  width: 50%;
+ 
+
 }
+/* contenedor logo rotacion  */
+.contenedor-logo-3d {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  perspective: 500px;
+  .logo-3d {
+    width: 400px;
+    height: 350px;
+    background-image: url(/src/img/logos/logo-v-1.png);
+    background-position: center;
+    background-size: cover;
+    animation: rotar 20s linear infinite;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+/* animacion rotacion logo  */
+@keyframes rotar {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(-180deg);
+  }
+}
+/* carusel de estrenos  */
+.home-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+
+
+
 /* estos son los estilos de los contenedores de las section  */
-.container-section{
+.container-section {
+  max-height: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  width: 95%;
   background-color: var(--colorSection);
   min-height: 100vh;
-  height: auto;
-  padding: 80px 0; 
+  padding: 80px 0;
 
   h2 {
     text-align: center;
@@ -29,24 +102,34 @@
     margin-bottom: 2rem;
   }
 }
-.section-plan{
-  scroll-margin-top:80px;
+.section-plan {
+  scroll-margin-top: 80px;
 }
-/* este es el video de la page error-404  */
-.video-error-404 {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
-    }
-/* esta es la imagen de la page error-404 */
-.imagen-error-404 {
-    display: none;
-    
-  }
+
+.container-carousel-estrenos {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+article.col-lg-2 {
+  position: relative;
+  z-index: 1;
+}
+.img-carousel {
+  width: 100%;
+  height: auto;
+  transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transform-origin: center center;
+  z-index: 1;
+  position: relative;
+}
+
+.img-carousel:hover {
+  transform: scale(1.4);
+}
+
 /* Breakpoints tablet  */
 @media (max-width: 768px) {
   .hero {
@@ -56,7 +139,7 @@
   }
   .div-hero {
     width: 100%;
-     img {
+    img {
       width: 150px;
       height: 120px;
     }
@@ -65,11 +148,10 @@
       margin: 0 auto;
       font-size: 1.8rem;
     }
-     p {
+    p {
       padding: 5px 0;
       font-size: 1.2rem;
     }
-
   }
   .div-hero-carousel {
     margin-top: 2rem;
@@ -77,7 +159,26 @@
     align-self: center;
     opacity: 0.5;
   }
+  .img-carousel {
+    width: 20%;
+    height: auto;
+    transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transform-origin: center center;
+    z-index: 1;
+    position: relative;
+  }
+  .div-hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .item-hero:nth-child(1),
+  .item-hero:nth-child(2),
+  .item-hero:nth-child(3) {
+    grid-area: auto;
+  }
 }
+
 /*Breakpoints  movil  */
 @media (max-width: 480px) {
   .hero {
@@ -85,6 +186,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .div-hero {
     width: 100%;
 
@@ -108,19 +210,22 @@
     align-self: center;
     opacity: 0.5;
   }
-  .video-error-404 {
-      display: none;
+  .img-carousel {
+    width: 20%;
+    height: auto;
+    transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transform-origin: center center;
+    z-index: 1;
+    position: relative;
+  }
+  .div-hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
   }
 
-  .imagen-error-404 {
-    display: block;
-    height: 100vh;
-    width: 100vw;
-    
+  .item-hero:nth-child(1),
+  .item-hero:nth-child(2),
+  .item-hero:nth-child(3) {
+    grid-area: auto;
   }
 }
-
-
-
-
-

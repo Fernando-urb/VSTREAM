@@ -1,20 +1,31 @@
-.navbar-contacto {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  z-index: 1000;
-  background-color: transparent;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  .top, .home, .more {
-    border: none;
+body{
+    overflow-x: hidden;
     color: white;
-    justify-content: center;
-    align-items: center;
-    font-weight: normal;
-  }
 }
 
-a, .more{
+/* Navbar */
+
+.navbar-contacto {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    .top, .home, .more {
+      border: none;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      font-weight: normal;
+    }
+}
+
+.navbar-contacto i {
+    margin-left: 5px;
+}
+
+.dropdown a{
     text-decoration: none;
     color: white;
     transition: ease-in-out .2s;
@@ -23,18 +34,27 @@ a, .more{
     }
 }
 
-.navbar-contacto i {
-    margin-left: 5px;
-}
-
 .dropdown-item:hover{
     background-color: rgba(24, 24, 25, 0.573);
+}
+
+/* Botón  offcanvas */
+
+.open-offcanvas{
+    display: none;
+}
+
+/* Banner principal */
+
+.banner{
+    width: 100%;
+    height: 800px;
 }
 
 .banner-content{
     position: absolute;
     width: 60%; 
-    margin: 110px 0 0 30px;
+    margin: 285px 0 0 30px;
     z-index: 1;
     text-align: left;
     padding: 20px;
@@ -66,12 +86,13 @@ a, .more{
 .banner-contacto {
     align-items: center;
     position: relative;
-    margin-top: -210px;
+    margin-top: -100px;
     width: 100%;
-    max-height: 700px;
+    max-height: 800px;
     overflow: hidden;
     z-index: 0;
     .img-banner{
+        justify-self: center;
         margin-top: -100px;
         position: relative;
         object-fit: cover;
@@ -80,14 +101,78 @@ a, .more{
     }
 }
 
+/* Cards información */
+
+.cards{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 25px;
+    width: 90%;
+    i{
+        font-size: 7rem;
+        margin-bottom: 50px;
+    }
+}
+
+.info-cards h2{
+    justify-self: center;
+    margin: 50px 0 0 0;
+    width: 90%;
+    color: rgb(194, 194, 194);
+    font-size: 3.25rem;
+}
+
+.info-cards-description{
+    justify-self: center;
+    font-size: 1.25rem;
+    width: 90%;
+    margin-top: 8px;
+}
+
+.card{
+    background: none;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0;
+    width: 550px;
+    height: 325px;
+    outline: 1px solid rgba(27, 27, 27, 0.5);
+    transition: .3s ease-in-out;
+    &:hover{
+        background-color: rgba(240, 248, 255, 0.057);
+        cursor: pointer;
+    }
+}
+
+.card a{
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 100%;
+}
+
+.card h3{
+    font-weight: bold;
+}
+
+.card p{
+    margin-bottom: -30px;
+}
+
+/* Container Formulario */
+
 .formulario-contacto{
     color: white;
     position: relative;
     width: 90%; 
     z-index: 2;
-    text-align: left;
     justify-self: center;
+    text-align: center;
 }
+
+/* Títulos de Formulario */
 
 .formulario-contacto-maintext{
     margin: 50px 0 40px 0;
@@ -95,20 +180,20 @@ a, .more{
     font-size: 1.5rem;
 }
 
-.formulario-contacto h1{
+.formulario-contacto h2{
+    text-align: left;
     color: rgb(194, 194, 194);
     font-size: 3.25rem;
 }
 
 .formulario-contacto-description{
+    text-align: left;
     font-size: 1.25rem;
     width: 90%;
     margin-bottom: 50px;
 }
 
-.completar-formulario{
-    width: 60%;
-}
+/* Estructura de Formulario */
 
 .formulario-row{
     margin-bottom: 25px;
@@ -118,6 +203,7 @@ a, .more{
     font-size: .85rem;
     font-weight: normal;
     width: 100%;
+    text-align: left;
 }
 
 .completar-formulario input, select{
@@ -159,30 +245,218 @@ a, .more{
 }
 
 .enviar-formulario{
-    background-color: rgb(67, 131, 90);
+    
+    background: none;
+    color: white;
+    outline: 1px solid rgb(67, 131, 90);
     border: none;
+    margin: 50px 0;
     padding: 5px 25px 5px 25px;
-    font-weight: bold;
-    margin-bottom: 175px;
-    transition: all .4s;
+    font-weight: normal;
+    transition: all .3s;
     &:hover{
+        background-color: rgb(67, 131, 90);
+        color: black;
+        font-weight: bold;
         filter: brightness(120%);
         transform: scale(1.1);
     }
 }
 
+/* Datos de contacto side */
+
+.contactos-container{
+    border-left: 1px solid rgba(22, 22, 24);
+    text-align: left;
+    margin-left: 30px;
+}
+
 /* Breakpoints tablet  */
 @media (max-width: 768px) {
+
+    /* Banner principal */
+    .banner{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 120%;
+    }
+
+    .banner-content{
+        text-align: center;
+        position: absolute;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .banner-content p{
+        font-size: 1.5rem;
+        margin-top: -150px;
+    }
+
+    .banner-content h1{
+        font-size: 5rem;
+        margin-bottom: 40px;
+    }
+
+    .banner-content input{
+        text-align: center;
+        padding: 0;
+    }
+
+    .banner-contacto {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .img-banner {
+        object-fit: cover;
+        filter: brightness(20%);
+        z-index: -1;
+    }
+
+    /* Cards */
+
+    .info-cards h2{
+        margin: 30px 0 0 0;
+    }
+
+    .cards i{
+        font-size: 5rem;
+        margin-bottom: 50px;
+    }
+
+    .card{
+        padding: 30px 10px;
+    }
+
+    /* Datos de contacto side */
+
+    .contactos-container{
+        border-left: none;
+    }
 }
+
 /*Breakpoints  movil  */
 @media (max-width: 480px) {
-  .navbar-contacto {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    .login {
-      font-size: 0.7rem;
-      margin: 0;
+
+    .banner-content{
+        text-align: center;
+        position: absolute;
+        width: 100%; 
+        margin: 0 auto;
     }
-  }
+
+    .banner-contacto{
+        height: 120%;
+    }
+
+    .banner-content p{
+        font-size: 1rem;
+    }
+
+    .banner-content h1{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .img-banner {
+        object-fit: cover;
+        filter: brightness(20%);
+        z-index: -1;
+    }
+
+    /* Navbar */
+
+    .navbar-contacto {  
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .login {
+            font-size: 0.7rem;
+            margin: 0;
+      }
+    }
+  
+    .navbar-contacto img{  
+        position: absolute;
+    }
+
+    .top, .home, .more {  
+        display: none;
+    }
+
+    .open-offcanvas{
+        text-align: center;
+        color: white;
+        display: inline-flex;
+        font-size: 1.5rem;
+    }
+
+    /* Offcanvas */
+
+    .offcanvas{
+        color: white;
+        background-color: rgb(33, 37, 41);
+    }
+
+    .offcanvas-title{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .offcanvas i{
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    .offcanvas li{
+        font-weight: normal;
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+
+    /* Cards */
+
+    .cards{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .info-cards h2{
+        font-size: 2.5rem;
+    }
+
+    .cards i{
+        margin: -20px 0 20px 0;
+    }
+
+    .card{
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 200px;
+        padding: 30px;
+    }
+
+    .card p{
+        margin-top: -5px;
+    }
+
+    /* Formulario */
+
+    .formulario-contacto h2{
+        font-size: 2.5rem;
+    }
+
+    .enviar-formulario{
+        margin: 50px 0 30px 0;
+    }
 }
