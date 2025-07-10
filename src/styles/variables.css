@@ -1,5 +1,11 @@
 :root {
   --colorSection:#111;
+  --color-botones:linear-gradient(
+    to right,
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
+  );
 
 }
 
