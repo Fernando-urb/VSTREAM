@@ -20,17 +20,11 @@
 .menu-toogle {
   display: none;
 }
-
+/* estilo de los botones  */
 .login {
   font-size: 1rem;
-  background-image: linear-gradient(
-    to right,
-    #aa076b 0%,
-    #61045f 51%,
-    #aa076b 100%
-  );
+  background-image: var(--color-botones);
   margin: 10px;
-
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -40,11 +34,28 @@
   color: #fff;
   text-decoration: none;
 }
+}
 
+.logo-rebotar {
+  width: 100%;
+  display: block;
+  transition: transform 1s ease;
+}
+
+.logo-rebotar:hover {
+  animation: bounce 2s;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-20px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
 /* Breakpoints tablet  */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 767px) and (max-width: 1199px) {
   .container-menu-toogle {
     margin-right: 60%;
   }

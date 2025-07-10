@@ -21,7 +21,7 @@
     <!-- aos animation  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- mis estilos  -->
-    <link rel="shortcut icon" href="/src/img/logos/logo-principal.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/src/img/logos/logo-v-2.png" type="image/x-icon" />
     <link rel="stylesheet" href="./src/styles/styles.css" />
     <title>VSTREAM</title>
 </head>
@@ -35,23 +35,23 @@
                     <div class="px-4 logo-inicio">
                         <a class="" href="#main-inicio" title="none">
                             <img src="/src/img/logos/logo-v-2.png" alt="Logo" width="50" height="40"
-                                class="d-inline-block  ">
+                                class="d-inline-block  logo-rebotar ">
                     </div>
-                    <!-- mu navegacion primario  -->
+
                     <div class=" container-menu-toogle ">
                         <ul class="nav  ">
                             <!-- enlace de contacto  -->
                             <li class="nav-item  fw-light">
-                                <a class="nav-link active text-light  " aria-current="page"
+                                <a class="nav-link active text-light  fs-5" aria-current="page"
                                     href="/src/pages/contacto.html">Contacto <i class="fa-solid fa-envelope"></i></a>
                             </li>
                             <!-- enlace de sobre nosotros  -->
-                            <li class="nav-item fw-light ">
+                            <li class="nav-item fw-light fs-5 ">
                                 <a class="nav-link text-light " href="/src/pages/acerca-de.html">Sobre Nosotros <i
                                         class="fa-solid fa-comments"></i></a>
                             </li>
                             <!-- enlace de ayuda  -->
-                            <li class="nav-item fw-light ">
+                            <li class="nav-item fw-light fs-5 ">
                                 <a class="nav-link text-light " href="#ayuda"> Ayuda <i
                                         class="fa-solid fa-question"></i></a>
                             </li>
@@ -65,11 +65,12 @@
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-end bg-dark opacity-1"
                                         aria-labelledby="dropdownMenuButton1">
-                                        <li><a href="/src/pages/contacto.html" class="dropdown-item text-light">Contacto
+                                        <li><a href="/src/pages/contacto.html"
+                                                class="dropdown-item text-light  ">Contacto
                                                 <i class="fa-solid fa-envelope"></i></a></li>
-                                        <li><a href="/src/pages/acerca-de.html" class="dropdown-item text-light">Sobre
+                                        <li><a href="/src/pages/acerca-de.html" class="dropdown-item text-light ">Sobre
                                                 Nosotros <i class="fa-solid fa-comments"></i></a></li>
-                                        <li><a href="#ayuda" class="dropdown-item text-light">Ayuda <i
+                                        <li><a href="#ayuda" class="dropdown-item text-light ">Ayuda <i
                                                     class="fa-solid fa-question"></i></a></li>
                                     </ul>
                                 </div>
@@ -93,8 +94,8 @@
                     <!-- texto principa  -->
                     <div class="item-hero  text-center text-xl-start ">
                         <h1 class=" fw-bold ">Disfrutá lo mejor del cine y las series</h1>
-                        <h2 > Los mejores éxitos del cine, Series exclusivas y más</h2>
-                        <p >Ahorra un 50% en el plan mensual durante 3 meses </p>
+                        <h2> Los mejores éxitos del cine, Series exclusivas y más</h2>
+                        <p>Ahorra un 50% en el plan mensual durante 3 meses </p>
                         <a class=" text-light btn  px-5 mx-3 login" href="/src/pages/login.html">
                             Registrarse</a>
                     </div>
@@ -108,10 +109,47 @@
                 </div>
             </section>
 
+            <!-- section baner dispositivos  -->
+            <section class="container-section text-light text-center ">
+                <div class="opacity-body">
+                    <h2 class="pt-5">Donde Quieras</h2>
+                    <p class=" fs-5">Disfrutá tus Pelis y Series favoritas desde cualquier dispositivo</p>
+                    <div class="container-dispositivos ">
+                        <!-- tablet  -->
+                        <div class="img-dispositivos" data-aos="fade-up" data-aos-duration="1500">
+                            <img src="/src/img/breakpoints-img/tablet-breakpoints-3-removebg-preview-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <!-- movil -->
+                        <div class="img-dispositivos" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="/src/img/breakpoints-img/celu-breakpoints-removebg-preview.png" alt="">
+                        </div>
+                        <!-- desktop -->
+                        <div class="img-dispositivos" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="/src/img/breakpoints-img/pc-breakpoints-removebg-preview.png" alt="">
+                        </div>
+                        <!-- smart -->
+                        <div class="img-dispositivos" data-aos="fade-down" data-aos-duration="1500">
+                            <img src="/src/img/breakpoints-img/smart-breakpoints-removebg-preview.png" alt="">
+                        </div>
+                        <div class="img-dispositivos">
+                            <a class="  text-light btn login  " href="/src/pages/login.html"> Ver ahora </a>
+                        </div>
+                    </div>
 
-            <!-- baner metodos de pago  -->
-            <section class="container-section p-5 text-light mb-5">
-                <h2> plan mensual</h2>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
                 <!-- carousel de imagenes y videos  -->
@@ -123,6 +161,84 @@
 
 
             </section>
+
+
+            <!-- section como usar la web  -->
+            <section class="container-section p-5 text-light " id="ayuda">
+                <h2 class="text-center">como usar la plataforma</h2>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                ¿Cómo me registro?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">VSTREAM está disponible en VSTREAM.com.ar
+
+                                . Puedes contactar a tu operador local para
+                                obtener más detalles. Para más información, visita help.VSTREAM.com/plans</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                ¿Qué incluye VSTREAM?
+
+
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Beneficios de la suscripción a Disney+:
+                                <ol>
+                                    <li><i class="fa-solid fa-check"></i> Estrenos de películas, series originales y clásicos de Disney, Pixar, Marvel, Star Wars,
+                                National Geographic y Star.</li>
+                                    <li><i class="fa-solid fa-check"></i></li>
+                                    <li><i class="fa-solid fa-check"></i></li>
+                                    <li><i class="fa-solid fa-check"></i></li>
+                                </ol>
+
+                               
+
+                                Los torneos más importantes del mundo y programas de ESPN en vivo.
+
+                                Hasta 4 pantallas a la vez con Disney+ Premium; y hasta 2 con Disney+ Estándar.
+
+                                Descarga de títulos, creación de perfiles y control parental para personalizar la
+                                experiencia por edad según tu plan.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </section>
+
 
             <!-- catalogo peliculas  -->
             <section
@@ -284,16 +400,12 @@
                     <p class="text-white mt-3 d-none d-lg-block">Mira el mejor catalogo de series</p>
             </section>
 
-            <!-- como y donde ver  -->
-            <section class="container-section p-5 text-light mb-5 " id="ayuda">
-                <h2>como y donde lo puedo usar</h2>
-
-            </section>
 
         </main>
 
-        <footer class="footer bg-light">
-            <p class="text-dark">&copy; 2025 VSTREAM. Todos los derechos reservados.</p>
+
+        <footer class="footer bg-dark text-light ">
+            <p class="pt-2">&copy; 2025 VSTREAM. Todos los derechos reservados.</p>
         </footer>
 
 
