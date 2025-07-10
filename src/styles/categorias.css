@@ -1,0 +1,75 @@
+/* Cuando se hace scroll */
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+/* Estilos navbar inicio */
+.navbar-inicio {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 0;
+}
+
+.efec-cursor{
+    height: 30px;
+    width: 150px;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    to right,
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
+  );
+  margin: 50px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  &:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+}
+}
+
+
+.logo_vstreams img{
+    margin: 30px;
+    height: 70px;
+}
+
+.buscador-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 3px;
+}
+
+.buscar-input{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  padding-right: 10px;
+}
+
+.buscar-button{
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+
+
