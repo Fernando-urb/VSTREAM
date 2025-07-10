@@ -3,6 +3,24 @@ body{
     color: white;
 }
 
+.body-contacto {
+  background-image: url(/src/img/fondos/3257640.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden scroll;
+}
+
+.opacity-body {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* negro con 50% de opacidad */
+  z-index: 1;
+}
+
 /* Navbar */
 
 .navbar-contacto {
@@ -95,14 +113,6 @@ body{
     max-height: 800px;
     overflow: hidden;
     z-index: 0;
-    .img-banner{
-        justify-self: center;
-        margin-top: -100px;
-        position: relative;
-        object-fit: cover;
-        filter: brightness(20%);
-        z-index: -1;
-    }
 }
 
 /* Cards información */
@@ -122,6 +132,10 @@ body{
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
+}
+
+.info-cards{
+    margin-bottom: -55px;
 }
 
 .info-cards h2{
@@ -169,7 +183,11 @@ body{
     margin-bottom: -30px;
 }
 
-/* Container Formulario */
+/* Containers Formulario */
+
+.estructura-formulario{
+    margin-bottom: -25px;
+}
 
 .formulario-contacto{
     color: white;
@@ -322,6 +340,7 @@ body{
     .banner-content input{
         text-align: center;
         padding: 0;
+        height: 65px;
     }
 
     .banner-contacto {
@@ -331,12 +350,6 @@ body{
         justify-content: center;
         align-items: center;
         position: relative;
-    }
-
-    .img-banner {
-        object-fit: cover;
-        filter: brightness(20%);
-        z-index: -1;
     }
 
     /* Cards */
@@ -374,11 +387,12 @@ body{
     }
 
     .banner-contacto{
-        height: 120%;
+        height: 100%;
     }
 
     .banner-content p{
         font-size: 1rem;
+        margin-top: -50px;
     }
 
     .banner-content h1{
@@ -386,10 +400,8 @@ body{
         margin-bottom: 20px;
     }
 
-    .img-banner {
-        object-fit: cover;
-        filter: brightness(20%);
-        z-index: -1;
+    .banner-content input{
+        height: 50px;
     }
 
     /* Navbar */
