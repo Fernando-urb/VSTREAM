@@ -71,5 +71,16 @@
   transition: color 0.3s;
 }
 
+.carousel-item{
+  height: 500px;
+  margin: 100px;
 
+}
+ 
+
+
+footer{
+  background-color: black;
+  height: 200px;
+}
 
