@@ -149,8 +149,8 @@
 
 /* Breakpoints tablet  */
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* esta es la section del hero  */
-
+ 
+/* texto principal  */
   .item-hero:nth-child(1) {
     width: 100%;
     h1 {
@@ -164,6 +164,7 @@
       font-size: 1rem;
     }
   }
+  /* logo principal  */
   .item-hero:nth-child(2) {
     width: 100%;
     display: flex;
@@ -177,6 +178,68 @@
       height: 180px;
     }
   }
+  /* contenedor img dispositivos  */
+  .container-dispositivos {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+
+}
+  /* tablet  */
+.img-dispositivos:nth-child(1) {
+  position: absolute;
+  top: 51%;
+  left: 55%;
+  z-index: 3;
+  img {
+    width: 350px;
+    height: 180px;
+  }
+}
+/* movil  */
+.img-dispositivos:nth-child(2) {
+  position: absolute;
+  top: 52%;
+  left: 80%;
+  z-index: 3;
+  img {
+    width: 200px;
+    height: 180px;
+  }
+}
+/* pc  */
+.img-dispositivos:nth-child(3) {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  z-index: 2;
+  img {
+    width: 400px;
+    height: 250px;
+  }
+}
+/* smart */
+.img-dispositivos:nth-child(4) {
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  z-index: 1;
+  img {
+    width: 600px;
+    height: 550px;
+  }
+}
+/* boton*/
+.img-dispositivos:nth-child(5) {
+  position: absolute;
+  top: 5%;
+  left:45%;
+  z-index: 1;
+
+}
+
+
 }
 
 /*Breakpoints  mobile  small */
@@ -214,4 +277,65 @@
       height: 155px;
     }
   }
+    /* contenedor img dispositivos  */
+  .container-dispositivos {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+
+}
+  /* tablet  */
+.img-dispositivos:nth-child(1) {
+  position: absolute;
+  top: 65%;
+  left: 15%;
+  z-index: 3;
+  img {
+    width: 200px;
+    height: 120px;
+  }
+}
+/* movil  */
+.img-dispositivos:nth-child(2) {
+  position: absolute;
+  top: 55%;
+  left: 53%;
+  z-index: 3;
+  img {
+    width: 180px;
+    height: 180px;
+  }
+}
+/* pc  */
+.img-dispositivos:nth-child(3) {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  z-index: 2;
+  img {
+    width: 250px;
+    height: 180px;
+  }
+}
+/* smart */
+.img-dispositivos:nth-child(4) {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  z-index: 1;
+  img {
+    width: 400px;
+    height: 450px;
+  }
+}
+/* boton*/
+.img-dispositivos:nth-child(5) {
+  position: absolute;
+  top: 5%;
+  left:40%;
+  z-index: 1;
+
+}
+
 }
