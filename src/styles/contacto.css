@@ -44,6 +44,7 @@ body{
 }
 
 .dropdown a{
+    margin-top: 5px;
     text-decoration: none;
     color: white;
     transition: ease-in-out .2s;
