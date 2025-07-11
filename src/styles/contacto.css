@@ -371,7 +371,7 @@ body{
 
     .banner-content p{
         font-size: 1rem;
-        margin-top: -150px;
+        margin-top: 150px;
     }
 
     .banner-content h1{
@@ -441,10 +441,12 @@ body{
     }
 
     .info-cards h2{
+        margin-top: 20px;
         font-size: 2.5rem;
     }
 
     .cards i{
+        font-size: 5rem;
         margin: -20px 0 20px 0;
         color: #61045f;
         background: linear-gradient(45deg, #61045f 10%, #aa076b 90%);
@@ -474,5 +476,9 @@ body{
 
     .enviar-formulario{
         margin: 50px 0 30px 0;
+    }
+
+    .contactos-container{
+        border: none;
     }
 }
