@@ -32,27 +32,29 @@
   <title>VSTREAM - CONTACTO</title>
 </head>
 
-<body class="bg-dark wrap-layout body-contacto">
+<body class=" wrap-layout body-bg">
 
   <!-- Contenedor opacidad bg -->
   <div class="opacity-body">
 
   <!-- Header -->  
-  <header class="header sticky-top">
-    <!-- esta es la barra de navegación -->
-    <nav class="navbar-contacto py-2">
+  <header class=" header  sticky-top ">
+              <!-- esta es la barra de navegación -->
+                <nav class="navbar-inicio ">
       <!-- este es el logo principal -->
-        <a class="px-5" href="#">
+       <div class="px-4 logo-inicio">
+        <a class="px-5" href="#main">
           <img src="/src/img/logos/logo-v-2.png" alt="Logo" width="50" height="40"
             class="my-3 d-inline-block logo-contacto">
         </a>
-
+        </div>
+        
         <!-- Enlaces / botones navbar -->
-        <div class="mx-4 my-3 dropdown">
-            <a class="btn px-3 top" href="#">Inicio</a>
-            <a class="btn px-3 home" href="/index.html">Ir a VStream</a>
+        <div class="mx-4 my-2 dropdown ">
+            <a class="btn px-3 top " href="#main" >Inicio</a>
+            <a class="btn px-3 home " href="/index.html" target="_blank">Ir a VStream</a>
 
-            <a class="btn dropdown-toggle px-3 more" data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
+            <button class=" btn dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">Ayuda</button>
             <ul class="dropdown-menu bg-dark">
                 <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Introducción</a></li>
                 <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Resolver Problemas</a></li>
@@ -61,16 +63,17 @@
                 <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Más...</a></li>
             </ul>
 
-            <button class="btn open-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars "></i></button>
+            <button class="btn open-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" title="none"><img src="/src/img/logos/logo-v-2.png" alt="Logo" width="50" height="40"
+            class=" d-inline-block logo-contacto"></button>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
               <div class="offcanvas-header">
-                <h3 class="offcanvas-title" id="offcanvasRightLabel">MENU DE AYUDA</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h3 class="offcanvas-title " id="offcanvasRightLabel">MENU INICIAL</h3>
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
                 <ul>
-                  <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                   <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
                   <li><a href="#"><i class="fa-solid fa-file-circle-question"></i> Introducción</a></li>
                   <li><a href="#"><i class="fa-solid fa-microchip"></i> Resolver Problemas</a></li>
                   <li><a href="#"><i class="fa-solid fa-wallet"></i> Cuenta y Facturación</a></li>
@@ -80,12 +83,15 @@
               </div>
             </div>
         </div>
-    
-    </nav>
-  </header>
+
+      
+                </nav>
+          
+        </header>
+
 
   <!-- Main -->
-  <main class="main">
+  <main class="main" id="main">
 
     <!-- Banner de página -->
     <section class="banner">
@@ -109,7 +115,7 @@
 
         <div class="card">
           <i class="fa-solid fa-users-viewfinder blabla"></i>
-          <a href="/src/pages/error-404.html"> </a>
+          <a href="/src/pages/error-404.html" title="none" target="_blank"> </a>
           <div>
             <h3 class="text-white fs-5">Dispositivos compatibles</h3>
             <p class="text-light contacto-desc">Ver en casa o en cualquier lugar</p>
@@ -118,7 +124,7 @@
 
         <div class="card">
           <i class="fa-solid fa-envelope-circle-check blabla"></i>
-          <a href="/src/pages/error-404.html"> </a>
+          <a href="/src/pages/error-404.html" title="none" target="_blank" > </a>
           <div>
             <h3 class="text-white fs-5">Tutoriales de ayuda</h3>
             <p class="text-light contacto-desc">Guías rápidas para resolver tus dudas</p>
@@ -127,7 +133,7 @@
 
         <div class="card">
           <i class="fa-solid fa-user-gear blabla"></i>
-          <a href="/src/pages/error-404.html"> </a>
+          <a href="/src/pages/error-404.html" title="none" target="_blank"> </a>
           <div>
             <h3 class="text-white fs-5">Cuenta y facturación</h3>
             <p class="text-light contacto-desc">Revisa pagos y configuraciones</p>
@@ -191,7 +197,7 @@
             </select>
           </div>
 
-          <button type="submit" class="enviar-formulario">ENVIAR</button>
+          <button type="submit" class="enviar-formulario btn login ">ENVIAR</button>
         </form>
         </div>
 
