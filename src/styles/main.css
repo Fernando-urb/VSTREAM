@@ -339,3 +339,144 @@
 }
 
 }
+
+.texto-izq {
+    padding-left: 40%;
+}
+.texto-der{
+    padding-right:40%;
+}
+/* Contenedor principal */
+.container-fluid {
+    padding: 2rem 0;
+    background: transparent;
+}
+
+/* Estilo del carrusel (1 imagen a la vez) */
+.carousel {
+    max-width: 300px; /* Controla el tamaño del carrusel */
+    margin-left: 300px;
+}
+
+/* Imágenes del carrusel */
+.poster-img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: auto;
+}
+
+/* Transición suave (fade) */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+/* Estilos para el overlay del carousel */
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay-btn {
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+/* Efecto hover */
+.carousel-item:hover .carousel-overlay {
+    opacity: 1;
+}
+
+.carousel-item:hover .overlay-btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Ajustes para los posters */
+.poster-img {
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover .poster-img {
+    transform: scale(1.03);
+}
+
+
+
+/* Responsive: En móviles, apila título y carrusel */
+@media (max-width: 990px) {
+    .flex-lg-row {
+        flex-direction: column;
+    }
+    .col-lg-4, .col-lg-8 {
+        width: 100%;
+        padding: 0;
+    }
+    .texto-der{
+    padding:0;
+}
+    .text-lg-start {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+    .texto-izq {
+    padding: 0;
+}
+.texto-derecha{
+    padding: 0;
+}
+
+    .carousel {
+    max-width: 300px;
+    margin: auto;
+} 
+
+
+.carousel {
+    max-width: auto; /* Controla el tamaño del carrusel */
+    
+}
+.carousel-item:hover .carousel-overlay {
+        opacity: 0;
+        visibility: none;
+    }
+    
+    
+    .carousel-overlay {
+        display: none; /* OPCIONAL: Si no quieres que aparezca para nada en móvil */
+    }
+
+
+
+ 
+
+}
+  
+   
+    
