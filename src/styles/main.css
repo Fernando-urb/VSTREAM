@@ -1,4 +1,4 @@
-.body-bg {
+.body-inicio {
   background-image: url(/src/img/fondos/fondo-body-4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -77,8 +77,10 @@
   width: 100%;
   /* background-color: var(--colorSection); */
   background-color: rgba(0, 0, 0, 0.7);
+
   z-index: 1;
   min-height: 100vh;
+ 
   h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -140,20 +142,15 @@
 .img-dispositivos:nth-child(5) {
   position: absolute;
   top: 0;
-  left: 45%;
+  left:45%;
   z-index: 1;
+
 }
 
-.container-img-responsive{
-display: none;
-}
-
-
-
-
-/* Breakpoints tablet verticl */
+/* Breakpoints tablet  */
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* texto principal  */
+ 
+/* texto principal  */
   .item-hero:nth-child(1) {
     width: 100%;
     h1 {
@@ -182,18 +179,67 @@ display: none;
     }
   }
   /* contenedor img dispositivos  */
- .container-dispositivos {
-  display: none;
-}
-.container-img-responsive{
-  display: block;
-  margin: 0 auto;
+  .container-dispositivos {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   
-}
-.img-dispositivo-responsivo{
-  width: 700px;
 
 }
+  /* tablet  */
+.img-dispositivos:nth-child(1) {
+  position: absolute;
+  top: 51%;
+  left: 55%;
+  z-index: 3;
+  img {
+    width: 350px;
+    height: 180px;
+  }
+}
+/* movil  */
+.img-dispositivos:nth-child(2) {
+  position: absolute;
+  top: 52%;
+  left: 80%;
+  z-index: 3;
+  img {
+    width: 200px;
+    height: 180px;
+  }
+}
+/* pc  */
+.img-dispositivos:nth-child(3) {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  z-index: 2;
+  img {
+    width: 400px;
+    height: 250px;
+  }
+}
+/* smart */
+.img-dispositivos:nth-child(4) {
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  z-index: 1;
+  img {
+    width: 600px;
+    height: 550px;
+  }
+}
+/* boton*/
+.img-dispositivos:nth-child(5) {
+  position: absolute;
+  top: 5%;
+  left:45%;
+  z-index: 1;
+
+}
+
+
 }
 
 /*Breakpoints  mobile  small */
@@ -231,7 +277,7 @@ display: none;
       height: 155px;
     }
   }
-  /* contenedor img dispositivos  */
+    /* contenedor img dispositivos  */
   .container-dispositivos {
   display: none;
 }
