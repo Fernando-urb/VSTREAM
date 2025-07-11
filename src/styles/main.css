@@ -244,6 +244,7 @@ display: none;
   width: 400px;
 
 }
+<<<<<<< HEAD
 }
   /* tablet  */
 .img-dispositivos:nth-child(1) {
@@ -296,9 +297,11 @@ display: none;
   left:40%;
   z-index: 1;
 
+=======
+ feat/section-info
+>>>>>>> c4bff14c4522f7d293af6df6ea966cfe6eb11a6f
 }
 
-}
 
 .texto-izq {
     padding-left: 40%;
@@ -440,3 +443,7 @@ display: none;
   
    
     
+<<<<<<< HEAD
+=======
+
+>>>>>>> c4bff14c4522f7d293af6df6ea966cfe6eb11a6f
