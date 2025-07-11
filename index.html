@@ -4,7 +4,7 @@
 <head>
     <!-- etiquetas meta  -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta name="canal de streaming" content="este es un sitio para ver peliculas y series " />
     <meta name="keywords" content="series, peliculas, suscripcion" />
@@ -26,63 +26,70 @@
     <title>VSTREAM</title>
 </head>
 
-<body class="bg-dark body-inicio ">
+<body class=" body-bg ">
+    <!-- Contenedor opacidad bg -->
     <div class="opacity-body">
+        <!-- Header -->
         <header class=" header  sticky-top ">
-            <nav class=" navbar-expand-lg navbar-inicio  ">
-                <div class="navbar-inicio py-2  ">
-                    <!-- este es el logo principal  -->
-                    <div class="px-4 logo-inicio">
-                        <a class="" href="#main-inicio" title="none">
-                            <img src="/src/img/logos/logo-v-2.png" alt="Logo" width="50" height="40"
-                                class="d-inline-block  logo-rebotar ">
-                    </div>
+            <!-- esta es la barra de navegación -->
+            <nav class="navbar-inicio ">
+                <!-- este es el logo principal -->
+                <div class="px-4 logo-inicio">
+                    <a class="px-5" href="#main-inicio">
+                        <img src="/src/img/logos/logo-v-2.png" alt="Logo" width="50" height="40"
+                            class="my-3 d-inline-block logo-contacto">
+                    </a>
+                </div>
 
-                    <div class=" container-menu-toogle ">
-                        <ul class="nav  ">
-                            <!-- enlace de contacto  -->
-                            <li class="nav-item  fw-light">
-                                <a class="nav-link active text-light  fs-5" aria-current="page"
-                                    href="/src/pages/contacto.html">Contacto <i class="fa-solid fa-envelope"></i></a>
-                            </li>
-                            <!-- enlace de sobre nosotros  -->
-                            <li class="nav-item fw-light fs-5 ">
-                                <a class="nav-link text-light " href="/src/pages/acerca-de.html">Sobre Nosotros <i
-                                        class="fa-solid fa-comments"></i></a>
-                            </li>
-                            <!-- enlace de ayuda  -->
-                            <li class="nav-item fw-light fs-5 ">
-                                <a class="nav-link text-light " href="#ayuda"> Ayuda <i
-                                        class="fa-solid fa-question"></i></a>
-                            </li>
-                            <!-- este es el menu toggle para responsive  -->
-                            <li class="menu-toogle">
-                                <div class="dropdown-center">
-                                    <button class="btn " type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="/src/img/logos/logo-v-2.png" alt="img-menu-togle" width="50"
-                                            height="40" class="d-inline-block  logo-movil">
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end bg-dark opacity-1"
-                                        aria-labelledby="dropdownMenuButton1">
-                                        <li><a href="/src/pages/contacto.html"
-                                                class="dropdown-item text-light  ">Contacto
-                                                <i class="fa-solid fa-envelope"></i></a></li>
-                                        <li><a href="/src/pages/acerca-de.html" class="dropdown-item text-light ">Sobre
-                                                Nosotros <i class="fa-solid fa-comments"></i></a></li>
-                                        <li><a href="#ayuda" class="dropdown-item text-light ">Ayuda <i
-                                                    class="fa-solid fa-question"></i></a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- esta es el boton de iniciar sesión -->
-                    <div>
-                        <a class="  text-light btn  px-1 mx-3 login" href="/src/pages/login.html"> iniciar
-                            sesión <i class="fa-solid fa-arrow-right-to-bracket px-2 "></i></a>
+                <!-- Enlaces / botones navbar -->
+                <div class="mx-4 my-2 dropdown ">
+                    <a class="btn px-3 top " href="/src/pages/contacto.html" target="_blank">Contacto</a>
+                    <a class="btn px-3 home " href="#footer">Sobre Nosotros</a>
+
+                    <button class=" btn dropdown-toggle text-light" data-bs-toggle="dropdown"
+                        aria-expanded="false">Ayuda</button>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Introducción</a></li>
+                        <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Resolver Problemas</a>
+                        </li>
+                        <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Cuenta y
+                                Facturación</a></li>
+                        <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Tutoriales de Ayuda</a>
+                        </li>
+                        <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Más...</a></li>
+                    </ul>
+
+                    <button class="btn open-offcanvas" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" title="none"><img
+                            src="/src/img/logos/logo-v-2.png" alt="Logo" width="50" height="40"
+                            class=" d-inline-block logo-contacto"></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h3 class="offcanvas-title " id="offcanvasRightLabel">MENU INICIAL</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul>
+                                <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                                <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+                                <li><a href="/src/pages/acerca-de.html"><i class="fa-solid fa-envelope"></i> Sobre Nosotros</a></li>
+                                <li><a href="/src/pages/suscripcion.html"><i class="fa-solid fa-envelope"></i> Registro</a></li>
+                                <li><a href="/src/pages/error-404.html"><i class="fa-solid fa-video"></i>Tutoriales de Ayuda</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
+                <!-- esta es el boton de iniciar sesión -->
+                <div class="">
+                    <a class=" mb-3 text-light btn  px-1 mx-3 login" href="/src/pages/login.html"> iniciar
+                        sesión <i class="fa-solid fa-arrow-right-to-bracket px-2 "></i></a>
+                </div>
+
+
             </nav>
         </header>
 
@@ -114,6 +121,8 @@
                 <div class="opacity-body">
                     <h2 class="pt-5">Donde Quieras</h2>
                     <p class=" fs-5">Disfrutá tus Pelis y Series favoritas desde cualquier dispositivo</p>
+                    <a class="  text-light btn login  " href="/src/pages/login.html"> Ver ahora </a>
+                    
                     <div class="container-dispositivos ">
                         <!-- tablet  -->
                         <div class="img-dispositivos" data-aos="fade-up" data-aos-duration="1500">
@@ -132,39 +141,24 @@
                         <div class="img-dispositivos" data-aos="fade-down" data-aos-duration="1500">
                             <img src="/src/img/breakpoints-img/smart-breakpoints-removebg-preview.png" alt="">
                         </div>
-                        <div class="img-dispositivos">
-                            <a class="  text-light btn login  " href="/src/pages/login.html"> Ver ahora </a>
-                        </div>
+                      
                     </div>
+                    <div class="container-img-responsive" data-aos="zoom-in" data-aos-duration="2000">
+                        <img src="/src/img/breakpoints-img/breakpoints.png" alt="" class="img-dispositivo-responsivo" >
 
+                    </div>
+                    
+                   
 
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- carousel de imagenes y videos  -->
-
-
-
-
-
-
 
             </section>
 
 
+
             <!-- section como usar la web  -->
-            <section class="container-section p-5 text-light " id="ayuda">
+            <section class="container-section  text-light " id="ayuda">
+
                 <h2 class="text-center">como usar la plataforma</h2>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
@@ -198,21 +192,23 @@
                             <div class="accordion-body">
                                 Beneficios de la suscripción a Disney+:
                                 <ol>
-                                    <li><i class="fa-solid fa-check"></i> Estrenos de películas, series originales y clásicos de Disney, Pixar, Marvel, Star Wars,
-                                National Geographic y Star.</li>
+                                    <li><i class="fa-solid fa-check"></i> Estrenos de películas, series originales y
+                                        clásicos de Disney, Pixar, Marvel, Star Wars,
+                                        National Geographic y Star.</li>
                                     <li><i class="fa-solid fa-check"></i></li>
                                     <li><i class="fa-solid fa-check"></i></li>
                                     <li><i class="fa-solid fa-check"></i></li>
                                 </ol>
 
-                               
+
 
                                 Los torneos más importantes del mundo y programas de ESPN en vivo.
 
                                 Hasta 4 pantallas a la vez con Disney+ Premium; y hasta 2 con Disney+ Estándar.
 
                                 Descarga de títulos, creación de perfiles y control parental para personalizar la
-                                experiencia por edad según tu plan.</div>
+                                experiencia por edad según tu plan.
+                            </div>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -404,7 +400,7 @@
         </main>
 
 
-        <footer class="footer bg-dark text-light ">
+        <footer class="footer bg-dark text-light " id="footer">
             <p class="pt-2">&copy; 2025 VSTREAM. Todos los derechos reservados.</p>
         </footer>
 
