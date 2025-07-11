@@ -234,167 +234,189 @@
 
 
             </section>
+<section class="container-fluid py-5 bg-dark bg-opacity-75">
+      <div class="container">
+        <h2 class="text-center mb-5 display-4 fw-bold text-success">Elige tu plan ideal</h2>
+        
+        <div class="row g-4 justify-content-center">
+          <!-- Plan Básico -->
 
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="card pricing-card h-100 w-100 border-danger border-3">
+              <div class="card-header bg-danger text-dark text-center py-3">
+                <h3 class="fw-bold mb-0">Estándar</h3>
+                <span class="badge bg-dark text-white mt-2">.</span>
+              </div>
+              <div class="card-body text-center bg-dark text-light">
+                <h4 class="card-title pricing-card-title">$7.99<small class="text-muted fw-light">/mes</small></h4>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li class="py-2"><i class="fas fa-check text-success me-2"></i> Calidad HD</li>
+                  <li class="py-2"><i class="fas fa-check text-success me-2"></i> 1 pantalla de reproduccion</li>
+                  <li class="py-2"><i class="fas fa-check text-success me-2"></i> Acceso a catálogo completo</li>
+                  <li class="py-2"><i class="fas fa-times text-danger me-2"></i> Sin descargas en dispositivo</li>
+                </ul>
+                <button class="w-100 btn btn-lg btn-outline-danger">Seleccionar</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Plan Estándar (Destacado) -->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="card pricing-card h-100 w-100 border-success border-3">
+              <div class="card-header bg-success text-dark text-center py-3">
+                <h3 class="fw-bold mb-0">Estándar</h3>
+                <span class="badge bg-dark text-white mt-2">Más popular</span>
+              </div>
+              <div class="card-body text-center bg-dark text-light">
+                <h4 class="card-title pricing-card-title ">$5.500<small class="text-muted fw-light">/mes</small></h4>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li class="py-2"><i class="fas fa-check text-success me-2"></i> Calidad Full HD</li>
+                  <li class="py-2"><i class="fas fa-check text-success me-2"></i> 2 pantallas simultáneas</li>
+                  <li class="py-2"><i class="fas fa-check text-success me-2"></i> Acceso a catálogo completo</li>
+                  <li class="py-2"><i class="fas fa-check text-success me-2"></i> Descargas en 1 dispositivo</li>
+                </ul>
+                <button class="w-100 btn btn-lg btn-outline-success">Seleccionar</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Plan Premium -->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="card pricing-card h-100 w-100 border-warning border-3">
+              <div class="card-header bg-warning text-dark text-center py-3">
+                <h3 class="fw-bold mb-0">Estándar</h3>
+                <span class="badge bg-dark text-white mt-2">.</span>
+              </div>
+              <div class="card-body text-center bg-dark text-light">
+                <h4 class="card-title pricing-card-title">$7.000<small class="text-muted fw-light">/mes</small></h4>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li class="py-2"><i class="fas fa-check text-success me-2"></i> Calidad Full HD</li>
+                  <li class="py-2"><i class="fas fa-check text-success me-2"></i> 3 pantallas simultáneas</li>
+                  <li class="py-2"><i class="fas fa-check text-success me-2"></i> Acceso a catálogo completo</li>
+                  <li class="py-2"><i class="fas fa-check text-success me-2"></i> Descargas en 3 dispositivo</li>
+                </ul>
+                <button class="w-100 btn btn-lg btn-outline-warning">Seleccionar</button>
+              </div>
+            </div>
+          </div>
 
-            <!-- catalogo peliculas  -->
-            <section
-                class="bg-dark bg-gradient min-vh-100 d-flex flex-column flex-lg-row align-items-center justify-content-center py-4 container-section mb-5">
-                <div class="order-2 order-lg-1 col-lg-4 text-center text-lg-start py-3 py-lg-0 ps-lg-5">
-                    <h2 class="text-success fw-bold mb-0 text-shadow display-5">Los Mejores Estrenos</h2>
-                    <p class="text-white mt-3 d-none d-lg-block">Descubre las películas más esperadas del año</p>
-                </div>
-                <div class="order-1 order-lg-2 col-lg-8 carousel-container">
+        </div>
+        
+        <div class="text-center mt-5 text-light">
+          <p class="lead">Todos los planes incluyen 30 días de prueba gratuita. Cancela cuando quieras.</p>
+          <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" style="height: 70px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard" style="height: 70px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="American Express" style="height: 70px;">
+            
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    <!-- Carrusel con transición suave -->
-                    <div id="peliculasCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                        data-bs-interval="4000" data-bs-touch="false" data-bs-pause="false">
-                        <!-- Slides -->
-                        <div class="carousel-inner w-100">
-                            <!-- Película 1 -->
-                            <div class="carousel-item active">
-                                <div class="poster-wrapper">
-                                    <div class="poster-container">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/x26MtUlwtWD26d0G0FXcppxCJio.jpg"
-                                            alt="Poster Película 1">
-                                    </div>
-                                    <!-- <div class="carousel-caption">
-                                <h5>Película 1</h5>
-                                <p class="d-none d-sm-block">Una aventura épica que te transportará</p>
-                            </div> -->
-                                </div>
-                            </div>
-
-                            <!-- Película 2 -->
-                            <div class="carousel-item">
-                                <div class="poster-wrapper">
-                                    <div class="poster-container">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7c5VBuCbjZOk7lSfj9sMpmDIaKX.jpg"
-                                            alt="Poster Película 2">
-                                    </div>
-                                    <!-- <div class="carousel-caption">
-                                <h5>Película 2</h5>
-                                <p class="d-none d-sm-block">Una comedia que te hará reír sin parar</p>
-                            </div> -->
-                                </div>
-                            </div>
-
-                            <!-- Película 3 -->
-                            <div class="carousel-item">
-                                <div class="poster-wrapper">
-                                    <div class="poster-container">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg"
-                                            alt="Poster Película 3">
-                                    </div>
-                                    <!-- <div class="carousel-caption">
-                                <h5>Película 3</h5>
-                                <p class="d-none d-sm-block">Un thriller que te mantendrá en vilo</p>
-                            </div> -->
-                                </div>
-                            </div>
-
-                            <!-- Película 4 -->
-                            <div class="carousel-item">
-                                <div class="poster-wrapper">
-                                    <div class="poster-container">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2VUmvqsHb6cEtdfscEA6fqqVzLg.jpg"
-                                            alt="Poster Película 4">
-                                    </div>
-                                    <!-- <div class="carousel-caption">
-                                <h5>Película 4</h5>
-                                <p class="d-none d-sm-block">Drama intenso con actuaciones memorables</p>
-                            </div> -->
-                                </div>
-                            </div>
-
-                            <!-- Película 5 -->
-                            <div class="carousel-item">
-                                <div class="poster-wrapper">
-                                    <div class="poster-container">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hqcexYHbiTBfDIdDWxrxPtVndBX.jpg"
-                                            alt="Poster Película 5" class="optimized-image" loading="lazy" width="300"
-                                            height="450">
-                                    </div>
-
-                                </div>
-                            </div>
+             <!-- catalogo peliculas  -->
+            <section class="container-fluid d-flex flex-column flex-lg-row align-items-center justify-content-center py-5">
+    <div class="col-lg-4 text-center text-lg-center ps-lg-5 mb-4 mb-lg-0">
+        <h2 class="texto-izq text-danger fw-bold display-5">Las Mejores Películas de Estreno</h2>
+        <a href="/peliculas" class="btn btn-danger mt-3 d-lg-none text-decoration-none">Ver todas las películas</a>
+    </div>
+    <div class="col-lg-8 text-center">
+        <div id="peliculasCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7c5VBuCbjZOk7lSfj9sMpmDIaKX.jpg" 
+                         alt="Poster Película 1" 
+                         class="img-fluid poster-img">
+                    <div class="carousel-overlay">
+                        <div class="overlay-content">
+                            <a href="/detalle-pelicula/1" class="btn btn-danger overlay-btn d-none d-lg-block">Ver más</a>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <!-- catalogo de series  -->
-            <section
-                class=" bg-dark bg-gradient min-vh-100 d-flex flex-column flex-lg-row align-items-center justify-content-center py-4 container-section mb-5">
-
-                <div class="order-1 order-lg-2 col-lg-8 carousel-container">
-
-                    <!-- Carrusel con transición suave -->
-                    <div id="peliculasCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                        data-bs-interval="4000" data-bs-touch="false" data-bs-pause="false">
-                        <!-- Slides -->
-                        <div class="carousel-inner w-100">
-                            <!-- Película 1 -->
-                            <div class="carousel-item active">
-                                <div class="poster-wrapper">
-                                    <div class="poster-container">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg"
-                                            alt="Poster Película 1">
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Película 2 -->
-                            <div class="carousel-item">
-                                <div class="poster-wrapper">
-                                    <div class="poster-container">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vHqeLzYl3dEAutojCO26g0LIkom.jpg"
-                                            alt="Poster Película 2">
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Película 3 -->
-                            <div class="carousel-item">
-                                <div class="poster-wrapper">
-                                    <div class="poster-container">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8BbZGH0kmkSWqWUmy4zaJAlVbfe.jpg"
-                                            alt="Poster Película 3">
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Película 4 -->
-                            <div class="carousel-item">
-                                <div class="poster-wrapper">
-                                    <div class="poster-container">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/WGRQ8FpjkDTzivQJ43t94bOuY0.jpg"
-                                            alt="Poster Película 4">
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Película 5 -->
-                            <div class="carousel-item">
-                                <div class="poster-wrapper">
-                                    <div class="poster-container">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/dhbqyYjLfTNAHodDDjDELzwO6F4.jpg"
-                                            alt="Poster Película 5" class="optimized-image" loading="lazy" width="300"
-                                            height="450">
-                                    </div>
-
-                                </div>
-                            </div>
+                <div class="carousel-item active">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg" 
+                         alt="Poster Película 2" 
+                         class="img-fluid poster-img">
+                    <div class="carousel-overlay">
+                        <div class="overlay-content">
+                            <a href="/detalle-pelicula/2" class="btn btn-danger overlay-btn d-none d-lg-block">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <div class="order-2 col-lg-4 text-center text-lg-start py-3 py-lg-0 ps-lg-4">
-                    <h2 class="text-success fw-bold mb-0 text-shadow display-5">Las Mejores Series Estreno</h2>
-                    <p class="text-white mt-3 d-none d-lg-block">Mira el mejor catalogo de series</p>
-            </section>
+                <div class="carousel-item">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hqcexYHbiTBfDIdDWxrxPtVndBX.jpg" 
+                         alt="Poster Película 3" 
+                         class="img-fluid poster-img">
+                    <div class="carousel-overlay">
+                        <div class="overlay-content">
+                            <a href="/detalle-pelicula/3" class="btn btn-danger overlay-btn d-none d-lg-block">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            
+
+    <!-- catalogo Series -->
+
+    <section class="container-fluid d-flex flex-column flex-lg-row align-items-center justify-content-center py-5">
+    <!-- Texto y botón (orden 1 en móvil) -->
+    <div class="col-12 col-lg-4 text-center text-lg-center pe-lg-5 mb-4 mb-lg-0 order-1 order-lg-last">
+    <h2 class="texto-der text-danger fw-bold display-5">Las Mejores Series de Estreno</h2>
+    <a href="/peliculas" class="btn btn-danger mt-3 d-lg-none">Ver todas las Series</a>
+</div>
+
+    <!-- Carrusel (orden 2 en móvil) -->
+    <div class="col-lg-8 text-center order-2 order-lg-first">
+        <div id="seriesCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg" 
+                         alt="Poster Película 1" 
+                         class="img-fluid poster-img">
+                    <div class="carousel-overlay">
+                        <div class="overlay-content">
+                            <a href="/detalle-pelicula/1" class="btn btn-danger overlay-btn d-none d-lg-block">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vHqeLzYl3dEAutojCO26g0LIkom.jpg" 
+                         alt="Poster Película 2" 
+                         class="img-fluid poster-img">
+                    <div class="carousel-overlay">
+                        <div class="overlay-content">
+                            <a href="/detalle-pelicula/2" class="btn btn-danger overlay-btn ">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8BbZGH0kmkSWqWUmy4zaJAlVbfe.jpg" 
+                         alt="Poster Película 3" 
+                         class="img-fluid poster-img">
+                    <div class="carousel-overlay">
+                        <div class="overlay-content">
+                            <a href="/detalle-pelicula/3" class="btn btn-danger overlay-btn">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/WGRQ8FpjkDTzivQJ43t94bOuY0.jpg" 
+                         alt="Poster Película 3" 
+                         class="img-fluid poster-img">
+                    <div class="carousel-overlay">
+                        <div class="overlay-content">
+                            <a href="/detalle-pelicula/3" class="btn btn-danger overlay-btn">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
         </main>
@@ -403,6 +425,145 @@
         <footer class="footer bg-dark text-light " id="footer">
             <p class="pt-2">&copy; 2025 VSTREAM. Todos los derechos reservados.</p>
         </footer>
+        <footer class="footer py-2 bg-gradient text-light" style="background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="/src/img/logos/logo-v-2.png" alt="VSTREAM" width="120" class="mb-3">
+          <p>El mejor contenido en streaming las 24 horas del día, los 365 días del año.</p>
+          <div class="social-icons mt-3">
+            <a href="#" class="text-blue me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="text-black me-3"><i class="fab fa-x fa-lg"></i></a>
+            <a href="#" class="text-danger me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-danger"><i class="fab fa-youtube fa-lg"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-danger mb-4">Navegación</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Inicio</a></li>
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Películas</a></li>
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Series</a></li>
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Novedades</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-danger mb-4">Legal</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#terminosModal">Términos</a></li>
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#privacidadModal">Privacidad</a></li>
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#cookiesModal">Cookies</a></li>
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#faqsModal">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4">
+          <h5 class="text-danger mb-4">Newsletter</h5>
+          <p>Suscríbete para recibir las últimas novedades y ofertas especiales.</p>
+          <form class="mt-3">
+            <div class="input-group">
+              <input type="email" class="form-control bg-danger border-light" placeholder="Tu email">
+              <button class="btn btn-outline-danger border-light" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; 2025 VSTREAM. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0">Made with <i class="fa-regular fa-chess-knight text-bg-success"></i> DAnte3</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modales Independientes para cada sección Legal -->
+    
+    <!-- Modal Términos -->
+    <div class="modal" id="terminosModal" tabindex="-1" aria-labelledby="terminosModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title text-danger" id="terminosModalLabel">Términos y Condiciones</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Contenido completo de los términos y condiciones... Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores esse quibusdam nostrum laborum explicabo id pariatur assumenda. Animi quasi, porro, sunt mollitia, impedit laudantium debitis natus assumenda fugit enim vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iste reprehenderit quas? Ullam commodi inventore quae ratione porro neque rem ipsum similique provident vel sapiente voluptatem, tempore libero, dolores at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsum aspernatur libero blanditiis facilis soluta deleniti nam, assumenda nihil dolore dicta tenetur. Officia accusantium, corrupti culpa veniam fuga assumenda ab.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsam earum veniam ipsa rem, officiis reprehenderit magni pariatur consequuntur quidem quos cupiditate, itaque reiciendis architecto, modi dolorem ipsum quod aspernatur.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, repellendus. Est in, architecto repellendus earum voluptate quia recusandae eligendi rerum laudantium nulla sint tempore quos adipisci sunt maxime vitae ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas et sed fugit fugiat, quam consequatur omnis veniam, unde minima exercitationem ea aliquam corporis officia, repellendus eaque voluptates! Adipisci, labore.</p>
+            <!-- Más contenido aquí -->
+          </div>
+          <div class="modal-footer border-secondary">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal Privacidad -->
+    <div class="modal fade" id="privacidadModal" tabindex="-1" aria-labelledby="privacidadModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-scrollable">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title text-danger" id="privacidadModalLabel">Política de Privacidad</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Contenido completo de la política de privacidad... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam facere officia, tempora tenetur commodi cumque? Ad eum aperiam amet possimus, earum fugit cupiditate tenetur veniam repellendus aut, illo magni praesentium.</p>
+            <!-- Más contenido aquí -->
+          </div>
+          <div class="modal-footer border-secondary">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal Cookies -->
+    <div class="modal fade" id="cookiesModal" tabindex="-1" aria-labelledby="cookiesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title text-danger" id="cookiesModalLabel">Política de Cookies</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Contenido completo de la política de cookies...</p>
+            <!-- Más contenido aquí -->
+          </div>
+          <div class="modal-footer border-secondary">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal FAQs -->
+    <div class="modal fade" id="faqsModal" tabindex="-1" aria-labelledby="faqsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title text-danger" id="faqsModalLabel">Preguntas Frecuentes</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Contenido completo de preguntas frecuentes...</p>
+            <!-- Más contenido aquí -->
+          </div>
+          <div class="modal-footer border-secondary">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</footer>
 
 
         <!-- aos animation  -->
