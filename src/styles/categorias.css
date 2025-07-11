@@ -4,7 +4,7 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 /* Estilos navbar inicio */
-.navbar-inicio {
+.navbar-inicio{
   display: flex;
   justify-content: space-between;
   align-self: center;
@@ -15,40 +15,25 @@
   padding: 0;
 }
 
-.efec-cursor{
-    height: 30px;
-    width: 150px;
-  font-size: 1rem;
-  background-image: linear-gradient(
-    to right,
-    #aa076b 0%,
-    #61045f 51%,
-    #aa076b 100%
-  );
-  margin: 50px;
-  border-radius: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  &:hover {
-  background-position: right center; 
-  color: #fff;
-  text-decoration: none;
-}
-}
+/* LOGO DE LA PAGINA */
 
+.logo_vstreams{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
 
 .logo_vstreams img{
-    margin: 30px;
     height: 70px;
 }
 
+/* BUSCADOR */
+
 .buscador-container{
+  margin: 40px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 50px;
   border-bottom: 2px solid #ccc;
   padding-bottom: 3px;
 }
@@ -71,16 +56,36 @@
   transition: color 0.3s;
 }
 
-.carousel-item{
-  height: 500px;
-  margin: 100px;
+/* LINK PARA DETALLES */
 
+.links-detalles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  height: 40px;
 }
- 
 
 
-footer{
-  background-color: black;
-  height: 200px;
+.peliseries_link{
+  margin: 70px;
+}
+
+/* CERRAR SESION */
+
+.salir-sesion{
+  margin: 30px;
+  height: 50px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px){
+  .buscador-container{
+    
+  }
+
+
+
+
 }
 
