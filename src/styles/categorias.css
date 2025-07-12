@@ -18,7 +18,7 @@
 /* LOGO DE LA PAGINA */
 
 .logo_vstreams{
-    margin: 20px;
+    margin: 40px;
     display: flex;
     justify-content: center;
     
@@ -31,7 +31,7 @@
 /* BUSCADOR */
 
 .buscador-container{
-  margin: 40px;
+  margin: 60px;
   display: flex;
   justify-content: center;
   border-bottom: 2px solid #ccc;
@@ -56,32 +56,133 @@
   transition: color 0.3s;
 }
 
-/* LINK PARA DETALLES */
 
-.links-detalles{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-  height: 40px;
-}
-
-
-.peliseries_link{
-  margin: 70px;
-}
 
 /* CERRAR SESION */
 
 .salir-sesion{
   margin: 30px;
-  height: 50px;
+  height: 70px;
+}
+
+.salir-sesion-phone{
+  display: none;
+}
+
+/* MENU-TOGGLE */
+
+.menu-toogle_buscador{
+  display: none;
+}
+
+/* LINKS-DETALLES */
+
+.links-detalles{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+  width: 300px;
+}
+
+.peliseries-links{
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.peliseries-links-icono{
+  height: 70px;
+  display: flex;
+  align-items: center;
 }
 
 
-@media (min-width: 768px) and (max-width: 1199px){
-  .buscador-container{
+/* PARA MOBILE  */
+
+@media (max-width: 480px){
+
+  /* NAVBAR */
+
+  .navbar-inicio{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+  /* LOGO */
+
+  .logo_vstreams{
+    display: none;
+  }
+
+  .logo_vstreams img{
+    height: 50px;
+  }
+
+
+  /* MENU-TOGGLE */
+
+  .menu-toogle{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
     
+  }
+
+  .peliseries-links{
+    display: none;
+  }
+  
+  .peliseries-links-icono{
+    display: none;
+  }
+
+
+  /* NAVBAR-BUSCADOR */
+
+  .buscador-container{
+    display: none;
+    margin: 20px;
+  }
+
+  .buscador-container input{
+    display: flex;
+    
+  }
+
+  .menu-toogle_buscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .menu-toogle_buscador ul{
+    height: 40px;
+  }
+
+  /* NAVBAR-SESION */
+
+  .salir-sesion{
+    display: none;
+  }
+
+  .salir-sesion-phone{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+}
+
+
+/* PARA TABLET */
+
+@media (min-width: 768px) and (max-width: 1199px){
+
+  .menu-toggle {
+    display: none;
   }
 
 

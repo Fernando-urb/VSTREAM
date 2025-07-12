@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="/src/styles/styles.css">
     <title>VSTREAM</title>
 </head>
-<body class="bg-dark body-inicio ">
+<body class="bg-dark body-inicio">
     
     <div class="opacity-body">
 
@@ -30,24 +30,69 @@
 
                 <div class="navbar-inicio">
 
+                    <!-- LOGO -->
+
                     <div class="logo_vstreams">
                         <a href="/src/pages/categorias.html"><img src="/src/img/logos/logo-v-1.png" alt=""></a>
                     </div>
- 
+                    
+                    <!-- MENU-TOGGLE-LOGO-PHONE -->
+
+                    <div>
+                        <li class="menu-toogle">
+                                <div class="dropdown-center">
+                                    <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="/src/img/logos/logo-v-2.png" alt="img-menu-togle" width="50" height="40" class="d-inline-block  logo-movil">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end bg-dark opacity-4" aria-labelledby="dropdownMenuButton1">
+                                    <li><a href="/src/pages/acerca-de.html" class="dropdown-item text-light">Peliculas</a></li>
+                                    <li><a href="/src/pages/detalles-peli.html" class="dropdown-item text-light">Series</a></li>
+                                </ul>
+                             </div>
+                        </li>
+                    </div>
+
+
                     <div class="links-detalles">
 
-                        <div class="peliseries_link">
-                            <a class="nav-link active text-light" href="">Peliculas</a>
+                        <div class="peliseries-links">  
+                            <a class="nav-link active" aria-current="page" href="/src/pages/detalles-peli.html">Peliculas</a>
                         </div>
 
-                         <i class="fa-solid fa-bolt"></i>
+                        <div class="peliseries-links-icono"><i class="fa-solid fa-bolt"></i></div>
 
-                        <div class="peliseries_link">
-                            <a class="nav-link active text-light" href="/">Series</a>
+                        <div class="peliseries-links">  
+                            <a class="nav-link active" aria-current="page" href="/src/pages/detalles-peli.html">Series</a>
+                        </div>
+                    
+                    </div>
+
+                    <!-- MENU TOGGLE -->
+
+                    <div class="menu-toogle_buscador">
+                        <div class="dropdown-center">
+                            <button class="btn " type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                               <div class="text-white">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                               </div>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark opacity-1"
+                            aria-labelledby="dropdownMenuButton1">
+                                <li> <form role="search" aria-label="Buscar contenido">
+                                        <label for="search" class="visually-hidden"> Buscar</label>
+                                        <input type="text" id="search" name="search" placeholder="Buscar..." class="buscar-input">
+                                        <button type="submit" class="buscar-button" aria-label="Buscar">
+                                        </button>
+                                    </form>
+                                </li>
+                                <!-- <li><a href="" class="dropdown-item text-light">peliculas</a></li>
+                                <li><a href="" class="dropdown-item text-light">series</a></li> -->
+                            </ul>
                         </div>
                     </div>
-                  
-
+                        
+                    <!-- BUSCADOR -->
 
                     <div class="buscador-container">
                         <form role="search" aria-label="Buscar contenido">
@@ -61,10 +106,16 @@
                         </form>
                     </div>
                     
+                    <!-- CERRAR SESION -->
 
-                     <div class="salir-sesion">
+                    <div class="salir-sesion">
                         <a class="  text-light btn  px-1 mx-3 login" href="/src/pages/login.html"> Cerrar Sesion <i class="fa-solid fa-arrow-right-to-bracket px-2"></i></a>
                     </div>
+
+                    <div class="salir-sesion-phone">
+                        <a class="text-light btn px-4 mx-6 d-flex login" href="/src/pages/login.html"> Cerrar Sesion <i class="fa-solid fa-arrow-right-to-bracket px-2"></i></a>
+                    </div>
+
                 </div>
             </nav>
         </header>
@@ -91,7 +142,6 @@
                     navbar.classList.remove('scrolled');
                 }
             });
-
     </script>
 </body>
 
