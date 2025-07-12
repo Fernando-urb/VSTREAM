@@ -116,7 +116,7 @@
   }
 
   .logo_vstreams img{
-    height: 50px;
+    height: 40px;
   }
 
 
@@ -125,8 +125,12 @@
   .menu-toogle{
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 20px 0;
     
+  }
+
+  .links-detalles{
+    display: none;
   }
 
   .peliseries-links{
@@ -142,7 +146,7 @@
 
   .buscador-container{
     display: none;
-    margin: 20px;
+    margin: 30px;
   }
 
   .buscador-container input{
@@ -174,6 +178,9 @@
     align-self: center;
   }
 
+  .salir-sesion-phone i{
+    display: none;
+  }
 }
 
 
@@ -181,12 +188,38 @@
 
 @media (min-width: 768px) and (max-width: 1199px){
 
-  .menu-toggle {
+  /* logo */
+
+  .logo_vstreams{
     display: none;
   }
 
+  .logo_vstreams img{
+    height: 40px;
+  }
 
+  .menu-toogle{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    
+  }
 
+  .links-detalles{
+    display: none;
+  }
 
+  .buscador-container{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 3px;
+  }
+  
+  .salir-sesion{
+  margin: 20px;
+  height: 50px;
+}
 }
 
