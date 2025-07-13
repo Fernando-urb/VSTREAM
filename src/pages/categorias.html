@@ -23,7 +23,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- mis estilos  -->
 
-  <link rel="shortcut icon" href="/src/img/logos/logo-principal.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="/src/img/logos/logo-v-2.png" type="image/x-icon" />
   <link rel="stylesheet" href="/src/styles/styles.css">
   <title>VSTREAM</title>
 </head>
@@ -31,277 +31,282 @@
 <body class="bg-dark body-inicio">
 
   <div class="opacity-body">
-    <header class="header sticky-top">
-      <nav class=" navbar-expand-lg">
-        <div class="navbar-inicio">
-          <!-- LOGO -->
-          <div class="logo_vstreams">
-            <a href="/src/pages/categorias.html"><img src="/src/img/logos/logo-v-1.png" alt=""></a>
-          </div>
 
-          <!-- MENU-TOGGLE-LOGO-PHONE -->
+    <!-- Header -->
+    <header class=" header  sticky-top ">
+      <!-- esta es la barra de navegación -->
+      <nav class="navbar-inicio ">
+        <!-- este es el logo principal -->
+        <div class="px-4 logo-inicio">
+          <a class="px-5" href="#main">
+            <img src="/src/img/logos/logo-v-2.png" alt="Logo" width="50" height="40"
+              class="my-3 d-inline-block logo-contacto">
+          </a>
+        </div>
+        <!-- Enlaces / botones navbar -->
+        <div class="mx-4 my-2 dropdown  menu-navbar ">
+          <a class="btn px-3  " href="#" target="_blank">Peliculas</a>
+          <a class="btn px-3  " href="#">Series</a>
+          <a class="btn px-3  " href="#">Estrenos</a>
+        </div>
+        
+          <!-- off canvas movil -->
+          <button class="btn open-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight" title="none"><img src="/src/img/logos/logo-v-2.png" alt="Logo" width="50"
+              height="40" class=" d-inline-block logo-contacto"></button>
 
-          <div>
-            <li class="menu-toogle">
-              <div class="dropdown-center">
-                <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <img src="/src/img/logos/logo-v-2.png" alt="img-menu-togle" width="50" height="40"
-                    class="d-inline-block  logo-movil">
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end bg-dark opacity-4" aria-labelledby="dropdownMenuButton1">
-                  <li><a href="/src/pages/acerca-de.html" class="dropdown-item text-light">Peliculas</a></li>
-                  <li><a href="/src/pages/detalles-peli.html" class="dropdown-item text-light">Series</a></li>
-                </ul>
-              </div>
-            </li>
-          </div>
-
-
-          <div class="links-detalles">
-
-            <div class="peliseries-links">
-              <a class="nav-link active" aria-current="page" href="/src/pages/detalles-peli.html">Peliculas</a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h3 class="offcanvas-title " id="offcanvasRightLabel">MENU INICIAL</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-
-            <div class="peliseries-links-icono">|</div>
-
-            <div class="peliseries-links">
-              <a class="nav-link active" aria-current="page" href="/src/pages/detalles-peli.html">Series</a>
-            </div>
-
-          </div>
-
-          <!-- MENU TOGGLE -->
-
-          <div class="menu-toogle_buscador">
-            <div class="dropdown-center">
-              <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <div class="text-white">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end bg-dark opacity-1" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <form role="search" aria-label="Buscar contenido">
-                    <label for="search" class="visually-hidden"> Buscar</label>
-                    <input type="text" id="search" name="search" placeholder="Buscar..." class="buscar-input">
-                    <button type="submit" class="buscar-button" aria-label="Buscar">
-                    </button>
-                  </form>
+            <div class="offcanvas-body">
+              <ul>
+                <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
                 </li>
-                <!-- <li><a href="" class="dropdown-item text-light">peliculas</a></li>
-                                <li><a href="" class="dropdown-item text-light">series</a></li> -->
+                <li><a href="/src/pages/acerca-de.html"><i class="fa-solid fa-envelope"></i> Sobre
+                    Nosotros</a></li>
+                <li><a href="/src/pages/suscripcion.html"><i class="fa-solid fa-envelope"></i>
+                    Registro</a></li>
+                <li><a href="/src/pages/error-404.html"><i class="fa-solid fa-video"></i>Tutoriales de
+                    Ayuda</a></li>
               </ul>
             </div>
           </div>
 
-          <!-- BUSCADOR -->
+        <!-- BUSCADOR -->
 
-          <div class="buscador-container">
-            <form role="search" aria-label="Buscar contenido">
+        <div class="mb-3 buscador-nav">
+          <form role="search" aria-label="Buscar contenido">
 
-              <label for="search" class="visually-hidden">Buscar</label>
-              <input type="text" id="search" name="search" placeholder="Buscar..." class="buscar-input">
-              <button type="submit" class="buscar-button" aria-label="Buscar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
+            <label for="search" class="visually-hidden">Buscar</label>
+            <input type="text" id="search" name="search" placeholder="Buscar estrenos" class="buscar-input">
+            <button type="submit" class="buscar-button" aria-label="Buscar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
 
-            </form>
-          </div>
-
-          <!-- CERRAR SESION -->
-
-          <div class="salir-sesion">
-            <a class="  text-light btn  px-1 mx-3 login" href="/src/pages/login.html"> Cerrar Sesion <i
-                class="fa-solid fa-arrow-right-to-bracket px-2"></i></a>
-          </div>
-
-          <div class="salir-sesion-phone">
-            <a class="text-light btn px-4 mx-6 d-flex login" href="/src/pages/login.html"> Cerrar Sesion <i
-                class="fa-solid fa-arrow-right-to-bracket px-2"></i></a>
-          </div>
-
+          </form>
         </div>
+
+
+        <!-- cuenta de usuario -->
+
+        <button class=" btn dropdown-toggle text-light mx-5 usuario" data-bs-toggle="dropdown" aria-expanded="false"
+          title="none"><i class="fa-solid fa-circle-user fs-1"></i></button>
+        <ul class="dropdown-menu bg-dark">
+          <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Adminitrar perfil</a></li>
+          <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Cuenta</a>
+          </li>
+          <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Centro de ayuda</a></li>
+          <li>
+            <hr class="my-4 border border-violet border-opacity-75">
+
+          </li>
+          <li><a class="dropdown-item text-light" href="/index.html">Cerrar Sesion en VSTREAM</a></li>
+        </ul>
+
       </nav>
     </header>
 
 
 
-          <main>
-            <section class="container my-5">
-                <!-- CARRUSEL PRINCIPAL -->          
-                <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-                  <div class="carousel-inner rounded overflow-hidden">
-                    <div class="carousel-item active">
-                      <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Como entrenar a tu dragon 2.avif" class="d-block w-100" alt="Como entrenar a tu dragon 2"></a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/endgame.jpg" class="d-block w-100" alt="ENDGAME"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/mario bros..jpg" class="d-block w-100" alt="Mario bros"></a>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                  </button>
+
+    <main>
+      <section class="container my-5">
+        <!-- CARRUSEL PRINCIPAL -->
+        <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-inner rounded overflow-hidden">
+            <div class="carousel-item active">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Como entrenar a tu dragon 2.avif"
+                  class="d-block w-100" alt="Como entrenar a tu dragon 2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/endgame.jpg" class="d-block w-100"
+                  alt="ENDGAME"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/mario bros..jpg" class="d-block w-100"
+                  alt="Mario bros"></a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev"
+            title="none">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next"
+            title="none">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <!-- PELÍCULAS DESTACADAS -->
+        <div class="peliculas-recomendadas contenedor">
+          <div class="contenedor-titulo">
+            <h3>Películas destacadas</h3>
+            <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a>
+          </div>
+
+          <div class="contenedor-principal">
+
+            <div class="contenedor-carousel">
+              <div class="carousel">
+                <div class="pelicula">
+                  <a href="/src/pages/error-404.html"><img
+                      src="/src/img/img.pelis/Dragon Ball Z .La resurreccion de FREEZER.webp"
+                      alt="Dragon Ball Z La resurreccion de FREEZER"></a>
                 </div>
-
-            <!-- PELÍCULAS DESTACADAS -->             
-            <div class="peliculas-recomendadas contenedor">
-			        <div class="contenedor-titulo">
-				        <h3>Películas destacadas</h3>
-                        <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a>
-			        </div>
-
-			        <div class="contenedor-principal">
-
-				        <div class="contenedor-carousel">
-					        <div class="carousel">
-						        <div class="pelicula">
-							        <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Dragon Ball Z .La resurreccion de FREEZER.webp" alt="Dragon Ball Z La resurreccion de FREEZER"></a>
-						        </div>
-						        <div class="pelicula">
-							        <a href="/src/pages/detalles-peli.html"><img src="/src/img/img.pelis/Batman.jpg" alt="The Batman"></a>
-						        </div>
-						        <div class="pelicula">
-							        <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/endgame.jpg" alt="ENDGAME"></a>
-						        </div>
-						        <div class="pelicula">
-							        <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Capitan america.jpeg" alt="Capitan america"></a>
-						        </div>
-						        <div class="pelicula">
-							        <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Joker.jpg" alt="Joker"></a>
-						        </div>
-						        <div class="pelicula">
-							        <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/batman.png" alt="Batman"></a>
-						        </div>
-					        </div>
-				        </div>
-
-			        </div>
-		        </div>
-
-                <!-- SERIES DESTACADAS -->
-                <div class="peliculas-recomendadas contenedor">
-			             <div class="contenedor-titulo">
-				             <h3>Series destacadas</h3>
-                             <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a>
-			             </div>
-
-			             <div class="contenedor-principal">
-
-				             <div class="contenedor-carousel">
-					             <div class="carousel">
-						             <div class="pelicula">
-							             <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Arrow.jpg" alt="Arrow"></a>
-						             </div>
-						             <div class="pelicula">
-							             <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/DARK.jpg" alt="DARK"></a>
-						             </div>
-						             <div class="pelicula">
-							             <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/YOU.jpeg" alt="YOU"></a>
-						             </div>
-						             <div class="pelicula">
-							             <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/FRIENDS.jpg" alt="FRIENDS"></a>
-						             </div>
-						             <div class="pelicula">
-							             <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/ONE PIECE.jpg" alt="ONE PIECE"></a>
-						             </div>
-						             <div class="pelicula">
-							             <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/The big bang theory.jpg" alt="The bif bang theory"></a>
-						             </div>
-					             </div>
-				             </div>
-
-			             </div>
-		             </div>
-
-            <!-- ESTRENOS RECIENTES -->
-            <section class="mb-5">
-            <h3 class="mb-3 text-light fs-4">Estrenos recientes</h3>
-            <div class="d-flex flex-nowrap overflow-auto">
-              <div class="card bg-dark text-white me-3 card-estrenos">
-                <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/el eternauta.webp" class="card-img-top" alt="El eternauta"></a>
-                <div class="card-body">
-                  <h6>El eternauta</h6>
+                <div class="pelicula">
+                  <a href="/src/pages/detalles-peli.html"><img src="/src/img/img.pelis/Batman.jpg" alt="The Batman"></a>
                 </div>
-              </div>
-              <div class="card bg-dark text-white me-3 card-estrenos">
-                <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/One piece red film.webp" class="card-img-top" alt="ONE PIECE FILM RED"></a>
-                <div class="card-body">
-                  <h6>ONE PIECE FILM RED</h6>
+                <div class="pelicula">
+                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/endgame.jpg" alt="ENDGAME"></a>
                 </div>
-              </div>
-              <div class="card bg-dark text-white me-3 card-estrenos">
-                <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/animal.jpg" class="card-img-top" alt="Animal"></a>
-                <div class="card-body">
-                  <h6>Animal</h6>
+                <div class="pelicula">
+                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Capitan america.jpeg"
+                      alt="Capitan america"></a>
                 </div>
-              </div>
-              <div class="card bg-dark text-white me-3 card-estrenos">
-                <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/boruto.jpg" class="card-img-top" alt="Boruto"></a>
-                <div class="card-body">
-                  <h6>Boruto</h6>
+                <div class="pelicula">
+                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Joker.jpg" alt="Joker"></a>
                 </div>
-              </div>
-              <div class="card bg-dark text-white me-3 card-estrenos">
-                <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/from.webp" class="card-img-top" alt="From"></a>
-                <div class="card-body">
-                  <h6>From</h6>
-                </div>
-              </div>
-              <div class="card bg-dark text-white me-3 card-estrenos">
-                <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/bailarina.avif" class="card-img-top" alt="Bailarina"></a>
-                <div class="card-body">
-                  <h6>Bailarina</h6>
-                </div>
-              </div>
-              <div class="card bg-dark text-white me-3 card-estrenos">
-                <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/dragon ball super.jpg" class="card-img-top" alt="Dragon ball Super"></a>
-                <div class="card-body">
-                  <h6>Dragon ball Super</h6>
-                </div>
-              </div>
-              <div class="card bg-dark text-white me-3 card-estrenos">
-                <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/the last of us.jpeg" class="card-img-top" alt="The last of us"></a>
-                <div class="card-body">
-                  <h6>The last of us</h6>
+                <div class="pelicula">
+                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/batman.png" alt="Batman"></a>
                 </div>
               </div>
             </div>
-          </section>
 
-               <!-- RANKING SEMANAL -->
-               <section>
-                 <h2 class="mb-3 text-light fs-4">Top 5 de la semana</h2>
-                 <ol class="list-group list-group-numbered ranking">
-                   <li class="list-group-item bg-gradien text-white d-flex align-items-center">
-                     <a href="/src/pages/error-404.html"><img src="/src/img//img.pelis/ballerina.jpg" class="me-3">Ballerina</a>
-                   </li>
-                   <li class="list-group-item bg-gradien text-white d-flex align-items-center">
-                     <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/luciferina.webp" class="me-3">Luciferina</a>
-                   </li>
-                   <li class="list-group-item bg-gradien text-white d-flex align-items-center">
-                    <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/naruto shippuden.jpg" class="me-3">Naruto Shippuden</a>
-                   </li>
-                   <li class="list-group-item bg-gradien text-white d-flex align-items-center">
-                    <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/venom.jpeg" class="me-3">Venom</a>
-                   </li>
-                   <li class="list-group-item bg-gradien text-white d-flex align-items-center">
-                    <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/reyes del futuro.webp" class="me-3">Reyes del futuro</a>
-                   </li>
-                 </ol>
-               </section>
-            </section>
-        </main>
+          </div>
+        </div>
 
-  
+        <!-- SERIES DESTACADAS -->
+        <div class="peliculas-recomendadas contenedor">
+          <div class="contenedor-titulo">
+            <h3>Series destacadas</h3>
+            <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a>
+          </div>
+
+          <div class="contenedor-principal">
+
+            <div class="contenedor-carousel">
+              <div class="carousel">
+                <div class="pelicula">
+                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Arrow.jpg" alt="Arrow"></a>
+                </div>
+                <div class="pelicula">
+                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/DARK.jpg" alt="DARK"></a>
+                </div>
+                <div class="pelicula">
+                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/YOU.jpeg" alt="YOU"></a>
+                </div>
+                <div class="pelicula">
+                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/FRIENDS.jpg" alt="FRIENDS"></a>
+                </div>
+                <div class="pelicula">
+                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/ONE PIECE.jpg" alt="ONE PIECE"></a>
+                </div>
+                <div class="pelicula">
+                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/The big bang theory.jpg"
+                      alt="The bif bang theory"></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ESTRENOS RECIENTES -->
+        <section class="mb-5">
+          <h3 class="mb-3 text-light fs-4">Estrenos recientes</h3>
+          <div class="d-flex flex-nowrap overflow-auto">
+            <div class="card bg-dark text-white me-3 card-estrenos">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/el eternauta.webp" class="card-img-top"
+                  alt="El eternauta"></a>
+              <div class="card-body">
+                <h6>El eternauta</h6>
+              </div>
+            </div>
+            <div class="card bg-dark text-white me-3 card-estrenos">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/One piece red film.webp"
+                  class="card-img-top" alt="ONE PIECE FILM RED"></a>
+              <div class="card-body">
+                <h6>ONE PIECE FILM RED</h6>
+              </div>
+            </div>
+            <div class="card bg-dark text-white me-3 card-estrenos">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/animal.jpg" class="card-img-top"
+                  alt="Animal"></a>
+              <div class="card-body">
+                <h6>Animal</h6>
+              </div>
+            </div>
+            <div class="card bg-dark text-white me-3 card-estrenos">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/boruto.jpg" class="card-img-top"
+                  alt="Boruto"></a>
+              <div class="card-body">
+                <h6>Boruto</h6>
+              </div>
+            </div>
+            <div class="card bg-dark text-white me-3 card-estrenos">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/from.webp" class="card-img-top"
+                  alt="From"></a>
+              <div class="card-body">
+                <h6>From</h6>
+              </div>
+            </div>
+            <div class="card bg-dark text-white me-3 card-estrenos">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/bailarina.avif" class="card-img-top"
+                  alt="Bailarina"></a>
+              <div class="card-body">
+                <h6>Bailarina</h6>
+              </div>
+            </div>
+            <div class="card bg-dark text-white me-3 card-estrenos">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/dragon ball super.jpg"
+                  class="card-img-top" alt="Dragon ball Super"></a>
+              <div class="card-body">
+                <h6>Dragon ball Super</h6>
+              </div>
+            </div>
+            <div class="card bg-dark text-white me-3 card-estrenos">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/the last of us.jpeg" class="card-img-top"
+                  alt="The last of us"></a>
+              <div class="card-body">
+                <h6>The last of us</h6>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- RANKING SEMANAL -->
+        <section>
+          <h2 class="mb-3 text-light fs-4">Top 5 de la semana</h2>
+          <ol class="list-group list-group-numbered ranking">
+            <li class="list-group-item bg-gradien text-white d-flex align-items-center">
+              <a href="/src/pages/error-404.html"><img src="/src/img//img.pelis/ballerina.jpg" class="me-3"
+                  title="none">Ballerina</a>
+            </li>
+            <li class="list-group-item bg-gradien text-white d-flex align-items-center">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/luciferina.webp" class="me-3"
+                  title="none">Luciferina</a>
+            </li>
+            <li class="list-group-item bg-gradien text-white d-flex align-items-center">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/naruto shippuden.jpg" class="me-3"
+                  title="none">Naruto Shippuden</a>
+            </li>
+            <li class="list-group-item bg-gradien text-white d-flex align-items-center">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/venom.jpeg" class="me-3"
+                  title="none">Venom</a>
+            </li>
+            <li class="list-group-item bg-gradien text-white d-flex align-items-center">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/reyes del futuro.webp" class="me-3"
+                  title="none">Reyes del futuro</a>
+            </li>
+          </ol>
+        </section>
+      </section>
+    </main>
+
+
 
     <footer>
 
@@ -312,25 +317,25 @@
     <script>
       AOS.init();
     </script>
-      <script>
+    <script>
 
-            window.addEventListener('scroll', () => {
-                const navbar = document.querySelector('.header');
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            });
+      window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.header');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
 
     </script>
 
- 
 
 
-    
-        
-  
+
+
+
+
 </body>
 
 </html>
