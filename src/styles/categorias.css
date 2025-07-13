@@ -93,7 +93,7 @@
 }
 
 .d-flex::-webkit-scrollbar-thumb {
-  background-color: #8a2be2; /* Color del scroll */
+  background-color: #521a86; /* Color del scroll */
   border-radius: 10px;
   border: 2px solid #1a1a1a; /* Borde interior */
 }
@@ -108,9 +108,19 @@
       height: 200px;
       object-fit: cover;
     }
+
 .ranking img {
     width: 60px;
     height: 90px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.ranking a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.ranking li{
+    background: rgba(0, 0, 0, 0.8);
 }
