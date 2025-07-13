@@ -1,5 +1,10 @@
 :root {
-  --colorSection:#111;
-
+  --color-section: #111;
+  --color-bg-botones: linear-gradient(
+    to right,
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
+  );
+  --color-texto-botones: #fff;
 }
-

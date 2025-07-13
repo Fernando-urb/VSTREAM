@@ -1,5 +1,5 @@
 .body-inicio {
-  background-image: url(/src/img/fondos/3257640.jpg);
+  background-image: url(/src/img/fondos/fondo-body-4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +14,6 @@
   background-color: rgba(0, 0, 0, 0.6); /* negro con 50% de opacidad */
   z-index: 1;
 }
-/* estos son los estilos del main del index  */
 /* Hero section pegada al top ocupa toda la pantalla */
 .hero-inicio {
   max-height: 100vh;
@@ -70,31 +69,94 @@
   }
 }
 
-/* estos son los estilos de los contenedores de las section  */
+/* estos son los estilos de los contenedores de las sectiones  */
 .container-section {
-  max-height: 100vh;
-  height: 100vh;
+  max-height: 200vh;
+  height: auto;
   margin: 0 auto;
-  width: 95%;
-  background-color: var(--colorSection);
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
   min-height: 100vh;
-  padding: 80px 0;
-
+ 
   h2 {
-    text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
   }
 }
-.section-plan {
-  scroll-margin-top: 80px;
+
+/* contenedor de img dispositivos  */
+.container-dispositivos {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
 }
+/* tablet  */
+.img-dispositivos:nth-child(1) {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  z-index: 3;
+  img {
+    width: 350px;
+    height: 180px;
+  }
+}
+/* movil  */
+.img-dispositivos:nth-child(2) {
+  position: absolute;
+  top: 42%;
+  left: 70%;
+  z-index: 3;
+  img {
+    width: 200px;
+    height: 180px;
+  }
+}
+/* pc  */
+.img-dispositivos:nth-child(3) {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  z-index: 2;
+  img {
+    width: 400px;
+    height: 250px;
+  }
+}
+/* smart */
+.img-dispositivos:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 33%;
+  z-index: 1;
+  img {
+    width: 600px;
+    height: 550px;
+  }
+}
+/* boton*/
+.img-dispositivos:nth-child(5) {
+  position: absolute;
+  top: 0;
+  left:45%;
+  z-index: 1;
+
+}
+
+.container-img-responsive{
+display: none;
+}
+
+
+
 
 /* Breakpoints tablet  */
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* esta es la section del hero  */
-
-
+ 
+/* texto principal  */
   .item-hero:nth-child(1) {
     width: 100%;
     h1 {
@@ -108,12 +170,12 @@
       font-size: 1rem;
     }
   }
+  /* logo principal  */
   .item-hero:nth-child(2) {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
   /* contenedor logo rotacion  */
   .contenedor-logo-3d {
@@ -122,6 +184,68 @@
       height: 180px;
     }
   }
+  /* contenedor img dispositivos  */
+  .container-dispositivos {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+
+}
+  /* tablet  */
+.img-dispositivos:nth-child(1) {
+  position: absolute;
+  top: 51%;
+  left: 55%;
+  z-index: 3;
+  img {
+    width: 350px;
+    height: 180px;
+  }
+}
+/* movil  */
+.img-dispositivos:nth-child(2) {
+  position: absolute;
+  top: 52%;
+  left: 80%;
+  z-index: 3;
+  img {
+    width: 200px;
+    height: 180px;
+  }
+}
+/* pc  */
+.img-dispositivos:nth-child(3) {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  z-index: 2;
+  img {
+    width: 400px;
+    height: 250px;
+  }
+}
+/* smart */
+.img-dispositivos:nth-child(4) {
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  z-index: 1;
+  img {
+    width: 600px;
+    height: 550px;
+  }
+}
+/* boton*/
+.img-dispositivos:nth-child(5) {
+  position: absolute;
+  top: 5%;
+  left:45%;
+  z-index: 1;
+
+}
+
+
 }
 
 /*Breakpoints  mobile  small */
@@ -159,4 +283,163 @@
       height: 155px;
     }
   }
+    /* contenedor img dispositivos  */
+  .container-dispositivos {
+  display: none;
 }
+.container-img-responsive{
+  display: block;
+  margin: 0 auto;
+  
+}
+.img-dispositivo-responsivo{
+  width: 400px;
+
+}
+
+}
+
+.border-tarjetas{
+  border: 5px solid #61045f;
+  border-radius: 5px;
+
+}
+.texto-izq {
+    padding-left: 40%;
+}
+.texto-der{
+    padding-right:40%;
+}
+/* Contenedor principal */
+.container-fluid {
+    padding: 2rem 0;
+    background: transparent;
+}
+
+/* Estilo del carrusel (1 imagen a la vez) */
+.carousel {
+    max-width: 300px; /* Controla el tamaño del carrusel */
+    margin-left: 300px;
+}
+
+/* Imágenes del carrusel */
+.poster-img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: auto;
+}
+
+/* Transición suave (fade) */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+/* Estilos para el overlay del carousel */
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay-btn {
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+/* Efecto hover */
+.carousel-item:hover .carousel-overlay {
+    opacity: 1;
+}
+
+.carousel-item:hover .overlay-btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Ajustes para los posters */
+.poster-img {
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover .poster-img {
+    transform: scale(1.03);
+}
+
+
+
+/* Responsive: En móviles, apila título y carrusel */
+@media (max-width: 480px) {
+    .flex-lg-row {
+        flex-direction: column;
+    }
+    .col-lg-4, .col-lg-8 {
+        width: 100%;
+        padding: 0;
+    }
+    .texto-der{
+    padding:0;
+}
+    .text-lg-start {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+    .texto-izq {
+    padding: 0;
+}
+.texto-derecha{
+    padding: 0;
+}
+
+    .carousel {
+    max-width: 300px;
+    margin: auto;
+} 
+
+
+.carousel {
+    max-width: auto; /* Controla el tamaño del carrusel */
+    
+}
+.carousel-item:hover .carousel-overlay {
+        opacity: 0;
+        visibility: none;
+    }
+    
+    
+    .carousel-overlay {
+        display: none; /* OPCIONAL: Si no quieres que aparezca para nada en móvil */
+    }
+
+
+
+ 
+
+}
+  
+

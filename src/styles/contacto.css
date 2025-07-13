@@ -1,54 +1,4 @@
-body{
-    overflow-x: hidden;
-    color: white;
-}
 
-/* Navbar */
-
-.navbar-contacto {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 1000;
-    background-color: transparent;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    .top, .home, .more {
-      border: none;
-      color: white;
-      justify-content: center;
-      align-items: center;
-      font-weight: normal;
-    }
-}
-
-.navbar-contacto i {
-    margin-left: 5px;
-}
-
-.dropdown a{
-    text-decoration: none;
-    color: white;
-    transition: ease-in-out .2s;
-    &:hover{
-        color: #aa076b;
-    }
-}
-
-.dropdown-item:hover{
-    background-color: rgba(24, 24, 25, 0.573);
-}
-
-/* Botón  offcanvas */
-
-.open-offcanvas{
-    display: none;
-}
-
-.open-offcanvas i{
-    color: white;
-}
-
-/* Banner principal */
 
 .banner{
     width: 100%;
@@ -58,7 +8,7 @@ body{
 .banner-content{
     position: absolute;
     width: 60%; 
-    margin: 285px 0 0 30px;
+    margin: 200px 0 0 30px;
     z-index: 1;
     text-align: left;
     padding: 20px;
@@ -87,24 +37,6 @@ body{
     box-shadow: 0 0 15px black;
 }
 
-.banner-contacto {
-    align-items: center;
-    position: relative;
-    margin-top: -100px;
-    width: 100%;
-    max-height: 800px;
-    overflow: hidden;
-    z-index: 0;
-    .img-banner{
-        justify-self: center;
-        margin-top: -100px;
-        position: relative;
-        object-fit: cover;
-        filter: brightness(20%);
-        z-index: -1;
-    }
-}
-
 /* Cards información */
 
 .cards{
@@ -117,12 +49,15 @@ body{
     i{
         font-size: 7rem;
         margin-bottom: 50px;
-        color: #61045f;
-        background: linear-gradient(45deg, #61045f 50%, #aa076b 50%);
+        background: linear-gradient(45deg, #61045f, #aa076b);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
+}
+
+.info-cards{
+    margin-bottom: -55px;
 }
 
 .info-cards h2{
@@ -170,7 +105,11 @@ body{
     margin-bottom: -30px;
 }
 
-/* Container Formulario */
+/* Containers Formulario */
+
+.estructura-formulario{
+    margin-bottom: -25px;
+}
 
 .formulario-contacto{
     color: white;
@@ -282,7 +221,7 @@ body{
         font-size: 7rem;
         margin-bottom: 50px;
         color: #61045f;
-        background: linear-gradient(45deg, #61045f 50%, #aa076b 50%);
+        background: linear-gradient(45deg, #61045f, #aa076b);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -290,7 +229,7 @@ body{
 }
 
 /* Breakpoints tablet  */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px)  {
 
     /* Banner principal */
 
@@ -300,7 +239,7 @@ body{
         text-align: center;
         display: flex;
         flex-direction: column;
-        height: 120%;
+        height: 100vh;
     }
 
     .banner-content{
@@ -321,23 +260,10 @@ body{
     }
 
     .banner-content input{
+        font-size: 1.5rem;
         text-align: center;
         padding: 0;
-    }
-
-    .banner-contacto {
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-    .img-banner {
-        object-fit: cover;
-        filter: brightness(20%);
-        z-index: -1;
+        height: 65px;
     }
 
     /* Cards */
@@ -358,7 +284,7 @@ body{
     /* Datos de contacto side */
 
     .contactos-container{
-        border-left: none;
+        border: none;
     }
 }
 
@@ -374,12 +300,9 @@ body{
         margin: 0 auto;
     }
 
-    .banner-contacto{
-        height: 120%;
-    }
-
     .banner-content p{
         font-size: 1rem;
+        margin-top: 150px;
     }
 
     .banner-content h1{
@@ -387,10 +310,8 @@ body{
         margin-bottom: 20px;
     }
 
-    .img-banner {
-        object-fit: cover;
-        filter: brightness(20%);
-        z-index: -1;
+    .banner-content input{
+        height: 50px;
     }
 
     /* Navbar */
@@ -451,13 +372,15 @@ body{
     }
 
     .info-cards h2{
+        margin-top: 20px;
         font-size: 2.5rem;
     }
 
     .cards i{
+        font-size: 5rem;
         margin: -20px 0 20px 0;
         color: #61045f;
-        background: linear-gradient(45deg, #61045f 25%, #aa076b 25%);
+        background: linear-gradient(45deg, #61045f 10%, #aa076b 90%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -484,5 +407,9 @@ body{
 
     .enviar-formulario{
         margin: 50px 0 30px 0;
+    }
+
+    .contactos-container{
+        border: none;
     }
 }
