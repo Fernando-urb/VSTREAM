@@ -1,159 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
 
-
-
 <head>
-    <!-- etiquetas meta  -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    <meta name="canal de streaming" content="este es un sitio para ver peliculas y series " />
-    <meta name="keywords" content="series, peliculas, suscripcion" />
-    <meta name="author" content="Tu Nombre" />
-    <meta name="robots" content="index, follow" />
-    <!-- bootstraps5.3v  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <!-- etiquetas meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=7" />
+  <meta name="canal de streaming" content="este es un sitio para ver peliculas y series " />
+  <meta name="keywords" content="series, peliculas, suscripcion" />
+  <meta name="author" content="Tu Nombre" />
+  <meta name="robots" content="index, follow" />
+  <!-- bootstraps5.3v  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-    <!-- fonawesome  -->
-    <script src="https://kit.fontawesome.com/7d1cc8c36e.js" crossorigin="anonymous"></script>
-    <!-- aos animation  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- mis estilos  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <!-- fonawesome  -->
+  <script src="https://kit.fontawesome.com/7d1cc8c36e.js" crossorigin="anonymous"></script>
+  <!-- aos animation  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- mis estilos  -->
 
-    <link rel="shortcut icon" href="/src/img/logos/logo-principal.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/src/styles/styles.css">
-    <title>VSTREAM</title>
+  <link rel="shortcut icon" href="/src/img/logos/logo-principal.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/src/styles/styles.css">
+  <title>VSTREAM</title>
 </head>
+
 <body class="bg-dark body-inicio">
-    
-    <div class="opacity-body">
 
-        <header class="header sticky-top">
+  <div class="opacity-body">
+    <header class="header sticky-top">
+      <nav class=" navbar-expand-lg">
+        <div class="navbar-inicio">
+          <!-- LOGO -->
+          <div class="logo_vstreams">
+            <a href="/src/pages/categorias.html"><img src="/src/img/logos/logo-v-1.png" alt=""></a>
+          </div>
 
-            <nav class=" navbar-expand-lg">
+          <!-- MENU-TOGGLE-LOGO-PHONE -->
 
-                <div class="navbar-inicio">
-
-                    <!-- LOGO -->
-
-                    <div class="logo_vstreams">
-                        <a href="/src/pages/categorias.html"><img src="/src/img/logos/logo-v-1.png" alt=""></a>
-                    </div>
-                    
-                    <!-- MENU-TOGGLE-LOGO-PHONE -->
-
-                    <div>
-                        <li class="menu-toogle">
-                                <div class="dropdown-center">
-                                    <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="/src/img/logos/logo-v-2.png" alt="img-menu-togle" width="50" height="40" class="d-inline-block  logo-movil">
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end bg-dark opacity-4" aria-labelledby="dropdownMenuButton1">
-                                    <li><a href="/src/pages/acerca-de.html" class="dropdown-item text-light">Peliculas</a></li>
-                                    <li><a href="/src/pages/detalles-peli.html" class="dropdown-item text-light">Series</a></li>
-                                </ul>
-                             </div>
-                        </li>
-                    </div>
+          <div>
+            <li class="menu-toogle">
+              <div class="dropdown-center">
+                <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="/src/img/logos/logo-v-2.png" alt="img-menu-togle" width="50" height="40"
+                    class="d-inline-block  logo-movil">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end bg-dark opacity-4" aria-labelledby="dropdownMenuButton1">
+                  <li><a href="/src/pages/acerca-de.html" class="dropdown-item text-light">Peliculas</a></li>
+                  <li><a href="/src/pages/detalles-peli.html" class="dropdown-item text-light">Series</a></li>
+                </ul>
+              </div>
+            </li>
+          </div>
 
 
-                    <div class="links-detalles">
+          <div class="links-detalles">
 
-                        <div class="peliseries-links">  
-                            <a class="nav-link active" aria-current="page" href="/src/pages/detalles-peli.html">Peliculas</a>
-                        </div>
+            <div class="peliseries-links">
+              <a class="nav-link active" aria-current="page" href="/src/pages/detalles-peli.html">Peliculas</a>
+            </div>
 
-                        <div class="peliseries-links-icono">|</div>
+            <div class="peliseries-links-icono">|</div>
 
-                        <div class="peliseries-links">  
-                            <a class="nav-link active" aria-current="page" href="/src/pages/detalles-peli.html">Series</a>
-                        </div>
-                    
-                    </div>
+            <div class="peliseries-links">
+              <a class="nav-link active" aria-current="page" href="/src/pages/detalles-peli.html">Series</a>
+            </div>
 
-                    <!-- MENU TOGGLE -->
+          </div>
 
-                    <div class="menu-toogle_buscador">
-                        <div class="dropdown-center">
-                            <button class="btn " type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                               <div class="text-white">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                               </div>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end bg-dark opacity-1"
-                            aria-labelledby="dropdownMenuButton1">
-                                <li> <form role="search" aria-label="Buscar contenido">
-                                        <label for="search" class="visually-hidden"> Buscar</label>
-                                        <input type="text" id="search" name="search" placeholder="Buscar..." class="buscar-input">
-                                        <button type="submit" class="buscar-button" aria-label="Buscar">
-                                        </button>
-                                    </form>
-                                </li>
-                                <!-- <li><a href="" class="dropdown-item text-light">peliculas</a></li>
-                                <li><a href="" class="dropdown-item text-light">series</a></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                        
-                    <!-- BUSCADOR -->
+          <!-- MENU TOGGLE -->
 
-                    <div class="buscador-container">
-                        <form role="search" aria-label="Buscar contenido">
-
-                            <label for="search" class="visually-hidden">Buscar</label>
-                            <input type="text" id="search" name="search" placeholder="Buscar..." class="buscar-input">
-                            <button type="submit" class="buscar-button" aria-label="Buscar">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-
-                        </form>
-                    </div>
-                    
-                    <!-- CERRAR SESION -->
-
-                    <div class="salir-sesion">
-                        <a class="  text-light btn  px-1 mx-3 login" href="/src/pages/login.html"> Cerrar Sesion <i class="fa-solid fa-arrow-right-to-bracket px-2"></i></a>
-                    </div>
-
-                    <div class="salir-sesion-phone">
-                        <a class="text-light btn px-4 mx-6 d-flex login" href="/src/pages/login.html"> Cerrar Sesion <i class="fa-solid fa-arrow-right-to-bracket px-2"></i></a>
-                    </div>
-
+          <div class="menu-toogle_buscador">
+            <div class="dropdown-center">
+              <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <div class="text-white">
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-            </nav>
-        </header>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end bg-dark opacity-1" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <form role="search" aria-label="Buscar contenido">
+                    <label for="search" class="visually-hidden"> Buscar</label>
+                    <input type="text" id="search" name="search" placeholder="Buscar..." class="buscar-input">
+                    <button type="submit" class="buscar-button" aria-label="Buscar">
+                    </button>
+                  </form>
+                </li>
+                <!-- <li><a href="" class="dropdown-item text-light">peliculas</a></li>
+                                <li><a href="" class="dropdown-item text-light">series</a></li> -->
+              </ul>
+            </div>
+          </div>
 
-        <main>
-           
-        </main>
+          <!-- BUSCADOR -->
 
-        <footer>
-            
-        </footer>
+          <div class="buscador-container">
+            <form role="search" aria-label="Buscar contenido">
 
-    <!-- aos animation  -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-          <script>
+              <label for="search" class="visually-hidden">Buscar</label>
+              <input type="text" id="search" name="search" placeholder="Buscar..." class="buscar-input">
+              <button type="submit" class="buscar-button" aria-label="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
 
-    <link rel="shortcut icon" href="/src/img/logos/logo-v-2.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./src/styles/styles.css" />
-    <link rel="stylesheet" href="/src/styles/categorias.css">
-    <title>VSTREAM</title>
-</head>
+            </form>
+          </div>
 
-<body class="bg-dark body-inicio ">
-    <div class="opacity-body">
+          <!-- CERRAR SESION -->
 
-        <main>
+          <div class="salir-sesion">
+            <a class="  text-light btn  px-1 mx-3 login" href="/src/pages/login.html"> Cerrar Sesion <i
+                class="fa-solid fa-arrow-right-to-bracket px-2"></i></a>
+          </div>
+
+          <div class="salir-sesion-phone">
+            <a class="text-light btn px-4 mx-6 d-flex login" href="/src/pages/login.html"> Cerrar Sesion <i
+                class="fa-solid fa-arrow-right-to-bracket px-2"></i></a>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+
+
+          <main>
             <section class="container my-5">
                 <!-- CARRUSEL PRINCIPAL -->          
                 <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
@@ -324,13 +300,19 @@
                </section>
             </section>
         </main>
-        
-        <!-- aos animation  -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        <script>
+
+  
+
+    <footer>
+
+    </footer>
+
+    <!-- aos animation  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+      <script>
 
             window.addEventListener('scroll', () => {
                 const navbar = document.querySelector('.header');
@@ -343,10 +325,12 @@
 
     </script>
 
+ 
 
-        </script>
-    </div>
 
+    
+        
+  
 </body>
 
 </html>
