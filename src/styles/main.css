@@ -76,7 +76,7 @@
   margin: 0 auto;
   width: 100%;
   /* background-color: var(--colorSection); */
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
   min-height: 100vh;
   h2 {
@@ -151,7 +151,7 @@ display: none;
 
 
 
-/* Breakpoints tablet verticl */
+/* Breakpoints tablet  */
 @media (min-width: 768px) and (max-width: 1199px) {
   /* texto principal  */
   .item-hero:nth-child(1) {
@@ -244,10 +244,14 @@ display: none;
   width: 400px;
 
 }
- feat/section-info
+
 }
 
+.border-tarjetas{
+  border: 5px solid #61045f;
+  border-radius: 5px;
 
+}
 .texto-izq {
     padding-left: 40%;
 }
@@ -337,7 +341,7 @@ display: none;
 
 
 /* Responsive: En móviles, apila título y carrusel */
-@media (max-width: 990px) {
+@media (max-width: 480px) {
     .flex-lg-row {
         flex-direction: column;
     }
