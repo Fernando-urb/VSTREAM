@@ -166,6 +166,14 @@
       font-size: 1rem;
     }
   }
+  
+.tarjeta-section [data-aos] {
+   animation: none;
+                transform: none;
+                transition: none;
+                opacity: 1;
+}
+
   /* logo principal  */
   .item-hero:nth-child(2) {
     width: 100%;
@@ -237,10 +245,40 @@
     left: 45%;
     z-index: 1;
   }
+.texto-der{
+  padding-left: 200px;
+}
+
 }
 
 /*Breakpoints  mobile  small */
 @media (max-width: 480px) {
+.texto-der {
+    padding: 0;
+    
+  }
+  
+  .texto-izq {
+    padding: 0;
+  }
+  
+.tarjeta-section [data-aos] {
+   animation: none;
+                transform: none;
+                transition: none;
+                opacity: 1;
+}
+  
+  .carousel-item:hover .carousel-overlay {
+    opacity: 0;
+    visibility: none;
+  }
+
+  .carousel-overlay {
+    display: none; 
+  }
+  
+
   .div-hero {
     display: flex;
     flex-direction: column;
@@ -260,6 +298,7 @@
       font-size: 1rem;
     }
   }
+  
   .item-hero:nth-child(2) {
     width: 100%;
     display: flex;
@@ -305,8 +344,8 @@
 
 /* Estilo del carrusel (1 imagen a la vez) */
 .carousel {
-  max-width: 300px; /* Controla el tamaño del carrusel */
-  margin-left: 300px;
+  max-width: 500px; /* Controla el tamaño del carrusel */
+  margin: 0 auto;
 }
 
 /* Imágenes del carrusel */
@@ -379,45 +418,32 @@
 
 /* Responsive: En móviles, apila título y carrusel */
 @media (max-width: 480px) {
-  .flex-lg-row {
-    flex-direction: column;
-  }
-  .col-lg-4,
-  .col-lg-8 {
-    width: 100%;
+  /* .texto-der {
     padding: 0;
+    
   }
-  .texto-der {
-    padding: 0;
-  }
-  .text-lg-start {
-    text-align: center;
-    padding-left: 0;
-    margin-top: 2rem;
-  }
+  
   .texto-izq {
     padding: 0;
   }
-  .texto-derecha {
-    padding: 0;
-  }
+  
 
   .carousel {
     max-width: 300px;
     margin: auto;
-  }
+  } */
 
-  .carousel {
-    max-width: auto; /* Controla el tamaño del carrusel */
-  }
-  .carousel-item:hover .carousel-overlay {
+  
+  /* .carousel-item:hover .carousel-overlay {
     opacity: 0;
     visibility: none;
   }
 
   .carousel-overlay {
-    display: none; /* OPCIONAL: Si no quieres que aparezca para nada en móvil */
-  }
+    display: none; 
+  } */
+  
+  
 }
 
 
