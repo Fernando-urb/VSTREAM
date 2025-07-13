@@ -341,7 +341,7 @@ display: none;
 
 
 /* Responsive: En móviles, apila título y carrusel */
-@media (max-width: 990px) {
+@media (max-width: 480px) {
     .flex-lg-row {
         flex-direction: column;
     }
