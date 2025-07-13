@@ -25,6 +25,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: url(/src/img/fondos/5508802.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden scroll;
 }
 p {
   font-family: sans-serif;
@@ -36,3 +44,10 @@ main{
     flex: 1;
 }
 
+footer{
+   max-height: 200vh;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+
+}
