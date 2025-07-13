@@ -56,7 +56,8 @@
   }
 
   .buscador-nav {
-    display: none;
+    
+    
   }
 
 
@@ -82,11 +83,7 @@
 
   /* NAVBAR-BUSCADOR */
 
-  .buscador-container {
-    display: none;
-    margin: 30px;
-  }
-
+ 
   .buscador-container input {
     display: flex;
   }
