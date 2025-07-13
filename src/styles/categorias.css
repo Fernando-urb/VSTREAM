@@ -1,0 +1,126 @@
+/* ESTILOS BODY */
+
+.body-inicio {
+  background-image: url(/src/img/fondos/fondo-body-4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden scroll;
+}
+.opacity-body {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* negro con 50% de opacidad */
+  z-index: 1;
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+
+.contenedor-titulo{
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo h3{
+	color: #fff;
+	font-size: 20px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.peliculas-recomendadas{
+	margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+/* CARRUSEL */
+
+.peliculas-recomendadas .contenedor-carousel{
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel{
+	display: flex;
+	flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
+	min-width: 24.3%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
+    &:hover{
+        scale: 105%;
+    }  
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img{
+	width: 100%;
+	vertical-align: top;
+    border-radius: 5px;
+}
+
+/* ESTRENOS */
+
+.card-estrenos{
+    flex: 0 0 auto; 
+    width: 200px;
+}
+
+/* BARRA DE SCROLL ESTRENOS */
+
+.d-flex::-webkit-scrollbar {
+  height: 10px; /* Altura de la barra */
+}
+
+.d-flex::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Color del fondo de la barra */
+  border-radius: 10px;
+}
+
+.d-flex::-webkit-scrollbar-thumb {
+  background-color: #521a86; /* Color del scroll */
+  border-radius: 10px;
+  border: 2px solid #1a1a1a; /* Borde interior */
+}
+
+.d-flex::-webkit-scrollbar-thumb:hover {
+  background-color: #b266ff;
+}
+
+/* RANKING */
+
+.card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+.ranking img {
+    width: 60px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ranking a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.ranking li{
+    background: rgba(0, 0, 0, 0.8);
+}
