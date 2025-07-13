@@ -73,6 +73,9 @@
 
 /*Breakpoints  movil  */
 @media (max-width: 480px) {
+  .navbar-inicio{
+    align-items: center;
+  }
   .dropdown-toggle{
     display: none;
 
@@ -102,6 +105,12 @@
   }
   .open-offcanvas{
     display: block;
+}
+    .usuario{
+  display: block;
+}
+  .menu-toogle_buscador{
+  display: block;
 }
 
 }

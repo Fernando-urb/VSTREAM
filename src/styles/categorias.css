@@ -1,44 +1,7 @@
-
-.header.scrolled {
-  background-color: rgba(0, 0, 0, 0.85);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-/* Estilos navbar inicio */
-.navbar-inicio{
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-  width: 100%;
-  z-index: 1000;
-  background-color: transparent;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  padding: 0;
-}
-
-/* LOGO DE LA PAGINA */
-
-.logo_vstreams{
-    margin: 40px;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.logo_vstreams img{
-    height: 70px;
-}
-
 /* BUSCADOR */
 
-.buscador-container{
-  margin: 60px;
-  display: flex;
-  justify-content: center;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 3px;
-}
 
-.buscar-input{
+.buscar-input {
   background-color: transparent;
   border: none;
   color: #fff;
@@ -47,7 +10,7 @@
   padding-right: 10px;
 }
 
-.buscar-button{
+.buscar-button {
   background: none;
   border: none;
   color: #ccc;
@@ -57,254 +20,202 @@
 }
 
 
-
-/* CERRAR SESION */
-
-.salir-sesion{
-  margin: 30px;
-  height: 70px;
-}
-
-.salir-sesion-phone{
-  display: none;
-}
-
 /* MENU-TOGGLE */
 
-.menu-toogle_buscador{
+.menu-toogle_buscador {
   display: none;
 }
 
 /* LINKS-DETALLES */
 
-.links-detalles{
+.links-detalles {
   display: flex;
   justify-content: space-between;
   margin: 40px;
   width: 250px;
 }
 
-.peliseries-links{
+.peliseries-links {
   height: 70px;
   display: flex;
   align-items: center;
 }
 
-.peliseries-links-icono{
+.peliseries-links-icono {
   height: 70px;
   display: flex;
   align-items: center;
 }
-
 
 /* PARA MOBILE  */
 
-@media (max-width: 480px){
-
-  /* NAVBAR */
-
-  .navbar-inicio{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  }
-
-  /* LOGO */
-
-  .logo_vstreams{
+@media (max-width: 480px) {
+  .menu-navbar{
     display: none;
+
   }
 
-  .logo_vstreams img{
-    height: 40px;
+  .buscador-nav {
+    display: none;
   }
 
 
   /* MENU-TOGGLE */
 
-  .menu-toogle{
+  .menu-toogle {
     display: flex;
     justify-content: center;
     margin: 20px 0;
-    
   }
 
-  .links-detalles{
+  .links-detalles {
     display: none;
   }
 
-  .peliseries-links{
-    display: none;
-  }
-  
-  .peliseries-links-icono{
+  .peliseries-links {
     display: none;
   }
 
+  .peliseries-links-icono {
+    display: none;
+  }
 
   /* NAVBAR-BUSCADOR */
 
-  .buscador-container{
+  .buscador-container {
     display: none;
     margin: 30px;
   }
 
-  .buscador-container input{
+  .buscador-container input {
     display: flex;
-    
   }
 
-  .menu-toogle_buscador{
+  .menu-toogle_buscador {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
   }
 
-  .menu-toogle_buscador ul{
+  .menu-toogle_buscador ul {
     height: 40px;
   }
 
-  /* NAVBAR-SESION */
+ 
 
-  .salir-sesion{
+  .salir-sesion-phone i {
     display: none;
   }
 
-  .salir-sesion-phone{
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-  }
-
-  .salir-sesion-phone i{
-    display: none;
-  }
+  .menu-toogle_buscador {
+  display: block;
+  padding: 0 2rem ;
 }
 
+}
 
 /* PARA TABLET */
 
-@media (min-width: 768px) and (max-width: 1199px){
-
+@media (min-width: 768px) and (max-width: 1199px) {
   /* logo */
 
-  .logo_vstreams{
+  .logo_vstreams {
     display: none;
   }
 
-  .logo_vstreams img{
+  .logo_vstreams img {
     height: 40px;
   }
 
-  .menu-toogle{
+  .menu-toogle {
     display: flex;
     justify-content: center;
     margin: 20px 0;
-    
   }
 
-  .links-detalles{
+  .links-detalles {
     display: none;
   }
 
-  .buscador-container{
-  margin: 30px;
-  display: flex;
-  justify-content: center;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 3px;
+  .buscador-container {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 3px;
   }
-  
-  .salir-sesion{
-  margin: 20px;
-  height: 50px;
-}
+
+  .salir-sesion {
+    margin: 20px;
+    height: 50px;
+  }
 }
 
-=======
 /* ESTILOS BODY */
-
-.body-inicio {
-  background-image: url(/src/img/fondos/fondo-body-4.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  max-width: 100%;
-  width: 100%;
-  overflow: hidden scroll;
-}
-.opacity-body {
-  width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.6); /* negro con 50% de opacidad */
-  z-index: 1;
-}
 
 /* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
 
-.contenedor-titulo{
-	display: flex;
-	justify-content: space-between;
-	align-items: end;
+.contenedor-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
-.contenedor-titulo h3{
-	color: #fff;
-	font-size: 20px;
+.contenedor-titulo h3 {
+  color: #fff;
+  font-size: 20px;
 }
 
 /* CONTENEDOR PRINCIPAL */
 
-.peliculas-recomendadas{
-	margin-bottom: 70px;
+.peliculas-recomendadas {
+  margin-bottom: 70px;
 }
 
-.peliculas-recomendadas .contenedor-principal{
-	display: flex;
-	align-items: center;
-	position: relative;
+.peliculas-recomendadas .contenedor-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 /* CARRUSEL */
 
-.peliculas-recomendadas .contenedor-carousel{
-	width: 100%;
-	padding: 20px 0;
-	overflow: hidden;
+.peliculas-recomendadas .contenedor-carousel {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
 }
 
-.peliculas-recomendadas .contenedor-carousel .carousel{
-	display: flex;
-	flex-wrap: nowrap;
-    gap: 10px;
+.peliculas-recomendadas .contenedor-carousel .carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
 }
 
-.peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
-	min-width: 24.3%;
-	transition: .3s ease all;
-	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+  min-width: 24.3%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
-    &:hover{
-        scale: 105%;
-    }  
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+  &:hover {
+    scale: 105%;
+  }
 }
 
-.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img{
-	width: 100%;
-	vertical-align: top;
-    border-radius: 5px;
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+  width: 100%;
+  vertical-align: top;
+  border-radius: 5px;
 }
 
 /* ESTRENOS */
 
-.card-estrenos{
-    flex: 0 0 auto; 
-    width: 200px;
+.card-estrenos {
+  flex: 0 0 auto;
+  width: 200px;
 }
 
 /* BARRA DE SCROLL ESTRENOS */
@@ -331,23 +242,22 @@
 /* RANKING */
 
 .card img {
-      height: 200px;
-      object-fit: cover;
-    }
+  height: 200px;
+  object-fit: cover;
+}
 
 .ranking img {
-    width: 60px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-.ranking a{
-    text-decoration: none;
-    color: inherit;
+.ranking a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.ranking li{
-    background: rgba(0, 0, 0, 0.8);
+.ranking li {
+  background: rgba(0, 0, 0, 0.8);
 }
-
