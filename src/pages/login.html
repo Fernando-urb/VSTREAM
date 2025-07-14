@@ -8,29 +8,32 @@
     <link rel="stylesheet" href="/src/styles/Login-form.css">
 </head>
 <body>
-  <header>
-    <img src="/src/img/logos/logo-principal.png" alt="Logo VStream" class="logo-login">
-  </header>
+  <main class="login-main">
+  <!-- <div class="logo"><img src="/src/img/logos/logo-v-1.png" alt="VStream logo" /></div> -->
+  <div class="logo">
+  <a href="/index.html">
+    <img src="/src/img/logos/logo-v-1.png" alt="VStream logo" />
+  </a>
+  </div>
 
-  <main class="main-login">
-    <section class="contenedor-login">
-      <h1 class="titulo-login">Iniciar sesión</h1>
-      <form class="form-login">
-        <input type="email" id="email" placeholder="Correo electrónico" required>
-        <input type="password" id="password" placeholder="Contraseña" required>
+  <section class="login-form">
+    <h1>Iniciar sesión</h1>
+    <form>
+      <input type="email" placeholder="Correo electrónico" required />
+      <input type="password" placeholder="Contraseña" required />
+      <button type="submit">Iniciar sesión</button>
+      <div class="options">
+        <label><input type="checkbox" /> Recordarme</label>
+        <a href="#">¿Olvidaste la contraseña?</a>
+      </div>
+    </form>
+    <div class="extra">
+      <p>¿Primera vez en VStream? <a href="suscripcion.html">Suscribite ya.</a></p>
+    </div>
+  </section>
+</main>
 
-        <a href="#" class="boton-enviar">Iniciar sesión</a>
-
-        <div class="olvido-contraseña-login">
-          <a href="#">¿Olvidaste la contraseña?</a>
-        </div>
-
-        <div class="recuerdame-check-login">
-          <input type="checkbox" id="recuerdame">
-          <label for="recuerdame">Recordarme</label>
-        </div>
-      </form>
-    </section>
-  </main>
 </body>
 </html>
+
+
