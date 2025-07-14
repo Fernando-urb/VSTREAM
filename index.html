@@ -192,65 +192,56 @@
            
             <!-- catalogo Series -->
 
-            <section
-                class="container-section d-flex flex-column flex-lg-row align-items-center justify-content-center py-5">
-                <!-- Texto y botón (orden 1 en móvil) -->
-                <div class="col-12 col-lg-4 text-center text-lg-center pe-lg-5 mb-4 mb-lg-0 order-1 order-lg-last">
-                    <h2 class="texto-der text-danger fw-bold display-5">Las Mejores Series de Estreno</h2>
-                    <a href="/peliculas" class="btn btn-danger mt-3 d-lg-none">Ver todas las Series</a>
-                </div>
+           <section class="series-premieres d-flex flex-column flex-lg-row align-items-center justify-content-between py-5">
+    <!-- Texto y botón (primero en móvil/tablet) -->
+    <div class="col-12 col-lg-4 text-center text-lg-start ps-lg-5 order-first mb-4 mb-lg-0">
+        <h2 class="text-danger fw-bold display-5 mb-4">Las Mejores Series de Estreno</h2>
+        <a href="/peliculas" class="btn btn-danger d-lg-none">Ver todas las Series</a>
+    </div>
 
-                <!-- Carrusel (orden 2 en móvil) -->
-                <div class="col-lg-8 text-center order-2 order-lg-first">
-                    <div id="seriesCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                        data-bs-interval="3000">
-                        <div class="carousel-inner">
-                            <div class="carousel-item">
-                                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg"
-                                    alt="Poster Película 1" class="img-fluid poster-img">
-                                <div class="carousel-overlay">
-                                    <div class="overlay-content">
-                                        <a href="/detalle-pelicula/1"
-                                            class="btn btn-danger overlay-btn d-none d-lg-block">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item active">
-                                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vHqeLzYl3dEAutojCO26g0LIkom.jpg"
-                                    alt="Poster Película 2" class="img-fluid poster-img">
-                                <div class="carousel-overlay">
-                                    <div class="overlay-content">
-                                        <a href="/detalle-pelicula/2" class="btn btn-danger overlay-btn ">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8BbZGH0kmkSWqWUmy4zaJAlVbfe.jpg"
-                                    alt="Poster Película 3" class="img-fluid poster-img">
-                                <div class="carousel-overlay">
-                                    <div class="overlay-content">
-                                        <a href="/detalle-pelicula/3" class="btn btn-danger overlay-btn">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/WGRQ8FpjkDTzivQJ43t94bOuY0.jpg"
-                                    alt="Poster Película 3" class="img-fluid poster-img">
-                                <div class="carousel-overlay">
-                                    <div class="overlay-content">
-                                        <a href="/detalle-pelicula/3" class="btn btn-danger overlay-btn">Ver más</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Carrusel (segundo en móvil/tablet) -->
+    <div class="col-12 col-lg-8 order-lg-first ">
+        <div id="seriesCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg"
+                        alt="Poster Película 1" class="img-fluid poster-img">
+                    <div class="carousel-overlay d-none d-lg-flex">
+                        <a href="/detalle-pelicula/1" class="btn btn-danger overlay-btn align-self-center">Ver más</a>
                     </div>
                 </div>
-            </section>
+                <div class="carousel-item active">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vHqeLzYl3dEAutojCO26g0LIkom.jpg"
+                        alt="Poster Película 2" class="img-fluid poster-img">
+                    <div class="carousel-overlay d-none d-lg-flex">
+                        <a href="/detalle-pelicula/2" class="btn btn-danger overlay-btn align-self-center">Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8BbZGH0kmkSWqWUmy4zaJAlVbfe.jpg"
+                        alt="Poster Película 3" class="img-fluid poster-img">
+                    <div class="carousel-overlay d-none d-lg-flex">
+                        <a href="/detalle-pelicula/3" class="btn btn-danger overlay-btn align-self-center">Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/WGRQ8FpjkDTzivQJ43t94bOuY0.jpg"
+                        alt="Poster Película 4" class="img-fluid poster-img">
+                    <div class="carousel-overlay d-none d-lg-flex">
+                        <a href="/detalle-pelicula/4" class="btn btn-danger overlay-btn align-self-center">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
           
 
             <!-- section de tarjetas de planes   -->
-            <section class="  container-section text-light py-5">
+            <section class="container-section tarjeta-section text-light py-5">
                 <div class="container ">
                     <h2 class="text-center">Elige tu plan ideal</h2>
                     <div class="row g-4 justify-content-center">
