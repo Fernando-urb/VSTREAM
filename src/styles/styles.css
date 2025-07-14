@@ -1,17 +1,17 @@
 /* estos son los estilos  */
 
-/* @import "/src/styles/acerca-de.css"; */
+@import "/src/styles/acerca-de.css";
 @import "/src/styles/categorias.css";
-/* @import "/src/styles/contacto.css"; */
-/* @import "/src/styles/detalles.css"; */
-/* @import "/src/styles/error-404.css"; */
+@import "/src/styles/contacto.css";
+@import "/src/styles/detalles.css";
+@import "/src/styles/error-404.css";
 @import "/src/styles/footer.css";
 @import "/src/styles/general.css";
 @import "./header.css";
-/* @import "./Login-form.css"; */
+@import "./Login-form.css";
 @import "./main.css";
 @import "./styles.css";
-/* @import "./suscripcion-form.css"; */
+@import "./suscripcion-form.css";
 @import "/src/styles/variables.css";
 
 
