@@ -150,6 +150,7 @@
   display: none;
 }
 
+
 /* Breakpoints tablet  */
 @media (min-width: 768px) and (max-width: 1199px) {
   /* texto principal  */
@@ -248,6 +249,10 @@
 .texto-der{
   padding-left: 200px;
 }
+.carousel {
+  max-width: 500px; /* Controla el tamaño del carrusel */
+  margin: 0 auto;
+}
 
 }
 
@@ -261,6 +266,10 @@
   .texto-izq {
     padding: 0;
   }
+  .nosotros-container {       
+        margin-top: 50px;
+        padding-top: 50px;
+    }
   
 .tarjeta-section [data-aos] {
    animation: none;
@@ -344,7 +353,7 @@
 
 /* Estilo del carrusel (1 imagen a la vez) */
 .carousel {
-  max-width: 500px; /* Controla el tamaño del carrusel */
+  max-width: 400px; /* Controla el tamaño del carrusel */
   margin: 0 auto;
 }
 
@@ -415,37 +424,6 @@
 .carousel-item:hover .poster-img {
   transform: scale(1.03);
 }
-
-/* Responsive: En móviles, apila título y carrusel */
-@media (max-width: 480px) {
-  /* .texto-der {
-    padding: 0;
-    
-  }
-  
-  .texto-izq {
-    padding: 0;
-  }
-  
-
-  .carousel {
-    max-width: 300px;
-    margin: auto;
-  } */
-
-  
-  /* .carousel-item:hover .carousel-overlay {
-    opacity: 0;
-    visibility: none;
-  }
-
-  .carousel-overlay {
-    display: none; 
-  } */
-  
-  
-}
-
 
 .contenedor-principal {
   position: relative;
