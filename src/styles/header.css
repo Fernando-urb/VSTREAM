@@ -30,57 +30,96 @@
   transition: 0.5s;
   background-size: 200% auto;
   &:hover {
-  background-position: right center; 
-  color: #fff;
-  text-decoration: none;
-}
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
 }
 .dropdown {
-    a{
-        color:var(--color-texto-botones);
-    transition: ease-in-out .2s;
-    &:hover{
-        color: #aa076b;
+  a {
+    color: var(--color-texto-botones);
+    transition: ease-in-out 0.2s;
+    &:hover {
+      color: #aa076b;
     }
-    
-    }
- 
+  }
 }
 /* Botón  offcanvas */
-.open-offcanvas{
-    display: none;
+.open-offcanvas {
+  display: none;
+}
+.offcanvas-body {
+  background-image: url(/src/img/fondos/3203685.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden scroll;
 }
 
-.dropdown-item:hover{
-    background-color: rgba(24, 24, 25, 0.573);
+.dropdown-item:hover {
+  background-color: rgba(24, 24, 25, 0.573);
+}
+.logo-inicio {
+  display: block;
+}
+.menu-navbar {
+  display: block;
+}
+/* BUSCADOR */
+
+
+.buscar-input {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  padding-right: 10px;
+}
+
+.buscar-button {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 
 
 /* Breakpoints tablet  */
-@media (min-width: 768px){ 
-
-  .logo-contacto{
+@media (min-width: 768px) and (max-width: 1199px) {
+  .logo-contacto {
     padding-top: 5px;
   }
- 
 
- 
   .login {
     font-size: 0.6rem;
   }
+  .logo-inicio {
+    display: block;
+  }
+  .menu-navbar {
+    display: none;
+  }
+  .open-offcanvas {
+  display: none;
+}
+.buscador-movil{
+  display: none;
+}
 }
 
 /*Breakpoints  movil  */
 @media (max-width: 480px) {
-  .navbar-inicio{
-    align-items: center;
-  }
-  .dropdown-toggle{
+  .dropdown-toggle {
     display: none;
-
   }
-  
+
   .logo-inicio {
     display: none;
   }
@@ -89,28 +128,28 @@
     height: 2rem;
   }
   .login {
-    
     font-size: 0.5rem;
   }
-  .offcanvas-body{
-  background-image: url(/src/img/fondos/fondo-body-4.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  max-width: 100%;
-  width: 100%;
-  overflow: hidden scroll;
 
-  }
-  .open-offcanvas{
+  .open-offcanvas {
     display: block;
-}
-    .usuario{
+  }
+  .logo-inicio {
+    display: none;
+  }
+  .menu-navbar {
+    display: none;
+  }
+  .open-offcanvas {
   display: block;
 }
-  .menu-toogle_buscador{
+.buscador-nav{
   display: block;
+  margin-top: 1rem;
+}
+.usuario{
+  display: block;
+  
 }
 
 }

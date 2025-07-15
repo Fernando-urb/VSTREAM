@@ -1,0 +1,106 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+color: whitesmoke;
+}
+
+.logo-login {
+padding: 20px;
+align-self: flex-start;
+}
+
+.logo-login img {
+width: 90px;
+height: auto;
+}
+
+.login-main{
+/* background-color: crimson; */
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 40px 20px;
+position: relative;
+}
+
+.login-form {
+width: 100%;
+max-width: 400px;
+background-color: rgba(0, 0, 0, 0.65);
+padding: 3rem;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+/* form */
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: none;
+  color: whitesmoke;
+  border-radius: 4px;
+}
+
+
+.login-form button {
+  padding: 12px;
+  background: var(--color-bg-botones);
+  color: whitesmoke;
+  font-weight: bold;
+  border: none;
+  /* border-color: crimson; */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* .login-form button:hover {
+  background: var(--color-bg-botones);
+} */
+
+
+/* opciones y check */
+.opciones{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-texto-botones);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.opciones a{
+  color: var(--color-texto-botones);
+  text-decoration: none;
+}
+
+.opciones a:hover {
+  text-decoration: underline;
+}
+
+.extra{
+  text-align: center;
+}
+
+.extra a {
+  color: var(--color-texto-botones);
+  text-decoration: underline;
+}

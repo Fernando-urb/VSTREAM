@@ -1,27 +1,72 @@
-.opacity-body {
-  width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.4); /* negro con 50% de opacidad */
-  z-index: 1;
+
+.inicio {
+  opacity: 0;
+  animation: aparecerSuave 1.2s ease-out forwards;
+  animation-delay: 0.4s;
 }
 
+@keyframes aparecerSuave {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .baner-separacion {
-  background-image: url(/src/img/fondos/3257640.jpg);
+  background-image: url(/src/img/fondos/6257.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  min-height: 40vh;
-  height: 30vh;
+  min-height: 100vh;
+  height: auto;
 }
+/* estos son los estilos de los contenedores de las sectiones  degradado bottom */
+.container-section {
+  max-height: 200vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+  z-index: 1;
+  min-height: 100vh;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+/* estos son los estilos de los contenedores de las sectiones  degradado top*/
+.container-section-2 {
+  max-height: 200vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+  min-height: 100vh;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+/* primera section  */
 /* Hero section pegada al top ocupa toda la pantalla */
 .hero-inicio {
   max-height: 100vh;
   height: 100vh;
   margin: 0 auto;
   width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
+
 /* contenedor del hero  */
 .div-hero {
   width: 90%;
@@ -70,36 +115,20 @@
   }
 }
 
-/* estos son los estilos de los contenedores de las sectiones  */
-.container-section {
-  max-height: 200vh;
-  height: auto;
-  margin: 0 auto;
-  width: 90%;
-  /* background-color: var(--colorSection); */
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
-  min-height: 100vh;
-
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-}
+/* segunda section  */
 
 /* contenedor de img dispositivos  */
 .container-dispositivos {
   position: relative;
   width: 100%;
   height: 100vh;
-  margin: 0 auto;
 }
 /* tablet  */
 .img-dispositivos:nth-child(1) {
   position: absolute;
-  top: 40%;
-  left: 55%;
-  z-index: 3;
+  top: 45%;
+  left: 42%;
+  z-index: 2;
   img {
     width: 350px;
     height: 180px;
@@ -108,8 +137,8 @@
 /* movil  */
 .img-dispositivos:nth-child(2) {
   position: absolute;
-  top: 42%;
-  left: 70%;
+  top: 47%;
+  left: 63%;
   z-index: 3;
   img {
     width: 200px;
@@ -119,8 +148,8 @@
 /* pc  */
 .img-dispositivos:nth-child(3) {
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 35%;
+  left: 15%;
   z-index: 2;
   img {
     width: 400px;
@@ -130,12 +159,12 @@
 /* smart */
 .img-dispositivos:nth-child(4) {
   position: absolute;
-  top: 0;
-  left: 33%;
+  top: -15%;
+  left: 23%;
   z-index: 1;
   img {
-    width: 600px;
-    height: 550px;
+    width: 700px;
+    height: 650px;
   }
 }
 /* boton*/
@@ -158,22 +187,15 @@
     width: 100%;
     h1 {
       font-size: 2rem;
-    }
     h2 {
-      font-size: 1rem;
+      font-size: 1.5rem;
       font-weight: lighter;
     }
     p {
       font-size: 1rem;
     }
   }
-  
-.tarjeta-section [data-aos] {
-   animation: none;
-                transform: none;
-                transition: none;
-                opacity: 1;
-}
+  }
 
   /* logo principal  */
   .item-hero:nth-child(2) {
@@ -189,63 +211,19 @@
       height: 180px;
     }
   }
+
   /* contenedor img dispositivos  */
   .container-dispositivos {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+    display: none;
   }
-  /* tablet  */
-  .img-dispositivos:nth-child(1) {
-    position: absolute;
-    top: 51%;
-    left: 55%;
-    z-index: 3;
-    img {
-      width: 350px;
-      height: 180px;
-    }
+  .container-img-responsive {
+    display: block;
+    margin: 0 auto;
   }
-  /* movil  */
-  .img-dispositivos:nth-child(2) {
-    position: absolute;
-    top: 52%;
-    left: 80%;
-    z-index: 3;
-    img {
-      width: 200px;
-      height: 180px;
-    }
+  .img-dispositivo-responsivo {
+    width: 80%;
   }
-  /* pc  */
-  .img-dispositivos:nth-child(3) {
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    z-index: 2;
-    img {
-      width: 400px;
-      height: 250px;
-    }
-  }
-  /* smart */
-  .img-dispositivos:nth-child(4) {
-    position: absolute;
-    top: 20%;
-    left: 22%;
-    z-index: 1;
-    img {
-      width: 600px;
-      height: 550px;
-    }
-  }
-  /* boton*/
-  .img-dispositivos:nth-child(5) {
-    position: absolute;
-    top: 5%;
-    left: 45%;
-    z-index: 1;
-  }
+
 .texto-der{
   padding-left: 200px;
 }
@@ -254,18 +232,22 @@
   margin: 0 auto;
 }
 
+
 }
+  
+
+
 
 /*Breakpoints  mobile  small */
 @media (max-width: 480px) {
-.texto-der {
+  .texto-der {
     padding: 0;
-    
   }
-  
+
   .texto-izq {
     padding: 0;
   }
+
   .nosotros-container {       
         margin-top: 50px;
         padding-top: 50px;
@@ -278,15 +260,24 @@
                 opacity: 1;
 }
   
+
+
+  .tarjeta-section [data-aos] {
+    animation: none;
+    transform: none;
+    transition: none;
+    opacity: 1;
+  }
+
+
   .carousel-item:hover .carousel-overlay {
     opacity: 0;
     visibility: none;
   }
 
   .carousel-overlay {
-    display: none; 
+    display: none;
   }
-  
 
   .div-hero {
     display: flex;
@@ -307,7 +298,7 @@
       font-size: 1rem;
     }
   }
-  
+
   .item-hero:nth-child(2) {
     width: 100%;
     display: flex;
@@ -334,6 +325,7 @@
     width: 400px;
   }
 }
+
 
 .border-tarjetas {
   border: 5px solid #61045f;
@@ -425,6 +417,36 @@
   transform: scale(1.03);
 }
 
+
+
+/* Responsive: En móviles, apila título y carrusel */
+@media (max-width: 480px) {
+  /* .texto-der {
+    padding: 0;
+    
+  }
+  
+  .texto-izq {
+    padding: 0;
+  }
+  
+
+  .carousel {
+    max-width: 300px;
+    margin: auto;
+  } */
+
+  /* .carousel-item:hover .carousel-overlay {
+    opacity: 0;
+    visibility: none;
+  }
+
+  .carousel-overlay {
+    display: none; 
+  } */
+}
+
+
 .contenedor-principal {
   position: relative;
   width: 100%;
@@ -446,7 +468,6 @@
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(128, 0, 128, 0.5);
 }
-
 
 .contenedor-deimagen-de-peliculas:nth-child(1) {
   top: 5%;
