@@ -1,30 +1,5 @@
-/* BUSCADOR */
 
 
-.buscar-input {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  outline: none;
-  padding-right: 10px;
-}
-
-.buscar-button {
-  background: none;
-  border: none;
-  color: #ccc;
-  font-size: 18px;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-
-/* MENU-TOGGLE */
-
-.menu-toogle_buscador {
-  display: none;
-}
 
 /* LINKS-DETALLES */
 
@@ -50,113 +25,35 @@
 /* PARA MOBILE  */
 
 @media (max-width: 480px) {
-  .menu-navbar{
-    display: none;
-
-  }
-
-  .buscador-nav {
-    
-    
-  }
 
 
-  /* MENU-TOGGLE */
-
-  .menu-toogle {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-
-  .links-detalles {
-    display: none;
-  }
-
-  .peliseries-links {
-    display: none;
-  }
-
-  .peliseries-links-icono {
-    display: none;
-  }
-
-  /* NAVBAR-BUSCADOR */
-
- 
-  .buscador-container input {
-    display: flex;
-  }
-
-  .menu-toogle_buscador {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-  }
-
-  .menu-toogle_buscador ul {
-    height: 40px;
-  }
-
- 
-
-  .salir-sesion-phone i {
-    display: none;
-  }
-
-  .menu-toogle_buscador {
-  display: block;
-  padding: 0 2rem ;
-}
 
 }
 
 /* PARA TABLET */
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* logo */
 
-  .logo_vstreams {
-    display: none;
-  }
-
-  .logo_vstreams img {
-    height: 40px;
-  }
-
-  .menu-toogle {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-
-  .links-detalles {
-    display: none;
-  }
-
-  .buscador-container {
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 3px;
-  }
-
-  .salir-sesion {
-    margin: 20px;
-    height: 50px;
-  }
 }
 
 /* CARRUSEL PRINCIPAL */
 
 #mainCarousel {
   max-width: 100%;
-  /* height: 700px; */
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.imagen-con-boton {
+  position: relative;
+  display: inline-block;
+}
+
+.imagen-con-boton img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .boton-encima-info {
@@ -184,6 +81,10 @@
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 8px;
+}
+
+.img-carrusel-principal{
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 /* CONTENEDOR SECCIONES */
