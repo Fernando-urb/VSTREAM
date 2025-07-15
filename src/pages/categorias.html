@@ -123,15 +123,15 @@
 
 
 
-    <main>
+    <main class="main-inicio">
 
-      <section class="container-section text-light py-5">
         <!-- CARRUSEL PRINCIPAL -->
-        <div id="mainCarousel " class="" data-bs-ride="carousel">
-          <div class="carousel-inner rounded overflow-hidden .boton-encima contenedor-btn imagen-con-boton">
-            <div class="carousel-item active">
-              <a href="/src/pages/error-404.html" class="img-carousel-peliculas"><img src="/src/img/img.pelis/Como entrenar a tu dragon 2.avif"
-                  class="d-block w-100 img-carousel-peliculas" alt="Como entrenar a tu dragon 2"></a>
+      <section class="container-section-2 text-light">
+        <div id="mainCarouselCategorias" class="carousel slide carrusel-img " data-bs-ride="carousel">
+          <div class="hero-inicio carousel-inner rounded contenedor-btn ">
+            <div class="carousel-item active ">
+              <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Como entrenar a tu dragon 2.avif"
+                  class="d-block w-100" alt="Como entrenar a tu dragon 2"></a>
             </div>
             <div class="carousel-item">
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/endgame.jpg" class="d-block w-100"
@@ -141,28 +141,72 @@
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/mario bros..jpg" class="d-block w-100"
                   alt="Mario bros"></a>
             </div>
-                <button class="boton-encima-info">INFO</button>
-                <button class="boton-encima-vermas">VER MAS</button>
+                <button class="boton-encima-info"><a class="text-light" href="/src/pages/detalles-peli.html">INFO</a></button>
+                <button class="boton-encima-vermas"><a class="text-light" href="/src/pages/detalles-peli.html">VER MAS</a></button>
               </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev"
+          <button class="carousel-control-prev" type="button" data-bs-target="#mainCarouselCategorias" data-bs-slide="prev"
             title="none">
             <span class="carousel-control-prev-icon"></span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next"
+          <button class="carousel-control-next" type="button" data-bs-target="#mainCarouselCategorias" data-bs-slide="next"
             title="none">
             <span class="carousel-control-next-icon"></span>
           </button>
         </div>
       </section>
 
+      <div class="baner-separacion">
+
       <!-- PELÍCULAS DESTACADAS -->
        <section class="container-section text-light py-5">
-        <div class="container-section h-25j text-light">
-            <div class="container-titulo-btn">
+        <div class=" text-light">
+            <div class="container-titulo-btn pb-2">
                 <h3>Películas destacadas</h3>
                 <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a>
             </div>
-            <div class="container-pelis-destacadas py-4">
+            <div class="container-pelis-destacadas pb-5">
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Dragon Ball Z .La resurreccion de FREEZER.webp" alt="Dragon Ball Z La resurreccion de FREEZER"></a>
+                <a href="/src/pages/detalles-peli.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Batman.jpg" alt="The Batman"></a>
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/endgame.jpg" alt="ENDGAME"></a>
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Capitan america.jpeg" alt="Capitan america"></a>
+                <a href="/src/pages/error-404.html"><img   class="img-peli-des"  src="/src/img/img.pelis/Joker.jpg" alt="Joker"></a>
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/batman.png" alt="Batman"></a>
+            </div>
+        </div>
+        <div class=" text-light">
+            <div class="container-titulo-btn pb-2">
+                <h3>Genero de acción</h3>
+                <!-- <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a> -->
+            </div>
+            <div class="container-pelis-destacadas pb-5">
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Dragon Ball Z .La resurreccion de FREEZER.webp" alt="Dragon Ball Z La resurreccion de FREEZER"></a>
+                <a href="/src/pages/detalles-peli.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Batman.jpg" alt="The Batman"></a>
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/endgame.jpg" alt="ENDGAME"></a>
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Capitan america.jpeg" alt="Capitan america"></a>
+                <a href="/src/pages/error-404.html"><img   class="img-peli-des"  src="/src/img/img.pelis/Joker.jpg" alt="Joker"></a>
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/batman.png" alt="Batman"></a>
+            </div>
+        </div>
+        <div class=" text-light">
+            <div class="container-titulo-btn pb-2">
+                <h3>Genero de comedia</h3>
+                <!-- <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a> -->
+            </div>
+            <div class="container-pelis-destacadas pb-5">
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Dragon Ball Z .La resurreccion de FREEZER.webp" alt="Dragon Ball Z La resurreccion de FREEZER"></a>
+                <a href="/src/pages/detalles-peli.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Batman.jpg" alt="The Batman"></a>
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/endgame.jpg" alt="ENDGAME"></a>
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Capitan america.jpeg" alt="Capitan america"></a>
+                <a href="/src/pages/error-404.html"><img   class="img-peli-des"  src="/src/img/img.pelis/Joker.jpg" alt="Joker"></a>
+                <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/batman.png" alt="Batman"></a>
+            </div>
+        </div>
+        <div class=" text-light">
+            <div class="container-titulo-btn pb-2">
+                <h3>Genero ciencia ficción</h3>
+                <!-- <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a> -->
+            </div>
+            <div class="container-pelis-destacadas pb-5">
                 <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Dragon Ball Z .La resurreccion de FREEZER.webp" alt="Dragon Ball Z La resurreccion de FREEZER"></a>
                 <a href="/src/pages/detalles-peli.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Batman.jpg" alt="The Batman"></a>
                 <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/endgame.jpg" alt="ENDGAME"></a>
@@ -175,13 +219,58 @@
 
       <!-- SERIES DESTACADAS -->
 
-       <section class="container-section text-light py-5">
-        <div class="container-section text-light">
-            <div class="container-titulo-btn">
-                <h3>Películas destacadas</h3>
+       <section class="container-section-2 text-light py-5">
+        <div class=" text-light">
+            <div class="container-titulo-btn pb-2">
+                <h3>Series destacadas</h3>
                 <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a>
             </div>
-            <div class="container-pelis-destacadas py-4">
+            <div class="container-pelis-destacadas pb-5">
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/Arrow.jpg" alt="Arrow"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/DARK.jpg" alt="DARK"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/YOU.jpeg" alt="YOU"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/FRIENDS.jpg" alt="FRIENDS"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/ONE PIECE.jpg" alt="ONE PIECE"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/The big bang theory.jpg"
+                      alt="The bif bang theory"></a>
+            </div>
+        </div>
+        <div class=" text-light">
+            <div class="container-titulo-btn pb-2">
+                <h3>Genero de acción</h3>
+                <!-- <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a> -->
+            </div>
+            <div class="container-pelis-destacadas pb-5">
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/Arrow.jpg" alt="Arrow"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/DARK.jpg" alt="DARK"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/YOU.jpeg" alt="YOU"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/FRIENDS.jpg" alt="FRIENDS"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/ONE PIECE.jpg" alt="ONE PIECE"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/The big bang theory.jpg"
+                      alt="The bif bang theory"></a>
+            </div>
+        </div>
+        <div class=" text-light">
+            <div class="container-titulo-btn pb-2">
+                <h3>Genero de comedia</h3>
+                <!-- <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a> -->
+            </div>
+            <div class="container-pelis-destacadas pb-5">
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/Arrow.jpg" alt="Arrow"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/DARK.jpg" alt="DARK"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/YOU.jpeg" alt="YOU"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/FRIENDS.jpg" alt="FRIENDS"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/ONE PIECE.jpg" alt="ONE PIECE"></a>
+                <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/The big bang theory.jpg"
+                      alt="The bif bang theory"></a>
+            </div>
+        </div>
+        <div class=" text-light">
+            <div class="container-titulo-btn pb-2">
+                <h3>Genero ciencia ficción</h3>
+                <!-- <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a> -->
+            </div>
+            <div class="container-pelis-destacadas pb-5">
                 <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/Arrow.jpg" alt="Arrow"></a>
                 <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/DARK.jpg" alt="DARK"></a>
                 <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/YOU.jpeg" alt="YOU"></a>
@@ -193,146 +282,66 @@
         </div>
       </section>
 
-      <!-- <section class="container-section text-light py-5">
-
-        <div class="peliculas-recomendadas contenedor">
-          <div class="contenedor-titulo">
-            <h3>Películas destacadas</h3>
-            <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a>
-          </div>
-
-          <div class="contenedor-principal-categorias">
-
-            <div class="contenedor-carousel">
-              <div class="carousel-categorias">
-                <div class="pelicula">
-                  <a href="/src/pages/error-404.html"><img
-                      src="/src/img/img.pelis/Dragon Ball Z .La resurreccion de FREEZER.webp"
-                      alt="Dragon Ball Z La resurreccion de FREEZER"></a>
-                </div>
-                <div class="pelicula">
-                  <a href="/src/pages/detalles-peli.html"><img src="/src/img/img.pelis/Batman.jpg" alt="The Batman"></a>
-                </div>
-                <div class="pelicula">
-                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/endgame.jpg" alt="ENDGAME"></a>
-                </div>
-                <div class="pelicula">
-                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Capitan america.jpeg"
-                      alt="Capitan america"></a>
-                </div>
-                <div class="pelicula">
-                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Joker.jpg" alt="Joker"></a>
-                </div>
-                <div class="pelicula">
-                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/batman.png" alt="Batman"></a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </section>
-    
-        SERIES DESTACADAS
-      <section class="container-section text-light py-5">
-
-        <div class="peliculas-recomendadas contenedor">
-          <div class="contenedor-titulo">
-            <h3>Series destacadas</h3>
-            <a href="/src/pages/detalles-peli.html" class="btn btn-outline-light btn-sm">Ver todos los géneros</a>
-          </div>
-
-          <div class="contenedor-principal-categorias">
-
-            <div class="contenedor-carousel">
-              <div class="carousel-categorias">
-                <div class="pelicula">
-                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Arrow.jpg" alt="Arrow"></a>
-                </div>
-                <div class="pelicula">
-                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/DARK.jpg" alt="DARK"></a>
-                </div>
-                <div class="pelicula">
-                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/YOU.jpeg" alt="YOU"></a>
-                </div>
-                <div class="pelicula">
-                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/FRIENDS.jpg" alt="FRIENDS"></a>
-                </div>
-                <div class="pelicula">
-                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/ONE PIECE.jpg" alt="ONE PIECE"></a>
-                </div>
-                <div class="pelicula">
-                  <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/The big bang theory.jpg"
-                      alt="The bif bang theory"></a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </section>    -->
-
         <!-- ESTRENOS RECIENTES -->
+         
       <section class="container-section text-light py-5">
 
         <div class="contenedor-estrenos-categorias">
-          <h3 class="mb-3 text-light fs-4 px-3">Estrenos recientes</h3>
-          <div class="d-flex flex-nowrap overflow-auto">
-            <div class="card bg-dark text-white me-3 card-estrenos">
+          <h3 class=" text-light fs-3 px-3">Estrenos recientes</h3>
+          <div class="d-flex flex-nowrap overflow-auto px-3">
+            <div class="card bg-dark text-white me-3 card-estrenos-categorias">
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/el eternauta.webp" class="card-img-top"
                   alt="El eternauta"></a>
-              <div class="card-body">
+              <div class="card-body-categorias">
                 <h6>El eternauta</h6>
               </div>
             </div>
-            <div class="card bg-dark text-white me-3 card-estrenos">
+            <div class="card bg-dark text-white me-3 card-estrenos-categorias">
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/One piece red film.webp"
                   class="card-img-top" alt="ONE PIECE FILM RED"></a>
-              <div class="card-body">
-                <h6>ONE PIECE FILM RED</h6>
+              <div class="card-body-categorias">
+                <h6 class="">ONE PIECE FILM RED</h6>
               </div>
             </div>
-            <div class="card bg-dark text-white me-3 card-estrenos">
+            <div class="card bg-dark text-white me-3 card-estrenos-categorias">
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/animal.jpg" class="card-img-top"
                   alt="Animal"></a>
-              <div class="card-body">
+              <div class="card-body-categorias">
                 <h6>Animal</h6>
               </div>
             </div>
-            <div class="card bg-dark text-white me-3 card-estrenos">
+            <div class="card bg-dark text-white me-3 card-estrenos-categorias">
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/boruto.jpg" class="card-img-top"
                   alt="Boruto"></a>
-              <div class="card-body">
+              <div class="card-body-categorias">
                 <h6>Boruto</h6>
               </div>
             </div>
-            <div class="card bg-dark text-white me-3 card-estrenos">
+            <div class="card bg-dark text-white me-3 card-estrenos-categorias">
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/from.webp" class="card-img-top"
                   alt="From"></a>
-              <div class="card-body">
+              <div class="card-body-categorias">
                 <h6>From</h6>
               </div>
             </div>
-            <div class="card bg-dark text-white me-3 card-estrenos">
+            <div class="card bg-dark text-white me-3 card-estrenos-categorias">
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/bailarina.avif" class="card-img-top"
                   alt="Bailarina"></a>
-              <div class="card-body">
+              <div class="card-body-categorias">
                 <h6>Bailarina</h6>
               </div>
             </div>
-            <div class="card bg-dark text-white me-3 card-estrenos">
+            <div class="card bg-dark text-white me-3 card-estrenos-categorias">
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/dragon ball super.jpg"
                   class="card-img-top" alt="Dragon ball Super"></a>
-              <div class="card-body">
+              <div class="card-body-categorias">
                 <h6>Dragon ball Super</h6>
               </div>
             </div>
-            <div class="card bg-dark text-white me-3 card-estrenos">
+            <div class="card bg-dark text-white me-3 card-estrenos-categorias">
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/the last of us.jpeg" class="card-img-top"
                   alt="The last of us"></a>
-              <div class="card-body">
+              <div class="card-body-categorias">
                 <h6>The last of us</h6>
               </div>
             </div>
@@ -342,7 +351,7 @@
       </section>
 
         <!-- RANKING SEMANAL -->
-      <section class="container-section text-light py-5">
+      <section class="container-section-2 text-light py-5">
         <div class="contenedor-ranking">
           <h2 class="mb-3 text-light fs-4">Top 5 de la semana</h2>
           <ol class="list-group list-group-numbered ranking">
@@ -369,7 +378,7 @@
           </ol>
         </div>
       </section>
-      
+      </div>
     </main>
 
 
