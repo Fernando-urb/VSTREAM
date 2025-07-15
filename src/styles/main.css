@@ -179,6 +179,7 @@
   display: none;
 }
 
+
 /* Breakpoints tablet  */
 @media (min-width: 768px) and (max-width: 1199px) {
   /* texto principal  */
@@ -223,6 +224,15 @@
     width: 80%;
   }
 
+.texto-der{
+  padding-left: 200px;
+}
+.carousel {
+  max-width: 500px; /* Controla el tamaño del carrusel */
+  margin: 0 auto;
+}
+
+
 }
   
 
@@ -238,12 +248,27 @@
     padding: 0;
   }
 
+  .nosotros-container {       
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+  
+.tarjeta-section [data-aos] {
+   animation: none;
+                transform: none;
+                transition: none;
+                opacity: 1;
+}
+  
+
+
   .tarjeta-section [data-aos] {
     animation: none;
     transform: none;
     transition: none;
     opacity: 1;
   }
+
 
   .carousel-item:hover .carousel-overlay {
     opacity: 0;
@@ -320,7 +345,7 @@
 
 /* Estilo del carrusel (1 imagen a la vez) */
 .carousel {
-  max-width: 500px; /* Controla el tamaño del carrusel */
+  max-width: 400px; /* Controla el tamaño del carrusel */
   margin: 0 auto;
 }
 
@@ -392,6 +417,8 @@
   transform: scale(1.03);
 }
 
+
+
 /* Responsive: En móviles, apila título y carrusel */
 @media (max-width: 480px) {
   /* .texto-der {
@@ -418,6 +445,7 @@
     display: none; 
   } */
 }
+
 
 .contenedor-principal {
   position: relative;
