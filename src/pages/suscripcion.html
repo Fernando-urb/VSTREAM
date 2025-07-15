@@ -23,6 +23,7 @@
     <title>Suscribirme | VStream</title>
 </head>
 <body>
+    <!-- logo -->
     <div class="logo-login">
   <a href="/index.html">
     <img src="/src/img/logos/logo-v-2.png" alt="VStream logo" />
@@ -31,7 +32,9 @@
     <main class="suscripcion">
         <div class="container-suscripcion">        
             <h3>Suscribirte a VStream es fácil!</h3>
+            <!-- formulario -->
             <form class="form" action="/src/pages/error-404.html">
+                <p>Completa los siguientes datos.</p>
                     <label for="name">
                     </label>
                     <input type="text" id="name" required placeholder="Nombre">
@@ -47,14 +50,18 @@
                     <label for="password2">
                     </label>
                     <input type="password2" id="mail" placeholder="Repetir Contraseña"> 
-                    <label for="terminos">Sí, me gustaría recibir comunicaciones de marketing, novedades y actualizaciones, ofertas especiales y otra información de VStream. Puedo darme de baja en cualquier momento.</label>
+
+                    <!-- checkbox -->
+                    <label class="container-checkbox">
                     <input type="checkbox" id="terminos">
+                    Sí, me gustaría recibir comunicaciones de marketing, novedades y actualizaciones, ofertas especiales y otra información de VStream. Puedo darme de baja en cualquier momento.
+                    </label>
 
                     <p>Al hacer clic en "Aceptar y Continuar", usted confirma que ha leído y esta de acuerdo con los Términos de Uso y acepta nuestra Política de Privacidad.</p>
                     
                     <button type="submit">Aceptar y continuar</button>
 
-                    <a class="volver" href="#">
+                    <a class="volver" href="/src/pages/login.html">
                     ↩ Volver</a>  
                 </form>
             </div>          
