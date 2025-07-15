@@ -1,18 +1,31 @@
-/* este es el video de la page error-404  */
-.video-error-404 {
-      position: fixed;
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-bg, .image-bg {
+  position: absolute;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
-      object-fit: cover;
+      object-fit: cover; /* para que se recorte bien sin distorsionarse */
       z-index: -1;
-    }
-/* esta es la imagen de la page error-404 */
-.video-error-movil {
-    display: none;
-   
-    
-  }
+}
 
+/* Mostrar solo el video en pantallas grandes */
+.image-bg {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .video-bg {
+    display: none;
+  }
+  .image-bg {
+    display: block;
+  }
+}
 
