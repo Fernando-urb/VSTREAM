@@ -25,6 +25,39 @@
   min-height: 100vh;
   height: auto;
 }
+/* estos son los estilos de los contenedores de las sectiones  degradado bottom */
+.container-section {
+  max-height: 200vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+  z-index: 1;
+  min-height: 100vh;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+/* estos son los estilos de los contenedores de las sectiones  degradado top*/
+.container-section-2 {
+  max-height: 200vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+  min-height: 100vh;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+/* primera section  */
 /* Hero section pegada al top ocupa toda la pantalla */
 .hero-inicio {
   max-height: 100vh;
@@ -33,7 +66,6 @@
   width: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
-
 
 /* contenedor del hero  */
 .div-hero {
@@ -83,37 +115,7 @@
   }
 }
 
-/* estos son los estilos de los contenedores de las sectiones  */
-.container-section {
-  max-height: 200vh;
-  height: auto;
-  margin: 0 auto;
-  width: 100%;
-  /* background-color: var(--colorSection); */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
-  z-index: 1;
-  min-height: 100vh;
-
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-}
-.container-section-2 {
-  max-height: 200vh;
-  height: auto;
-  margin: 0 auto;
-  width: 100%;
-  /* background-color: var(--colorSection); */
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  z-index: 1;
-  min-height: 100vh;
-
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-}
+/* segunda section  */
 
 /* contenedor de img dispositivos  */
 .container-dispositivos {
@@ -177,6 +179,7 @@
   display: none;
 }
 
+
 /* Breakpoints tablet  */
 @media (min-width: 768px) and (max-width: 1199px) {
   /* texto principal  */
@@ -184,21 +187,14 @@
     width: 100%;
     h1 {
       font-size: 2rem;
-    }
     h2 {
-      font-size: 1rem;
+      font-size: 1.5rem;
       font-weight: lighter;
     }
     p {
       font-size: 1rem;
     }
   }
-
-  .tarjeta-section [data-aos] {
-    animation: none;
-    transform: none;
-    transition: none;
-    opacity: 1;
   }
 
   /* logo principal  */
@@ -215,67 +211,32 @@
       height: 180px;
     }
   }
+
   /* contenedor img dispositivos  */
   .container-dispositivos {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+    display: none;
   }
-  /* tablet  */
-  .img-dispositivos:nth-child(1) {
-    position: absolute;
-    top: 51%;
-    left: 55%;
-    z-index: 3;
-    img {
-      width: 350px;
-      height: 180px;
-    }
+  .container-img-responsive {
+    display: block;
+    margin: 0 auto;
   }
-  /* movil  */
-  .img-dispositivos:nth-child(2) {
-    position: absolute;
-    top: 52%;
-    left: 80%;
-    z-index: 3;
-    img {
-      width: 200px;
-      height: 180px;
-    }
+  .img-dispositivo-responsivo {
+    width: 80%;
   }
-  /* pc  */
-  .img-dispositivos:nth-child(3) {
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    z-index: 2;
-    img {
-      width: 400px;
-      height: 250px;
-    }
-  }
-  /* smart */
-  .img-dispositivos:nth-child(4) {
-    position: absolute;
-    top: 20%;
-    left: 22%;
-    z-index: 1;
-    img {
-      width: 600px;
-      height: 550px;
-    }
-  }
-  /* boton*/
-  .img-dispositivos:nth-child(5) {
-    position: absolute;
-    top: 5%;
-    left: 45%;
-    z-index: 1;
-  }
-  .texto-der {
-    padding-left: 200px;
-  }
+
+.texto-der{
+  padding-left: 200px;
 }
+.carousel {
+  max-width: 500px; /* Controla el tamaño del carrusel */
+  margin: 0 auto;
+}
+
+
+}
+  
+
+
 
 /*Breakpoints  mobile  small */
 @media (max-width: 480px) {
@@ -287,12 +248,27 @@
     padding: 0;
   }
 
+  .nosotros-container {       
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+  
+.tarjeta-section [data-aos] {
+   animation: none;
+                transform: none;
+                transition: none;
+                opacity: 1;
+}
+  
+
+
   .tarjeta-section [data-aos] {
     animation: none;
     transform: none;
     transition: none;
     opacity: 1;
   }
+
 
   .carousel-item:hover .carousel-overlay {
     opacity: 0;
@@ -350,6 +326,7 @@
   }
 }
 
+
 .border-tarjetas {
   border: 5px solid #61045f;
   border-radius: 5px;
@@ -368,7 +345,7 @@
 
 /* Estilo del carrusel (1 imagen a la vez) */
 .carousel {
-  max-width: 500px; /* Controla el tamaño del carrusel */
+  max-width: 400px; /* Controla el tamaño del carrusel */
   margin: 0 auto;
 }
 
@@ -440,6 +417,8 @@
   transform: scale(1.03);
 }
 
+
+
 /* Responsive: En móviles, apila título y carrusel */
 @media (max-width: 480px) {
   /* .texto-der {
@@ -466,6 +445,7 @@
     display: none; 
   } */
 }
+
 
 .contenedor-principal {
   position: relative;

@@ -101,13 +101,13 @@
     font-size: 0.6rem;
   }
   .logo-inicio {
-    display: none;
+    display: block;
   }
   .menu-navbar {
     display: none;
   }
   .open-offcanvas {
-  display: block;
+  display: none;
 }
 .buscador-movil{
   display: none;
