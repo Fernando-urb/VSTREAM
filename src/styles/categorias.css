@@ -127,9 +127,20 @@
 
 /* ESTRENOS */
 
-.card-estrenos {
-  flex: 0 0 auto;
-  width: 200px;
+.card-estrenos-categorias{
+  flex: 0 0 200px; 
+  min-width: 150px;
+  max-width: 200px;
+  display: flex;
+  border-radius: 8px;
+}
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body-categorias{
+  margin-top: 200px;
 }
 
 .contenedor-estrenos-categorias{
