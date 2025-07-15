@@ -65,9 +65,9 @@
 
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                         aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
+                        <div class="offcanvas-header ">
                             <h3 class="offcanvas-title " id="offcanvasRightLabel">MENU INICIAL</h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            <button type="button" class="btn-close " data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
@@ -75,9 +75,9 @@
                                 <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
                                 <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
                                 </li>
-                                <li><a href="/src/pages/acerca-de.html"><i class="fa-solid fa-envelope"></i> Sobre
+                                <li><a href="/src/pages/acerca-de.html"><i class="fa-solid fa-address-book"></i>Sobre
                                         Nosotros</a></li>
-                                <li><a href="/src/pages/suscripcion.html"><i class="fa-solid fa-envelope"></i>
+                                <li><a href="/src/pages/suscripcion.html"><i class="fa-solid fa-user-plus"></i>
                                         Registro</a></li>
                                 <li><a href="/src/pages/error-404.html"><i class="fa-solid fa-video"></i>Tutoriales de
                                         Ayuda</a></li>
@@ -127,30 +127,30 @@
                          <!-- section baner dispositivos  -->
             <section class="container-section text-light text-center ">
 
-                <h2 class="pt-5">Disfrutala donde Quieras</h2>
-                <p class=" fs-5">Disfrutá tus Pelis y Series favoritas desde cualquier dispositivo</p>
+                <h2 class="pt-sm-0 pt-md-3">Disfrutala donde Quieras</h2>
+                <p class=" fs-5 pt-sm-0 pt-md-3">Disfrutá tus Pelis y Series favoritas desde cualquier dispositivo</p>
                 <a class="  text-light btn login   " href="/src/pages/login.html"> Ver ahora </a>
                 <div class="container-dispositivos ">
                     <!-- tablet  -->
                     <div class="img-dispositivos" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="/src/img/breakpoints-img/tablet-breakpoints-3-removebg-preview-removebg-preview.png"
+                        <img src="/src/img/breakpoints-img/tablet-.png"
                             alt="">
                     </div>
                     <!-- movil -->
                     <div class="img-dispositivos" data-aos="fade-left" data-aos-duration="1000">
-                        <img src="/src/img/breakpoints-img/celu-breakpoints-removebg-preview.png" alt="">
+                        <img src="/src/img/breakpoints-img/celu.png" alt="">
                     </div>
                     <!-- desktop -->
                     <div class="img-dispositivos" data-aos="fade-right" data-aos-duration="1000">
-                        <img src="/src/img/breakpoints-img/pc-breakpoints-removebg-preview.png" alt="">
+                        <img src="/src/img/breakpoints-img/pc.png" alt="">
                     </div>
                     <!-- smart -->
                     <div class="img-dispositivos" data-aos="fade-down" data-aos-duration="1500">
-                        <img src="/src/img/breakpoints-img/smart-breakpoints-removebg-preview.png" alt="">
+                        <img src="/src/img/breakpoints-img/smart-.png" alt="">
                     </div>
 
                 </div>
-                <div class="container-img-responsive" data-aos="zoom-in" data-aos-duration="2000">
+                <div class="container-img-responsive " >
                     <img src="/src/img/breakpoints-img/breakpoints.png" alt="" class="img-dispositivo-responsivo">
 
                 </div>
@@ -164,10 +164,17 @@
             <!-- catalogo peliculas  -->
             <section class=" d-flex flex-column  container-section-2 ">
 
-                <div class="d-flex justify-content-around align-item-center">
-                    <h2 class=" text-light fw-bold ">Las Mejores Películas de Estreno</h2>
-                    <a href="/peliculas" class=" text-light  text-center mt-3 ">Ver todas las
+                <div class="d-flex justify-content-around align-item-center titulo-catalogos">
+                    <div>
+                        <h2 class=" text-light fw-bold ">Las Mejores Películas de Estreno</h2>
+                    </div>
+                    
+                    <div >
+                         <a href="/src/pages/login.html" class=" text-dark  text-center  p-3  ">Ver todas las
                         películas</a>
+
+                    </div>
+                   
                 </div>
              
 
@@ -179,7 +186,7 @@
                     <img src="https://i.pinimg.com/736x/85/6b/94/856b94f980bb6cb19cc6e2386a81a3b9.jpg" alt="" >
                 </div>
                 <div class="contenedor-deimagen-de-peliculas ">
-                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7c5VBuCbjZOk7lSfj9sMpmDIaKX.jpg" alt="" ">
+                    <img src="https://i.pinimg.com/736x/1c/71/34/1c713456da884b80b34b7440af1f369f.jpg" alt="" >
                 </div>
                 <div class="contenedor-deimagen-de-peliculas ">
                     <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg" alt="" >
@@ -248,8 +255,7 @@
 
             <!-- section de tarjetas de planes   -->
 
-            <section class="container-planes tarjeta-section text-light py-5 mb-5 mb-lg-0">
-    <div class="container">
+   
 
             <section class="container-section-2 tarjeta-section text-light py-5">
                 <div class="container ">
@@ -512,7 +518,7 @@
 
         </main>
 
-        <footer class="footer py-2 bg-gradient text-light" style="background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);">
+        <footer id="footer" class="footer py-2 bg-gradient text-light" style="background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4 mb-lg-0">

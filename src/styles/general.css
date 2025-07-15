@@ -33,6 +33,7 @@ body {
   max-width: 100%;
   width: 100%;
   overflow: hidden scroll;
+  color: var(--color-texto-botones);
 }
 p {
   font-family: sans-serif;

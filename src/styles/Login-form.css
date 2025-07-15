@@ -1,24 +1,7 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-body{
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-color: whitesmoke;
-}
 
 .logo-login {
 padding: 20px;
 align-self: flex-start;
-}
-
-.logo-login img {
-width: 90px;
-height: auto;
 }
 
 .login-main{
