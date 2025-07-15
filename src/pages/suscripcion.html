@@ -3,13 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="canal de streaming" content="este es un sitio para ver peliculas y series " />
+    <meta name="keywords" content="series, peliculas, suscripcion" />
+    <meta name="author" content="Tu Nombre" />
+    <meta name="robots" content="index, follow" />
+    <!-- bootstraps5.3v  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- fonawesome  -->
+    <script src="https://kit.fontawesome.com/7d1cc8c36e.js" crossorigin="anonymous"></script>
+    <!-- mis estilos  -->
+    <link rel="shortcut icon" href="/src/img/logos/logo-v-2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/pages/login.html">
+    <link rel="stylesheet" href="/src/styles/suscripcion-form.css">
     <title>Suscribirme | VStream</title>
 </head>
 <body>
+    <!-- logo -->
+    <div class="logo-login">
+  <a href="/index.html">
+    <img src="/src/img/logos/logo-v-2.png" alt="VStream logo" />
+  </a>
+  </div>
     <main class="suscripcion">
         <div class="container-suscripcion">        
-            <h3>Suscribete!</h3>
-            <form class="form">
+            <h3>Suscribirte a VStream es fácil!</h3>
+            <!-- formulario -->
+            <form class="form" action="/src/pages/error-404.html">
+                <p>Completa los siguientes datos.</p>
                     <label for="name">
                     </label>
                     <input type="text" id="name" required placeholder="Nombre">
@@ -25,14 +50,18 @@
                     <label for="password2">
                     </label>
                     <input type="password2" id="mail" placeholder="Repetir Contraseña"> 
-                    <label for="terminos">Sí, me gustaría recibir comunicaciones de marketing, novedades y actualizaciones, ofertas especiales y otra información de VStream. Puedo darme de baja en cualquier momento.</label>
+
+                    <!-- checkbox -->
+                    <label class="container-checkbox">
                     <input type="checkbox" id="terminos">
+                    Sí, me gustaría recibir comunicaciones de marketing, novedades y actualizaciones, ofertas especiales y otra información de VStream. Puedo darme de baja en cualquier momento.
+                    </label>
 
                     <p>Al hacer clic en "Aceptar y Continuar", usted confirma que ha leído y esta de acuerdo con los Términos de Uso y acepta nuestra Política de Privacidad.</p>
                     
-                    <a href="#" class="boton-enviar">Aceptar y continuar</a> 
+                    <button type="submit">Aceptar y continuar</button>
 
-                    <a class="volver" href="#">
+                    <a class="volver" href="/src/pages/login.html">
                     ↩ Volver</a>  
                 </form>
             </div>          
