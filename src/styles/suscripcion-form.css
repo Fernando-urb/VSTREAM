@@ -31,3 +31,13 @@
     color: whitesmoke;
     border-radius: 4px;
 }
+
+.container-suscripcion button {
+    padding: 12px;
+    background: var(--color-bg-botones);
+    color: whitesmoke;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
