@@ -38,30 +38,31 @@
 
 /* CARRUSEL PRINCIPAL */
 
-#mainCarousel {
+#mainCarouselCategorias{
   max-width: 100%;
   margin: 0 auto;
   border-radius: 10px;
-  overflow: hidden;
 }
 
-.imagen-con-boton {
-  position: relative;
-  display: inline-block;
+#mainCarouselCategorias .carousel-inner {
+  height: 750px; 
 }
 
-.imagen-con-boton img {
-  display: block;
+#mainCarouselCategorias .carousel-item img{
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
 }
+
 
 .boton-encima-info {
   position: absolute;
   font-size: px;
-  top: 85%;                 
+  top: 70%;                 
   left: 10%;
-  bottom: 5%;
+  bottom: 25%;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border: none;
@@ -72,9 +73,9 @@
 
 .boton-encima-vermas {
   position: absolute;
-  top: 85%;                 
+  top: 70%;                 
   right: 10%;
-  bottom: 5%;
+  bottom: 25%;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border: none;
@@ -100,20 +101,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 30px;
 }
 
 .container-pelis-destacadas{
   display: flex;
   width: 100%;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   object-fit: contain;
   gap: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .img-peli-des{
-  width: 245px;
+  width: 300px;
   height: auto;
   border-radius: 5px;
   transition: 0.3s ease all;
