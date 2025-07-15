@@ -32,9 +32,37 @@
     height: 55px;
     border-radius: 90px;
     border: none;
-    padding: 30px;
+    padding: 0 0 0 57px;
     font-size: 1rem;
     box-shadow: 0 0 15px black;
+    z-index: 1;
+}
+
+.search-button {
+    background-color: #2e0d4c;
+    position: relative;
+    display: flex;    
+    width: 45px;
+    height: 45px;
+    margin: -50px 5px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    z-index: 10;
+    &:hover{
+        background-color: #421969;
+        transform: scale(1.1);
+    }
+}
+
+.search-button i{
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+}
+
+.search-button-large{
+    display: none;
 }
 
 /* Cards información */
@@ -108,7 +136,7 @@
 /* Containers Formulario */
 
 .estructura-formulario{
-    margin-bottom: -25px;
+    margin-bottom: 0;
 }
 
 .formulario-contacto{
@@ -144,7 +172,7 @@
 /* Estructura de Formulario */
 
 .formulario-row{
-    margin-bottom: 25px;
+    margin-bottom: 0px;
 }
 
 .completar-formulario label{
@@ -198,7 +226,6 @@
     color: white;
     outline: 1px solid #aa076b;
     border: none;
-    margin: 50px 0;
     padding: 5px 25px 5px 25px;
     font-weight: normal;
     transition: all .3s;
@@ -266,6 +293,31 @@
         height: 65px;
     }
 
+    .search-button{
+        display: none;
+    }
+
+    .search-button-large{
+        justify-self: center;
+        margin: 25px 0;
+        background-color: #2e0d4c;
+        font-size: 1.5rem;
+        position: relative;
+        display: flex;    
+        width: 300px;
+        height: 55px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        &:hover{
+            background-color: #421969;
+            transform: scale(1.1);
+        }
+    }
+
     /* Cards */
 
     .info-cards h2{
@@ -302,7 +354,7 @@
 
     .banner-content p{
         font-size: 1rem;
-        margin-top: 150px;
+        margin-top: 140px;
     }
 
     .banner-content h1{
@@ -311,7 +363,34 @@
     }
 
     .banner-content input{
+        text-align: center;
+        padding: 0;
         height: 50px;
+    }
+
+    .search-button{
+        display: none;
+    }
+
+    .search-button-large{
+        justify-self: center;
+        margin: 15px 0;
+        background-color: #2e0d4c;
+        font-size: 1.15rem;
+        position: relative;
+        display: flex;    
+        width: 120px;
+        height: 45px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        &:hover{
+            background-color: #421969;
+            transform: scale(1.1);
+        }
     }
 
     /* Navbar */
