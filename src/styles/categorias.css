@@ -42,11 +42,6 @@
   display: block;
 }
 
-.carousel-item-principal{
-  position: relative;
-  overflow: hidden;
-}
-
 .container-section-2-carrusel{
   max-height: 100vh;
   height: auto;
@@ -202,6 +197,15 @@
 }
 
 /* RANKING */
+.container-section-2-ranking{
+  max-height: 200vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
 
 .contenedor-ranking{
    padding: 0px 100px;
@@ -239,6 +243,7 @@
 /* PARA TABLET */
 
 @media (min-width: 768px) and (max-width: 1199px) {
+
   /* CARRUSEL PRINCIPAL */
   #mainCarouselCategorias .carousel-inner {
   height: 100%; 
@@ -256,11 +261,17 @@
     bottom: 10%;
   }
 
+  /* PELICULAS DESTACADAS */
   .container-section-peliculas-destacadas{
     max-height: 100%;
   }
 
+  /* SERIES DESTACADAS */
   .container-section-2-series-destacadas{
     max-height: 100%;
+  }
+
+  .container-titulo-btn{
+    padding: 0px 70px;
   }
 }
