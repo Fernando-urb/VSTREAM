@@ -22,20 +22,6 @@
   align-items: center;
 }
 
-/* PARA MOBILE  */
-
-@media (max-width: 480px) {
-
-
-
-}
-
-/* PARA TABLET */
-
-@media (min-width: 768px) and (max-width: 1199px) {
-
-}
-
 /* CARRUSEL PRINCIPAL */
 
 #mainCarouselCategorias{
@@ -45,7 +31,7 @@
 }
 
 #mainCarouselCategorias .carousel-inner {
-  height: 750px; 
+  height: 800px; 
 }
 
 #mainCarouselCategorias .carousel-item img{
@@ -56,6 +42,16 @@
   display: block;
 }
 
+.container-section-2-carrusel{
+  max-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+  z-index: 1;
+ /*  min-height: 100vh; */
+}
 
 .boton-encima-info {
   position: absolute;
@@ -95,7 +91,28 @@
   height: 10px;
 }
 
-/* GALERIA PELIS DESTACADAS */
+/* GALERIA DESTACADAS */
+
+.container-section-peliculas-destacadas{
+  max-height: 200vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+  z-index: 1;
+  min-height: 100vh;
+}
+.container-section-2-series-destacadas{
+  max-height: 200vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+  min-height: 100vh;
+}
 
 .container-titulo-btn{
     display: flex;
@@ -147,6 +164,17 @@
   padding: 0px 100px;
 }
 
+.container-section-estrenos{
+  max-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+  z-index: 1;
+ /*  min-height: 100vh; */
+}
+
 /* BARRA DE SCROLL ESTRENOS */
 
 .d-flex::-webkit-scrollbar {
@@ -169,6 +197,15 @@
 }
 
 /* RANKING */
+.container-section-2-ranking{
+  max-height: 200vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
 
 .contenedor-ranking{
    padding: 0px 100px;
@@ -193,4 +230,48 @@
 
 .ranking li {
   background: rgba(0, 0, 0, 0.8);
+}
+
+/* PARA MOBILE  */
+
+@media (max-width: 480px) {
+
+
+
+}
+
+/* PARA TABLET */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  /* CARRUSEL PRINCIPAL */
+  #mainCarouselCategorias .carousel-inner {
+  height: 100%; 
+  }
+
+  .boton-encima-info{
+    top: 80%;                 
+    left: 10%;
+    bottom: 10%;
+  }
+
+  .boton-encima-vermas{
+    top: 80%;                 
+    right: 10%;
+    bottom: 10%;
+  }
+
+  /* PELICULAS DESTACADAS */
+  .container-section-peliculas-destacadas{
+    max-height: 100%;
+  }
+
+  /* SERIES DESTACADAS */
+  .container-section-2-series-destacadas{
+    max-height: 100%;
+  }
+
+  .container-titulo-btn{
+    padding: 0px 70px;
+  }
 }
