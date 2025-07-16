@@ -45,16 +45,28 @@
 }
 
 #mainCarouselCategorias .carousel-inner {
-  height: 750px; 
+  height: auto; 
 }
 
 #mainCarouselCategorias .carousel-item img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
-  display: block;
+ 
+
 }
+
+#mainCarouselCategorias {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; /* más alto que otros elementos */
+    max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
 
 
 .boton-encima-info {
@@ -87,6 +99,8 @@
 .img-carrusel-principal{
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
+
+
 
 /* CONTENEDOR SECCIONES */
 

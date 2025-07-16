@@ -11,11 +11,9 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      object-fit: cover; /* para que se recorte bien sin distorsionarse */
-      z-index: -1;
+      object-fit: cover; 
 }
 
-/* Mostrar solo el video en pantallas grandes */
 .image-bg {
   display: none;
 }
