@@ -184,7 +184,7 @@
 /* tercera section  */
 .contenedor-principal {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 100vh;
  
 }
@@ -198,8 +198,8 @@
 
 .contenedor-deimagen-de-peliculas {
   position: absolute;
-  width: 350px;
-  height: 500px;
+  width: 300px;
+  height: 450px;
   transition: transform 0.5s ease, z-index 0.2s;
 }
 
@@ -251,7 +251,17 @@
 
 
 /* Breakpoints tablet  */
-@media (max-width: 768px) and (max-width: 1199px) {
+@media (max-width: 998px) {
+     .container-section{
+   max-height: 200vh;
+   min-height: 50vh;
+
+  }
+    .container-section-2{
+   max-height: 200vh;
+   min-height: 50vh;
+
+  }
   /* primera section  */
 
   /* texto principal  */
@@ -376,11 +386,18 @@
 
 }
   
-
-
-
 /*Breakpoints  mobile  small */
 @media (max-width: 480px) {
+    .container-section{
+   max-height: 100vh;
+   min-height: 50vh;
+
+  }
+    .container-section-2{
+   max-height: 100vh;
+   min-height: 50vh;
+
+  }
 
 /* primera section  */
   .div-hero {
@@ -418,6 +435,7 @@
     }
   }
   /* segunda section  */
+
   .container-dispositivos {
     display: none;
   }
@@ -426,10 +444,11 @@
     margin: 0 auto;
   }
   .img-dispositivo-responsivo {
-    width: 300px;
-  }
+    max-width: 300px;
 
-    /* tercera section  */
+  }
+  
+ /* tercera section  */
 
   .contenedor-principal {
   width: 100%;
@@ -438,7 +457,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   
  
 
@@ -629,8 +648,6 @@
 .carousel-item:hover .poster-img {
   transform: scale(1.03);
 }
-
-
 
 
 
