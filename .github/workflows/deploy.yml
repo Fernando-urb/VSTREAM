@@ -3,7 +3,7 @@ name: Deploy VSTREAM to GitHub Pages
 on:
   push:
     branches:
-      - developer  
+      - feat/nav-bar 
 
 jobs:
   deploy:
