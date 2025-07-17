@@ -549,9 +549,9 @@
   background: transparent;
 }
 
-/* Estilo del carrusel (1 imagen a la vez) */
+/* Estilo del carrusel index serie */
 .carousel {
-  max-width: 400px; /* Controla el tamaño del carrusel */
+  max-width: 400px; 
   margin: 0 auto;
 }
 
@@ -563,7 +563,7 @@
   height: auto;
 }
 
-/* Transición suave (fade) */
+/* Transición suave */
 .carousel-fade .carousel-item {
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -604,7 +604,6 @@
   opacity: 0;
 }
 
-/* Efecto hover */
 .carousel-item:hover .carousel-overlay {
   opacity: 1;
 }
@@ -614,7 +613,7 @@
   opacity: 1;
 }
 
-/* Ajustes para los posters */
+
 .poster-img {
   transition: transform 0.3s ease;
 }
