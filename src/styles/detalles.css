@@ -24,8 +24,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 10px;
     padding-left: 50px;
     align-items: center;
     background-color: black;
@@ -39,7 +37,7 @@
 /* informacion */
 
 .descriptions-container img{
-    height: 300px;
+    height: 200px;
 }
 
 .info-container{
@@ -57,7 +55,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .info-container h3{
@@ -65,7 +62,7 @@
 }
 
 .button-play{
-margin: 30px;
+    margin: 60px;
 }
 
 .button-play i{
@@ -117,7 +114,6 @@ margin: 30px;
   unicode-bidi: bidi-override;
   font-size: 3rem;
   display: flex;
-  flex-direction: ;
 }
 
 .estrellas input {
@@ -143,7 +139,6 @@ margin: 30px;
 
 .img-movie{
     position: relative;
-    z-index: ;
 }
 
 .img-movie img{
@@ -161,71 +156,4 @@ margin: 30px;
     height: 100%;
      background: linear-gradient(to right, black, transparent);
     pointer-events: none;
-}
-
-/* main */
-
-
-.carousel-item img{
-    max-width: 150px;
-    height: auto;
-    margin: 1rem;
-    
-}
-
-.carouselPeliculas{
-    max-width: 100%;
-    width: 100%;
-    max-height: 100vh;
-    height: 50vh;
-    margin: 0 auto;
-    padding: 1rem;
-
-}
-.carousel-item div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.img-peliculas{
-    
-    transition: transform 0.3s ease;
-    &:hover{
-    transform: scale(1.5);
-  }
-}
-
-
-.imagen-hover {
-    position: relative;
-    display: inline-block;
-    transition: transform 0.3s ease;
-    &:hover{
-        transform: scale(1.5);
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .texto-hover {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  &:hover .texto-hover {
-    opacity: 1;
-  }
 }
