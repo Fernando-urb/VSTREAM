@@ -184,7 +184,7 @@
 /* tercera section  */
 .contenedor-principal {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 100vh;
  
 }
@@ -198,8 +198,8 @@
 
 .contenedor-deimagen-de-peliculas {
   position: absolute;
-  width: 350px;
-  height: 500px;
+  width: 300px;
+  height: 450px;
   transition: transform 0.5s ease, z-index 0.2s;
 }
 
@@ -238,6 +238,12 @@
   transform: scale(1.1);
   z-index: 10;
 }
+.img-proximos-estrenos{
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 350px;
+}
 
 
 
@@ -245,7 +251,17 @@
 
 
 /* Breakpoints tablet  */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (max-width: 998px) {
+     .container-section{
+   max-height: 200vh;
+   min-height: 50vh;
+
+  }
+    .container-section-2{
+   max-height: 200vh;
+   min-height: 50vh;
+
+  }
   /* primera section  */
 
   /* texto principal  */
@@ -279,7 +295,7 @@
     }
   }
 
- /* segunda section  */
+   /* segunda section  */
   .container-dispositivos {
     display: none;
   }
@@ -288,10 +304,10 @@
     margin: 0 auto;
   }
   .img-dispositivo-responsivo {
-    width: 80%;
+    width: 500px;
   }
 
-     /* tercera section  */
+    /* tercera section  */
 
   .contenedor-principal {
   width: 100%;
@@ -323,8 +339,8 @@
 .contenedor-deimagen-de-peliculas {
   margin-top: 2rem;
   position: static;
-  width: 330px;
-  height: 400px;
+  width: 150px;
+  height: 250px;
   transform: none;
 
 }
@@ -363,6 +379,7 @@
 }
 
 
+
 .texto-der{
   padding-left: 200px;
 }
@@ -374,11 +391,18 @@
 
 }
   
-
-
-
 /*Breakpoints  mobile  small */
 @media (max-width: 480px) {
+    .container-section{
+   max-height: 100vh;
+   min-height: 50vh;
+
+  }
+    .container-section-2{
+   max-height: 100vh;
+   min-height: 50vh;
+
+  }
 
 /* primera section  */
   .div-hero {
@@ -416,6 +440,7 @@
     }
   }
   /* segunda section  */
+
   .container-dispositivos {
     display: none;
   }
@@ -424,10 +449,11 @@
     margin: 0 auto;
   }
   .img-dispositivo-responsivo {
-    width: 400px;
-  }
+    max-width: 300px;
 
-    /* tercera section  */
+  }
+  
+ /* tercera section  */
 
   .contenedor-principal {
   width: 100%;
@@ -437,6 +463,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+
 }
 
 .titulo-catalogos{
@@ -616,8 +643,6 @@
 .carousel-item:hover .poster-img {
   transform: scale(1.03);
 }
-
-
 
 
 

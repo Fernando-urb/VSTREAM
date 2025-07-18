@@ -38,6 +38,17 @@
 
 /* CARRUSEL PRINCIPAL */
 
+.container-section-2-carrusel-principal{
+  max-height: 200vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+  min-height: 100vh;
+}
+
 .carousel-de-fondo{
    position: fixed;       
   top: 0;
@@ -67,38 +78,6 @@
   display: block;
 }
 
-
-.boton-encima-info {
-  position: absolute;
-  font-size: px;
-  top: 70%;                 
-  left: 10%;
-  bottom: 25%;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
-.boton-encima-vermas {
-  position: absolute;
-  top: 70%;                 
-  right: 10%;
-  bottom: 25%;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
-.img-carrusel-principal{
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-
 /* CONTENEDOR SECCIONES */
 
 .contenedor-seccion-categorias{
@@ -108,11 +87,33 @@
 
 /* GALERIA PELIS DESTACADAS */
 
+.container-section-peliculas-destacadas{
+  max-height: 200vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+  z-index: 1;
+  min-height: 100vh;
+}
+
+.container-section-2-series-destacadas{
+  max-height: 200vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+  min-height: 100vh;
+}
+
 .container-titulo-btn{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
+    padding: 0px 50px;
 }
 
 .container-pelis-destacadas{
@@ -126,7 +127,7 @@
 }
 
 .img-peli-des{
-  width: 300px;
+  width: 200px;
   height: auto;
   border-radius: 5px;
   transition: 0.3s ease all;
@@ -137,6 +138,16 @@
 }
 
 /* ESTRENOS */
+
+.container-section-categorias-estrenos{
+  max-height: 200vh;
+  height: 80vh;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+  z-index: 1;
+}
 
 .card-estrenos-categorias{
   flex: 0 0 200px; 
@@ -181,6 +192,17 @@
 
 /* RANKING */
 
+.container-section-2-ranking-semanal{
+  max-height: 200vh;
+  height: 130vh;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+  /* min-height: 100vh; */
+}
+
 .contenedor-ranking{
    padding: 0px 100px;
 }
@@ -204,4 +226,84 @@
 
 .ranking li {
   background: rgba(0, 0, 0, 0.8);
+}
+
+/* TABLET RESPONSIVE */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* CARRUSEL PRINCIPAL */
+  .container-section-2-carrusel-principal{
+    height: auto;
+    min-height: 40vh;
+  }
+  /* PELICULAS DESTACADAS */
+  .container-section-peliculas-destacadas{
+    max-height: 100%;
+  }
+
+  /* SERIES DESTACADAS */
+  .container-section-2-series-destacadas{
+    max-height: 100%;
+  }
+
+  .container-titulo-btn{
+    padding: 0px 60px;
+  }
+
+  /* ESTRENOS */
+  .container-section-categorias-estrenos{
+    height: 60vh;
+  }
+
+  /* RANKING */
+  .container-section-2-ranking-semanal{
+    height: 80vh;
+  }
+}
+
+/* MOVIL RESPONSIVE */
+
+@media (max-width: 480px) {
+  /* CARRUSEL PRINCIPAL */
+  .container-section-2-carrusel-principal{
+    height: auto;
+    min-height: 25vh;
+  }
+
+  /* SECCIONES DESTACADAS */
+  .container-section-peliculas-destacadas{
+    max-height: 250vh;
+    height: 205vh;
+  }
+
+  .img-peli-des{
+    width: 150px;
+    height: auto;
+  }
+
+  /* ESTRENOS RECIENTES */
+  /* .container-section-estrenos{
+
+  }
+
+  .contenedor-estrenos-categorias{
+  padding: 0px 10px;
+ }
+
+ .container-estrenos-recientes{
+  height: 300px;
+ }
+
+ .card-estrenos-categorias{
+  height: 300px;
+ }
+ .card-estrenos-categorias img{
+  height: auto;
+  object-fit: cover;
+ }
+
+ .card-body-categorias{
+  font-size: 1.2rem;
+  margin: ;
+ } */
 }
