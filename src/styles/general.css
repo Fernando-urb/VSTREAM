@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(/src/img/fondos/5508802.jpg);
+  background-image: url(/src/img/fondos/body.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
