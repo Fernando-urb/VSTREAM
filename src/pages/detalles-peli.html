@@ -31,13 +31,13 @@
 <body>
     <!-- Header -->
 
-    <header class=" header  sticky-top ">
+        <header class=" header  sticky-top ">
 
       <!-- esta es la barra de navegación -->
       <nav class="navbar-inicio ">
 
         <!-- este es el logo principal -->
-        <div class="px-4 logo-inicio">
+        <div class=" logo-inicio">
           <a class="px-5" href="#main">
             <img src="/src/img/logos/logo-v-2.png" alt="Logo" width="50" height="40"
               class="my-3 d-inline-block logo-contacto">
@@ -45,7 +45,7 @@
         </div>
 
         <!-- Enlaces / botones navbar -->
-        <div class="mx-4 my-2 dropdown  menu-navbar ">
+        <div class=" my-3 dropdown  menu-navbar ">
           <a class="btn px-3  " href="#" target="_blank">Peliculas</a>
           <a class="btn px-3  " href="#">Series</a>
           <a class="btn px-3  " href="#">Estrenos</a>
@@ -61,24 +61,23 @@
             <h3 class="offcanvas-title " id="offcanvasRightLabel">MENU INICIAL</h3>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body">
-            <ul>
-              <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-              <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+          <div class="offcanvas-body ">
+            <ul >
+              <li><a href="/src/pages/contacto.html" class=" text-light"><i class="fa-solid fa-house"></i> Inicio</a></li>  
+              <li><a href="/src/pages/acerca-de.html" class=" text-light"><i class="fa-solid fa-video"></i> Series</a></li>
+              <li><a href="/src/pages/suscripcion.html" class=" text-light"><i class="fa-solid fa-film"></i>Peliculas</a></li>
+              <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-clapperboard"></i>Ultimos estrenos</a></li>
+               <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-ticket-simple"></i>Mis Listas</a></li>
+                <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-magnifying-glass"></i>Buscar Series</a></li>
+                <li><a href="/src/pages/contacto.html" class=" text-light"><i class="fa-solid fa-envelope"></i> Contacto</a>
               </li>
-              <li><a href="/src/pages/acerca-de.html"><i class="fa-solid fa-envelope"></i> Sobre
-                  Nosotros</a></li>
-              <li><a href="/src/pages/suscripcion.html"><i class="fa-solid fa-envelope"></i>
-                  Registro</a></li>
-              <li><a href="/src/pages/error-404.html"><i class="fa-solid fa-video"></i>Tutoriales de
-                  Ayuda</a></li>
             </ul>
           </div>
         </div>
 
         <!-- BUSCADOR -->
 
-        <div class="mb-3 buscador-nav">
+        <div class="mb-4 buscador-nav">
           <form role="search" aria-label="Buscar contenido " class="d-flex">
 
             <input type="text" id="search" name="search" placeholder="Buscar estrenos" class="buscar-input">
@@ -98,9 +97,9 @@
 
         <!-- cuenta de usuario -->
     
-        <button class=" btn dropdown-toggle text-light  usuario" data-bs-toggle="dropdown" aria-expanded="false"
-          title="none"><i class="fa-solid fa-circle-user fs-1"></i></button>
-        <ul class="dropdown-menu bg-dark">
+        <button class=" m-2 btn dropdown-toggle text-light  usuario " data-bs-toggle="dropdown" aria-expanded="false"
+          title="none"><i class="fa-solid fa-circle-user fs-1 "></i></button>
+        <ul class="dropdown-menu bg-dark ">
           <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Adminitrar perfil</a></li>
           <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Cuenta</a>
           </li>
@@ -116,6 +115,7 @@
       </nav>
 
     </header>
+
 
     <main>
       <section class="container-section-detalles-peli text-light py-5">
@@ -218,6 +218,9 @@
               </div>
 
       </section>
+
+    <main id="main">
+
       
     </main>
 
