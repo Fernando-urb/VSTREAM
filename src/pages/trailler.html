@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones - VSTREAM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    
+</head>
+<body>
+
+<header class="header sticky-top">
+
+      <nav class="navbar-legal ">
+                <!-- este es el logo principal -->
+               
+                    <a class="px-5" href="#main-terminos">
+                        <img src="/src/img/logos/logo-v-2.png" alt="Logo" width="50" height="40"
+                            class="my-3  logo-legal">
+                    </a>
+                         <!-- texto centrado  -->
+                <p class="text-light h5 pt-3 ">Legal</p>
+            
+                <!-- esta es el boton de iniciar sesión -->
+           
+                <a class="text-light btn px-3 mx-3 login fs-6" href="/index.html"> 
+                    Inicio
+                </a>
+        
+            </nav>
+</header>
+
+    <!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.header');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+        </script>
+</body>
+</html>

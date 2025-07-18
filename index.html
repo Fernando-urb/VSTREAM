@@ -116,7 +116,7 @@
                         <h1 class=" fw-bold ">Disfrutá lo mejor del cine y las series</h1>
                         <h2> Los mejores éxitos del cine, Series exclusivas y más</h2>
                         <p>Ahorra un 50% en el plan mensual durante 3 meses </p>
-                        <a class=" text-light btn  px-5 mx-3 login" href="/src/pages/login.html">
+                        <a class=" text-light btn  px-5 mx-3 login" href="./src/pages/suscripcion.html" target="_blank">
                             Registrarse</a>
                     </div>
                     <!-- logo principal rotando  -->
@@ -129,15 +129,18 @@
                 </div>
             </section>
 
-                <div class="baner-separacion">
+            <div class="baner-separacion">
 
-                        <!-- section baner dispositivos  -->
-            <section class="container-section text-light text-center ">
+            <!-- section baner dispositivos  -->
+             
+                 <section class="container-section text-light text-center ">
                 
 
-                <h2 class="pt-sm-0 pt-md-3">Disfrutala donde Quieras</h2>
-                <p class=" fs-5 pt-sm-0 pt-md-3">Disfrutá tus Pelis y Series favoritas desde cualquier dispositivo</p>
-                <a class="  text-light btn login   " href="/src/pages/login.html"> Ver ahora </a>
+                <h2 class="pt-sm-0 pt-md-1">Desde cualquier pantalla</h2>
+                <p class=" fs-5 ">Disfrutá tus Pelis y Series favoritas desde cualquier dispositivo</p>
+                <a class="btn login text-light boton-ver-ahora" href="./src/pages/categorias.html">Ver ahora</a>
+             
+
                 <div class="container-dispositivos ">
                     <!-- tablet  -->
                     <div class="img-dispositivos" data-aos="fade-up" data-aos-duration="1500">
@@ -156,14 +159,20 @@
                     <div class="img-dispositivos" data-aos="fade-down" data-aos-duration="1500">
                         <img src="/src/img/breakpoints-img/smart-.png" alt="">
                     </div>
+                    <div class="img-dispositivos">
+                           <a class="btn login text-light" href="./src/pages/categorias.html">Ver ahora</a>
+                    </div>
 
                 </div>
                 <div class="container-img-responsive " >
-                    <img src="/src/img/breakpoints-img/breakpoints.png" alt="" class="img-dispositivo-responsivo">
+                    <img src="/src/img/breakpoints-img/breakpoints.png" alt="" class="img-dispositivo-responsivo" data-aos="zoom-in" data-aos-duration="1500">
 
                 </div>
 
             </section>
+
+          
+           
 
             <!-- catalogo peliculas  -->
             <section class=" d-flex flex-column  container-section-2 ">
@@ -177,21 +186,21 @@
 
 
                  <div class="  contenedor-principal m-auto">
-                <div class="contenedor-deimagen-de-peliculas  d-flex  flex-column">
+                <div class="contenedor-deimagen-de-peliculas  flex-column">
 
                     <img src="https://pics.filmaffinity.com/smurfs-178339408-large.jpg" alt="" >
                     
                     <a href="https://www.youtube.com/watch?v=KcfukfQ613s" class="btn login text-light ">ver trailer</a>
                 </div>
-                <div class="contenedor-deimagen-de-peliculas d-flex  flex-column ">
+                <div class="contenedor-deimagen-de-peliculas  flex-column ">
                     <img src="https://pics.filmaffinity.com/superman-138926671-large.jpg" alt="" >
                      <a href="https://www.youtube.com/watch?v=NEPP0YiHS6s" class="btn login text-light ">ver trailer</a>
                 </div>
-                <div class="contenedor-deimagen-de-peliculas d-flex  flex-column ">
+                <div class="contenedor-deimagen-de-peliculas   flex-column ">
                     <img src="https://pics.filmaffinity.com/koln_75-689353164-large.jpg" alt="" >
                      <a href="https://www.youtube.com/watch?v=l5EJqwP71DA" class="btn login text-light ">ver trailer</a>
                 </div>
-                <div class="contenedor-deimagen-de-peliculas d-flex  flex-column">
+                <div class="contenedor-deimagen-de-peliculas   flex-column">
                     <img src="https://pics.filmaffinity.com/jurassic_world_rebirth-254962281-large.jpg" alt="" >
                      <a href="https://www.youtube.com/watch?v=1R3LTANp7hw&t=13s" class="btn login text-light ">ver trailer</a>
                 </div>
@@ -208,7 +217,7 @@
 
         
             <!-- catalogo Series -->
-        <section class=" container-section series-premieres d-flex flex-column flex-lg-row align-items-center justify-content-between py-5">
+            <section class=" container-section series-premieres d-flex flex-column flex-lg-row align-items-center justify-content-between py-5">
     <div class="col-12 col-lg-4 text-center text-lg-center ps-lg-5 order-first mb-4 mb-lg-0">
         <h2 class="text-danger fw-bold display-5 mb-4">Las Mejores Series de Estreno</h2>
         <a href="/src/pages/categorias.html" class="btn btn-danger d-lg-none">Ver todas las Series</a>
@@ -504,9 +513,10 @@
         </div>
     </div>
             </section>
+
         </main>
 
-        <footer id="footer" class="footer py-2 bg-gradient text-light" style="background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);">
+        <footer id="footer" class="footer py-2 bg-gradient text-light" >
     <div class="container">
 
         <div class="row">
