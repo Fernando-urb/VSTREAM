@@ -22,20 +22,6 @@
   align-items: center;
 }
 
-/* PARA MOBILE  */
-
-@media (max-width: 480px) {
-
-
-
-}
-
-/* PARA TABLET */
-
-@media (min-width: 768px) and (max-width: 1199px) {
-
-}
-
 /* CARRUSEL PRINCIPAL */
 
 .container-section-2-carrusel-principal{
