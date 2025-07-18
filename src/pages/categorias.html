@@ -40,7 +40,7 @@
       <nav class="navbar-inicio ">
 
         <!-- este es el logo principal -->
-        <div class="px-4 logo-inicio">
+        <div class=" logo-inicio">
           <a class="px-5" href="#main">
             <img src="/src/img/logos/logo-v-2.png" alt="Logo" width="50" height="40"
               class="my-3 d-inline-block logo-contacto">
@@ -48,8 +48,8 @@
         </div>
 
         <!-- Enlaces / botones navbar -->
-        <div class="mx-4 my-2 dropdown  menu-navbar ">
-          <a class="btn px-3  " href="#" target="_blank">Peliculas</a>
+        <div class=" my-3 dropdown  menu-navbar ">
+          <a class="btn px-3  " href="#" >Peliculas</a>
           <a class="btn px-3  " href="#">Series</a>
           <a class="btn px-3  " href="#">Estrenos</a>
         </div>
@@ -64,24 +64,23 @@
             <h3 class="offcanvas-title " id="offcanvasRightLabel">MENU INICIAL</h3>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body">
-            <ul>
-              <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-              <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+          <div class="offcanvas-body ">
+            <ul >
+              <li><a href="#main" class=" text-light"><i class="fa-solid fa-house"></i> Inicio</a></li>  
+              <li><a href="#" class=" text-light"><i class="fa-solid fa-video"></i> Series</a></li>
+              <li><a href="#" class=" text-light"><i class="fa-solid fa-film"></i>Peliculas</a></li>
+              <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-clapperboard"></i>Ultimos estrenos</a></li>
+               <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-ticket-simple"></i>Mis Listas</a></li>
+                <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-magnifying-glass"></i>Buscar Series</a></li>
+                <li><a href="/src/pages/contacto.html" class=" text-light"><i class="fa-solid fa-envelope"></i> Contacto</a>
               </li>
-              <li><a href="/src/pages/acerca-de.html"><i class="fa-solid fa-envelope"></i> Sobre
-                  Nosotros</a></li>
-              <li><a href="/src/pages/suscripcion.html"><i class="fa-solid fa-envelope"></i>
-                  Registro</a></li>
-              <li><a href="/src/pages/error-404.html"><i class="fa-solid fa-video"></i>Tutoriales de
-                  Ayuda</a></li>
             </ul>
           </div>
         </div>
 
         <!-- BUSCADOR -->
 
-        <div class="mb-3 buscador-nav">
+        <div class="mb-4 buscador-nav">
           <form role="search" aria-label="Buscar contenido " class="d-flex">
 
             <input type="text" id="search" name="search" placeholder="Buscar estrenos" class="buscar-input">
@@ -101,10 +100,10 @@
 
         <!-- cuenta de usuario -->
     
-        <button class=" btn dropdown-toggle text-light  usuario" data-bs-toggle="dropdown" aria-expanded="false"
+        <button class=" m-2 btn dropdown-toggle text-light  usuario" data-bs-toggle="dropdown" aria-expanded="false"
           title="none"><i class="fa-solid fa-circle-user fs-1"></i></button>
-        <ul class="dropdown-menu bg-dark">
-          <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Adminitrar perfil</a></li>
+        <ul class="dropdown-menu bg-dark ">
+          <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Administrar perfil</a></li>
           <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Cuenta</a>
           </li>
           <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Centro de ayuda</a></li>
@@ -123,11 +122,12 @@
 
 
 
-    <main class="main-inicio">
+    <main class="main-inicio" id="main">
 
         <!-- CARRUSEL PRINCIPAL -->
-      <section class="container-section-2 text-light">
-        <div id="mainCarouselCategorias" class="carousel slide carrusel-img " data-bs-ride="carousel">
+      <section class="container-section-2-carrusel-principal text-light">
+        <div class="carousel-de-fondo">
+           <div id="mainCarouselCategorias" class="carousel slide carrusel-img " data-bs-ride="carousel">
           <div class="hero-inicio carousel-inner rounded contenedor-btn ">
             <div class="carousel-item active ">
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/Como entrenar a tu dragon 2.avif"
@@ -141,24 +141,20 @@
               <a href="/src/pages/error-404.html"><img src="/src/img/img.pelis/mario bros..jpg" class="d-block w-100"
                   alt="Mario bros"></a>
             </div>
-                <button class="boton-encima-info"><a class="text-light" href="/src/pages/detalles-peli.html">INFO</a></button>
-                <button class="boton-encima-vermas"><a class="text-light" href="/src/pages/detalles-peli.html">VER MAS</a></button>
-              </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#mainCarouselCategorias" data-bs-slide="prev"
-            title="none">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#mainCarouselCategorias" data-bs-slide="next"
-            title="none">
-            <span class="carousel-control-next-icon"></span>
-          </button>
+          </div>
         </div>
-      </section>
+
+        </div>
+       
+      </section>
 
       <div class="baner-separacion">
 
       <!-- PELÍCULAS DESTACADAS -->
-       <section class="container-section text-light py-5">
+       <section class="container-section-peliculas-destacadas text-light py-5">
+        <div>
+          <h1 class="text-center text-light fs-1 py-5 fw-bold">Disfruta de tus peliculas y series favoritas</h1>
+        </div>
         <div class=" text-light">
             <div class="container-titulo-btn pb-2">
                 <h3>Películas destacadas</h3>
@@ -219,7 +215,7 @@
 
       <!-- SERIES DESTACADAS -->
 
-       <section class="container-section-2 text-light py-5">
+       <section class="container-section-2-series-destacadas text-light py-5">
         <div class=" text-light">
             <div class="container-titulo-btn pb-2">
                 <h3>Series destacadas</h3>
@@ -284,7 +280,7 @@
 
         <!-- ESTRENOS RECIENTES -->
          
-      <section class="container-section text-light py-5">
+      <section class="container-section-categorias-estrenos text-light py-5">
 
         <div class="contenedor-estrenos-categorias">
           <h3 class=" text-light fs-3 px-3">Estrenos recientes</h3>
@@ -351,7 +347,7 @@
       </section>
 
         <!-- RANKING SEMANAL -->
-      <section class="container-section-2 text-light py-5">
+      <section class="container-section-2-ranking-semanal text-light py-5">
         <div class="contenedor-ranking">
           <h2 class="mb-3 text-light fs-4">Top 5 de la semana</h2>
           <ol class="list-group list-group-numbered ranking">
