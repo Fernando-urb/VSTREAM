@@ -30,6 +30,7 @@ border-radius: 10px;
 display: flex;
 flex-direction: column;
 gap: 2rem;
+margin-top: -60px
 }
 
 /* form */
