@@ -228,6 +228,8 @@
   background: rgba(0, 0, 0, 0.8);
 }
 
+/* TABLET RESPONSIVE */
+
 @media (min-width: 768px) and (max-width: 1199px) {
   /* CARRUSEL PRINCIPAL */
   .container-section-2-carrusel-principal{
@@ -257,4 +259,51 @@
   .container-section-2-ranking-semanal{
     height: 80vh;
   }
+}
+
+/* MOVIL RESPONSIVE */
+
+@media (max-width: 480px) {
+  /* CARRUSEL PRINCIPAL */
+  .container-section-2-carrusel-principal{
+    height: auto;
+    min-height: 25vh;
+  }
+
+  /* SECCIONES DESTACADAS */
+  .container-section-peliculas-destacadas{
+    max-height: 250vh;
+    height: 205vh;
+  }
+
+  .img-peli-des{
+    width: 150px;
+    height: auto;
+  }
+
+  /* ESTRENOS RECIENTES */
+  /* .container-section-estrenos{
+
+  }
+
+  .contenedor-estrenos-categorias{
+  padding: 0px 10px;
+ }
+
+ .container-estrenos-recientes{
+  height: 300px;
+ }
+
+ .card-estrenos-categorias{
+  height: 300px;
+ }
+ .card-estrenos-categorias img{
+  height: auto;
+  object-fit: cover;
+ }
+
+ .card-body-categorias{
+  font-size: 1.2rem;
+  margin: ;
+ } */
 }
