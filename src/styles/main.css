@@ -371,7 +371,12 @@
   transform: none;
  
 }
-
+.tarjeta-section [data-aos] {
+   animation: none;
+                transform: none;
+                transition: none;
+                opacity: 1;
+}
 
 
 
@@ -379,7 +384,7 @@
   padding-left: 200px;
 }
 .carousel {
-  max-width: 500px; /* Controla el tamaño del carrusel */
+  max-width: 500px; 
   margin: 0 auto;
 }
 
@@ -457,11 +462,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  
- 
+  gap: 20px;
 
 }
+
 .titulo-catalogos{
   display: flex;
   flex-direction: column;
@@ -514,18 +518,6 @@
 }
 
 
-
-
-
-
-    .texto-der {
-    padding: 0;
-  }
-
-  .texto-izq {
-    padding: 0;
-  }
-
   .nosotros-container {       
         margin-top: 50px;
         padding-top: 50px;
@@ -563,12 +555,8 @@
   border: 5px solid #61045f;
   border-radius: 5px;
 }
-.texto-izq {
-  padding-left: 40%;
-}
-.texto-der {
-  padding-right: 40%;
-}
+
+
 /* Contenedor principal */
 .container-fluid {
   padding: 2rem 0;
@@ -594,12 +582,20 @@
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+.text-series{
+  background: #19192e;
+  background: linear-gradient(90deg, rgb(192, 192, 216) 0%, rgb(228, 150, 252) 69%, rgb(255, 144, 205) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
 
 .carousel-fade .carousel-item.active {
   opacity: 1;
 }
 
-/* Estilos para el overlay del carousel */
+
 .carousel-item {
   position: relative;
   overflow: hidden;
