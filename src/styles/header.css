@@ -107,7 +107,7 @@
 
 
 /* Breakpoints tablet  */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (max-width: 768px) {
   .logo-contacto {
     padding-top: 5px;
   }
