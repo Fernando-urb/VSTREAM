@@ -135,6 +135,14 @@
   z-index: 1;
 }
 
+.card-estrenos{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  height: 30vh;
+}
+
 .card-estrenos-categorias{
   flex: 0 0 200px; 
   min-width: 150px;
@@ -146,10 +154,14 @@
 .card-img-top {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  width: 170px;
+  height: 200px;
+  padding: 10px 0px;
+  /* object-fit: fill; */
 }
 
-.card-body-categorias{
-  margin-top: 200px;
+.card-img-top img{
+  object-fit: cover;
 }
 
 .contenedor-estrenos-categorias{
@@ -268,6 +280,10 @@
     height: 210vh;
   }
 
+  .container-titulo-btn{
+    padding: 0px 30px;
+  }
+
   .img-peli-des{
     width: 150px;
     height: auto;
@@ -279,30 +295,12 @@
   }
 
   .contenedor-estrenos-categorias{
-    padding: 0px 20px;
+    padding: 0px 30px;
     
   }
 
-  .contenedor-card-estrenos{
-    max-height: 70vh;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-around;
-  }
-
-  .card-estrenos-categorias
-
-  .card-img-top{
-    width: 150px;
-    height: 200px;
-    object-fit: cover;
-    padding: 20px 0px ;
-  }
-
-  .card-body-categorias{
-    margin-top: 0px;
+  .card-estrenos{
+    height: 38vh;
   }
 
   /* RANKING */
@@ -310,4 +308,7 @@
     padding: 0px 30px;
   }
 
+  .container-section-2-ranking-semanal{
+    height: 100vh;
+  }
 }
