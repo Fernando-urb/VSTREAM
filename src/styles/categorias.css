@@ -142,6 +142,7 @@
   display: flex;
   border-radius: 8px;
 }
+
 .card-img-top {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -259,7 +260,12 @@
   /* SECCIONES DESTACADAS */
   .container-section-peliculas-destacadas{
     max-height: 250vh;
-    height: 205vh;
+    height: 225vh;
+  }
+
+  .container-section-2-series-destacadas{
+    max-height: 250vh;
+    height: 210vh;
   }
 
   .img-peli-des{
@@ -268,28 +274,40 @@
   }
 
   /* ESTRENOS RECIENTES */
-  /* .container-section-estrenos{
-
+  .container-section-categorias-estrenos{
+    height: 55vh;
   }
 
   .contenedor-estrenos-categorias{
-  padding: 0px 10px;
- }
+    padding: 0px 20px;
+    
+  }
 
- .container-estrenos-recientes{
-  height: 300px;
- }
+  .contenedor-card-estrenos{
+    max-height: 70vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+  }
 
- .card-estrenos-categorias{
-  height: 300px;
- }
- .card-estrenos-categorias img{
-  height: auto;
-  object-fit: cover;
- }
+  .card-estrenos-categorias
 
- .card-body-categorias{
-  font-size: 1.2rem;
-  margin: ;
- } */
+  .card-img-top{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    padding: 20px 0px ;
+  }
+
+  .card-body-categorias{
+    margin-top: 0px;
+  }
+
+  /* RANKING */
+  .contenedor-ranking{
+    padding: 0px 30px;
+  }
+
 }

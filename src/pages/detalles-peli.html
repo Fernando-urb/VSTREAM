@@ -28,19 +28,16 @@
   <title>VSTREAM</title>
 </head>
 
-<body class="bg-dark body-inicio">
-
-  <div class="opacity-body">
-
+<body>
     <!-- Header -->
 
-    <header class=" header  sticky-top ">
+        <header class=" header  sticky-top ">
 
       <!-- esta es la barra de navegación -->
       <nav class="navbar-inicio ">
 
         <!-- este es el logo principal -->
-        <div class="px-4 logo-inicio">
+        <div class=" logo-inicio">
           <a class="px-5" href="#main">
             <img src="/src/img/logos/logo-v-2.png" alt="Logo" width="50" height="40"
               class="my-3 d-inline-block logo-contacto">
@@ -48,7 +45,7 @@
         </div>
 
         <!-- Enlaces / botones navbar -->
-        <div class="mx-4 my-2 dropdown  menu-navbar ">
+        <div class=" my-3 dropdown  menu-navbar ">
           <a class="btn px-3  " href="#" target="_blank">Peliculas</a>
           <a class="btn px-3  " href="#">Series</a>
           <a class="btn px-3  " href="#">Estrenos</a>
@@ -64,24 +61,23 @@
             <h3 class="offcanvas-title " id="offcanvasRightLabel">MENU INICIAL</h3>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body">
-            <ul>
-              <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-              <li><a href="/src/pages/contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+          <div class="offcanvas-body ">
+            <ul >
+              <li><a href="/src/pages/contacto.html" class=" text-light"><i class="fa-solid fa-house"></i> Inicio</a></li>  
+              <li><a href="/src/pages/acerca-de.html" class=" text-light"><i class="fa-solid fa-video"></i> Series</a></li>
+              <li><a href="/src/pages/suscripcion.html" class=" text-light"><i class="fa-solid fa-film"></i>Peliculas</a></li>
+              <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-clapperboard"></i>Ultimos estrenos</a></li>
+               <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-ticket-simple"></i>Mis Listas</a></li>
+                <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-magnifying-glass"></i>Buscar Series</a></li>
+                <li><a href="/src/pages/contacto.html" class=" text-light"><i class="fa-solid fa-envelope"></i> Contacto</a>
               </li>
-              <li><a href="/src/pages/acerca-de.html"><i class="fa-solid fa-envelope"></i> Sobre
-                  Nosotros</a></li>
-              <li><a href="/src/pages/suscripcion.html"><i class="fa-solid fa-envelope"></i>
-                  Registro</a></li>
-              <li><a href="/src/pages/error-404.html"><i class="fa-solid fa-video"></i>Tutoriales de
-                  Ayuda</a></li>
             </ul>
           </div>
         </div>
 
         <!-- BUSCADOR -->
 
-        <div class="mb-3 buscador-nav">
+        <div class="mb-4 buscador-nav">
           <form role="search" aria-label="Buscar contenido " class="d-flex">
 
             <input type="text" id="search" name="search" placeholder="Buscar estrenos" class="buscar-input">
@@ -101,9 +97,9 @@
 
         <!-- cuenta de usuario -->
     
-        <button class=" btn dropdown-toggle text-light  usuario" data-bs-toggle="dropdown" aria-expanded="false"
-          title="none"><i class="fa-solid fa-circle-user fs-1"></i></button>
-        <ul class="dropdown-menu bg-dark">
+        <button class=" m-2 btn dropdown-toggle text-light  usuario " data-bs-toggle="dropdown" aria-expanded="false"
+          title="none"><i class="fa-solid fa-circle-user fs-1 "></i></button>
+        <ul class="dropdown-menu bg-dark ">
           <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Adminitrar perfil</a></li>
           <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Cuenta</a>
           </li>
@@ -120,7 +116,111 @@
 
     </header>
 
+
     <main>
+      <section class="container-section-detalles-peli text-light py-5">
+        <div class="pelicula-presentation">
+    
+          <!-- CARACTERISTICAS DE LA PELICULA -->
+
+              <div class="descriptions-container">
+
+                  <!-- TITULO -->
+
+                    
+                    <img src="/src/img/img-detalles-peli/16461475180207-removebg-preview.png" alt="">
+                
+
+                <!-- DESCRIPCION -->
+                
+                  <p>En una ciudad hundida en corrupción, Batman ya no lucha por justicia… lucha por venganza. Tras la muerte de alguien cercano, el Caballero Oscuro desata su lado más oscuro para cazar a quienes manipulan Gotham desde las sombras. Pero en su búsqueda, descubrirá que la verdad es más peligrosa que cualquier villano.</p>
+                
+
+                <div class="info-container">
+
+                <!-- INFO -->
+
+                <div class="edad">
+                  <h3>Edad 
+                    <span>+16</span>
+                  </h3>
+                </div>
+
+                <div class="space-info">|</div>
+
+                  <div class="idioma">
+                    <h3>Idioma</h3>
+                  </div>
+
+                  <div class="space-info">|</div>
+                    <div class="generos">
+                      <h3>Ciencia Ficcion</h3>
+                    </div>
+                  </div>
+
+                  <!-- PLAY -->
+                          
+                  <div class="button-play">
+                    <a href=""><i class="fa-solid fa-play"></i></a>
+                  </div>
+
+                  <!-- PUNTUACION -->
+
+
+                  <div class="contenedor-hover">
+                    <div class="cartel-hover">
+                      <h3>¿Que te parecio?</h3>
+                    </div>
+
+                    <div class="estrellas">
+                      <input type="radio" id="estrella5" name="puntuacion" value="5">
+                      <label for="estrella5">★</label>
+                      
+                      <input type="radio" id="estrella4" name="puntuacion" value="4">
+                      <label for="estrella4">★</label>
+                      
+                      <input type="radio" id="estrella3" name="puntuacion" value="3">
+                      <label for="estrella3">★</label>
+                      
+                      <input type="radio" id="estrella2" name="puntuacion" value="2">
+                      <label for="estrella2">★</label>
+                      
+                      <input type="radio" id="estrella1" name="puntuacion" value="1">
+                      <label for="estrella1">★</label>
+                    </div>
+                  </div>
+                </div>
+            
+              
+            <!-- img-pelicula -->
+
+            <div class="img-movie">
+                <img src="/src/img/img-detalles-peli/Diseño sin título (8).png" alt="">
+            </div>
+      </section>
+
+      <section>
+        <iframe width="1200px" height="900px" src="https://www.youtube.com/embed/JQymT6Xc2QE?si=Xusa2Lh0XGK4HLbG" ></iframe>
+      </section>
+      
+
+      <section>
+              <div class="titulo-2">
+                <h1 class="text-center text-light fs-1 py-5 fw-bold">Peliculas Relacionadas</h1>
+              </div>
+              <div class=" text-light">
+                  <div class="container-pelis-destacadas pb-5">
+                      <a href="/src/pages/detalles-peli.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Batman.jpg" alt="The Batman"></a>
+                      <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/endgame.jpg" alt="ENDGAME"></a>
+                      <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/Capitan america.jpeg" alt="Capitan america"></a>
+                      <a href="/src/pages/error-404.html"><img   class="img-peli-des"  src="/src/img/img.pelis/Joker.jpg" alt="Joker"></a>
+                  </div>
+              </div>
+
+      </section>
+
+    <main id="main">
+
       
     </main>
 
