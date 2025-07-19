@@ -1,12 +1,13 @@
 .banner{
     width: 100%;
     height: 100vh;
+     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 .banner-content{
     position: absolute;
     width: 60%; 
-    margin: 200px 0 0 30px;
+    margin: 100px 0 0 30px;
     z-index: 1;
     text-align: left;
     padding: 20px;
@@ -84,6 +85,7 @@
 
 .info-cards{
     margin-bottom: -55px;
+     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
 }
 
 .info-cards h2{
@@ -135,6 +137,7 @@
 
 .estructura-formulario{
     margin-bottom: 0;
+     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
 }
 
 .formulario-contacto{
@@ -254,7 +257,7 @@
 }
 
 /* Breakpoints tablet  */
-@media (min-width: 768px) and (max-width: 1199px)  {
+@media (max-width: 768px)   {
 
     /* Banner principal */
 
@@ -270,18 +273,18 @@
     .banner-content{
         text-align: center;
         position: absolute;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
     .banner-content p{
         font-size: 1.5rem;
-        margin-top: -150px;
+        
     }
 
     .banner-content h1{
-        font-size: 5rem;
-        margin-bottom: 40px;
+        font-size: 3rem;
+       
     }
 
     .banner-content input{
@@ -489,4 +492,5 @@
     .contactos-container{
         border: none;
     }
+    
 }
