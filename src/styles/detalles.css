@@ -158,7 +158,14 @@
     pointer-events: none;
 }
 
-/* main */
+.ver-pelicula{
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 /* GALERIA PELIS DESTACADAS */
 
@@ -170,7 +177,7 @@
     align-items: center;
 }
 
-.container-pelis-destacadas{
+.container-pelis-similares{
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
@@ -180,7 +187,7 @@
   /* overflow: hidden; */
 }
 
-.img-peli-des{
+.img-peli-similares{
   width: 300px;
   height: auto;
   border-radius: 5px;
@@ -190,3 +197,4 @@
     scale: 105%;
   }
 }
+
