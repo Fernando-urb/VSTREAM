@@ -46,10 +46,10 @@ main{
 }
 
 footer{
-   max-height:100vh;
+  max-height:100vh;
   height: auto;
   width: 100%;
   z-index: 1;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 4), rgba(0, 0, 0, 0.5));
+
 
 }

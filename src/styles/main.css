@@ -202,7 +202,8 @@
   position: absolute;
   width: 300px;
   height: 450px;
-  transition: transform 0.5s ease, z-index 0.2s;
+  transition: transform 0.5s ease,z-index 0.2s;
+  display: flex;
 }
 
 .contenedor-deimagen-de-peliculas img {
@@ -240,16 +241,106 @@
   transform: scale(1.1);
   z-index: 10;
 }
-.img-proximos-estrenos{
-  display: flex;
-  flex-wrap: wrap;
-  width: 300px;
-  height: 350px;
+
+
+/* seciones daniel acomodar  */
+
+.border-tarjetas {
+  border: 5px solid #61045f;
+  border-radius: 5px;
 }
 
 
+/* Contenedor principal */
+.container-fluid {
+  padding: 2rem 0;
+  background: transparent;
+}
+
+/* Estilo del carrusel index serie */
+.carousel {
+  max-width: 400px; 
+  margin: 0 auto;
+}
+
+/* Imágenes del carrusel */
+.poster-img {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: auto;
+}
+
+/* Transición suave */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.text-series{
+  background: #19192e;
+  background: linear-gradient(90deg, rgb(192, 192, 216) 0%, rgb(228, 150, 252) 69%, rgb(255, 144, 205) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
 
 
+.carousel-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay-btn {
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.carousel-item:hover .carousel-overlay {
+  opacity: 1;
+}
+
+.carousel-item:hover .overlay-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.poster-img {
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover .poster-img {
+  transform: scale(1.03);
+}
+.container-planes{
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+
+}
 
 
 /* Breakpoints tablet  */
@@ -392,6 +483,14 @@
   max-width: 500px; 
   margin: 0 auto;
 }
+.container-planes{
+ max-height: 400vh;
+}
+.series-premieres{
+  max-height: 400vh;
+  margin: 0;
+  height: auto;
+}
 
 
 }
@@ -527,8 +626,10 @@
 
 
   .nosotros-container {       
-        margin-top: 50px;
-        padding-top: 50px;
+        /* margin-top: 50px;
+        padding-top: 50px; */
+        max-height: 150vh;
+        height: auto;
     }
   
 .tarjeta-section [data-aos] {
@@ -556,10 +657,9 @@
   .carousel-overlay {
     display: none;
   }
-}
 
-
-.border-tarjetas {
+  /* quinta section  */
+  .border-tarjetas {
   border: 5px solid #61045f;
   border-radius: 5px;
 }
@@ -655,3 +755,12 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
 
 }
+.container-planes{
+ max-height: 400vh;
+}
+.series-premieres{
+  height: auto;
+}
+}
+
+
