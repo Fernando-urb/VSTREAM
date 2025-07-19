@@ -38,12 +38,25 @@
 
 .container-suscripcion button {
     padding: 10px;
-    background: var(--color-bg-botones);
+    /* background: var(--color-bg-botones); */
     color: whitesmoke;
     font-weight: bold;
     border: none;
-    border-radius: 4px;
+    /* border-radius: 4px; */
+    /* font-size: 0.8rem; */
+    background-image: var(--color-bg-botones);
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
     cursor: pointer;
+    transition: 0.5s;
+    background-size: 200% auto;
+  /* border-color: crimson; */
+        &:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+    }
 }
 
 .volver {

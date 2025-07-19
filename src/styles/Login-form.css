@@ -53,20 +53,20 @@ margin-top: -60px
 
 
 .login-form button {
-  padding: 12px;
-  background: var(--color-bg-botones);
-  color: whitesmoke;
-  font-weight: bold;
-  border: none;
+  font-size: 0.8rem;
+  background-image: var(--color-bg-botones);
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
   /* border-color: crimson; */
-  border-radius: 4px;
-  cursor: pointer;
+  &:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
 }
-
-/* .login-form button:hover {
-  background: var(--color-bg-botones);
-} */
-
 
 /* opciones y check */
 .opciones{

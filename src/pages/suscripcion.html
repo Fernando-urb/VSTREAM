@@ -38,29 +38,29 @@
                 <p>Completa los siguientes datos.</p>
                     <label for="name">
                     </label>
-                    <input type="text" id="name" required placeholder="Nombre">
+                    <input type="text" id="name" required placeholder="Nombre"required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,30}$" title="Solo letras y espacios. Mínimo 2 y máximo 30 caracteres.">
                     <label for="apellido">
                     </label>
-                    <input type="text" id="apellido" required placeholder="Apellido">
+                    <input type="text" id="apellido" required placeholder="Apellido" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,30}$" title="Solo letras y espacios. Mínimo 2 y máximo 30 caracteres.">
                     <label for="email">
                     </label>
-                    <input type="email" id="email" placeholder="Correo Electrónico"> 
+                    <input type="email" id="email" placeholder="Correo Electrónico" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Ingresá un correo válido. Ej: ejemplo@mail.com"> 
                     <label for="password">
                     </label>
-                    <input type="password" id="password" placeholder="Contraseña">     
+                    <input type="password" id="password" placeholder="Contraseña" required pattern=".{6,}" title="La contraseña debe tener mínimo 6 caracteres">     
                     <label for="password2">
                     </label>
-                    <input type="password2" id="mail" placeholder="Repetir Contraseña"> 
+                    <input type="password2" id="mail" placeholder="Repetir Contraseña" required pattern=".{6,}" title="La contraseña debe tener mínimo 6 caracteres"> 
 
                     <!-- checkbox -->
                     <label class="container-checkbox">
-                    <input type="checkbox" id="terminos">
+                    <input type="checkbox" id="terminos" required title="Debés aceptar para continuar">
                     Sí, me gustaría recibir comunicaciones de marketing, novedades y actualizaciones, ofertas especiales y otra información de VStream. Puedo darme de baja en cualquier momento.
                     </label>
 
                     <p>Al hacer clic en "Aceptar y Continuar", usted confirma que ha leído y esta de acuerdo con los Términos de Uso y acepta nuestra Política de Privacidad.</p>
                     
-                    <button type="submit">Aceptar y continuar</button>
+                    <button type="submit" class="w-90 btn btn-lg login text-light fs-5">Aceptar y continuar</button>
 
                     <a class="volver" href="/src/pages/login.html">
                     ↩ Volver</a>  
