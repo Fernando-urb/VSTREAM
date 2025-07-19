@@ -14,18 +14,18 @@
       object-fit: cover; /* para que se recorte bien sin distorsionarse */
       z-index: -1;
 }
+.item-error{
+max-width: 100%;
+margin: 0 auto;
+padding-top: 400px;
 
-/* Mostrar solo el video en pantallas grandes */
-.image-bg {
-  display: none;
 }
 
-@media (max-width: 768px) {
-  .video-bg {
-    display: none;
-  }
-  .image-bg {
-    display: block;
-  }
-}
+@media (max-width: 768px){
+  .item-error{
+     padding-top: 100px;
 
+
+  }
+ 
+}

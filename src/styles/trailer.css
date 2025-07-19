@@ -1,0 +1,99 @@
+.container-section-trailer {
+  max-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+  z-index: 1;
+  min-height: 50vh;
+}
+
+.img-trailer{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: 100vh;
+    overflow: hidden;
+}
+.descriptions-container-trailer{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
+ 
+  text-align: center;
+    z-index: 2;
+    background: linear-gradient(to right, #000000 120%, transparent);
+    img{
+    height:100px;   
+    }
+    p{
+        font-size: 1rem;
+    }
+
+}
+.container-section-trailer-2{
+      max-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+  z-index: 1;
+  min-height: 50vh;
+
+}
+
+.contenedor-video-trailer{
+    max-width: 100%;
+    min-width: 50%;
+    height: 100vh;
+    background: linear-gradient(to right, #000000 100%, transparent);
+    div{
+       display: flex;
+       justify-content: center;
+       margin-top:2rem ;
+       padding: 5rem 0;
+       width: 100%;
+    }
+
+}
+.img-trailer-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: 80vh;
+    overflow: hidden;
+    p{
+        font-size: 0.8rem;
+    }
+}
+.contenedor-video-trailer-2{
+    max-width: 100%;
+    min-width: 50%;
+    height: 80vh;
+    background: linear-gradient(to right, #000000 100%, transparent);
+    div{
+       display: flex;
+       justify-content: center;
+       margin-top:2rem ;
+       padding: 5rem 0;
+       width: 100%;
+    }
+   
+}
+
+/* PARA TABLET */
+
+@media (max-width: 768px)  {
+
+}
+
+
+@media (max-width: 480px) {
+
+
+
+}

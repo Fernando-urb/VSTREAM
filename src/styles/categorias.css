@@ -246,6 +246,10 @@
     height: 60vh;
   }
 
+  .card-estrenos{
+    height: 30vh;
+  }
+
   /* RANKING */
   .container-section-2-ranking-semanal{
     height: 80vh;
