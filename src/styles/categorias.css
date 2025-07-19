@@ -22,20 +22,6 @@
   align-items: center;
 }
 
-/* PARA MOBILE  */
-
-@media (max-width: 480px) {
-
-
-
-}
-
-/* PARA TABLET */
-
-@media (min-width: 768px) and (max-width: 1199px) {
-
-}
-
 /* CARRUSEL PRINCIPAL */
 
 .container-section-2-carrusel-principal{
@@ -149,6 +135,14 @@
   z-index: 1;
 }
 
+.card-estrenos{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  height: 30vh;
+}
+
 .card-estrenos-categorias{
   flex: 0 0 200px; 
   min-width: 150px;
@@ -156,13 +150,18 @@
   display: flex;
   border-radius: 8px;
 }
+
 .card-img-top {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  width: 170px;
+  height: 200px;
+  padding: 10px 0px;
+  /* object-fit: fill; */
 }
 
-.card-body-categorias{
-  margin-top: 200px;
+.card-img-top img{
+  object-fit: cover;
 }
 
 .contenedor-estrenos-categorias{
@@ -273,7 +272,16 @@
   /* SECCIONES DESTACADAS */
   .container-section-peliculas-destacadas{
     max-height: 250vh;
-    height: 205vh;
+    height: 225vh;
+  }
+
+  .container-section-2-series-destacadas{
+    max-height: 250vh;
+    height: 210vh;
+  }
+
+  .container-titulo-btn{
+    padding: 0px 30px;
   }
 
   .img-peli-des{
@@ -282,28 +290,25 @@
   }
 
   /* ESTRENOS RECIENTES */
-  /* .container-section-estrenos{
-
+  .container-section-categorias-estrenos{
+    height: 55vh;
   }
 
   .contenedor-estrenos-categorias{
-  padding: 0px 10px;
- }
+    padding: 0px 30px;
+    
+  }
 
- .container-estrenos-recientes{
-  height: 300px;
- }
+  .card-estrenos{
+    height: 38vh;
+  }
 
- .card-estrenos-categorias{
-  height: 300px;
- }
- .card-estrenos-categorias img{
-  height: auto;
-  object-fit: cover;
- }
+  /* RANKING */
+  .contenedor-ranking{
+    padding: 0px 30px;
+  }
 
- .card-body-categorias{
-  font-size: 1.2rem;
-  margin: ;
- } */
+  .container-section-2-ranking-semanal{
+    height: 100vh;
+  }
 }
