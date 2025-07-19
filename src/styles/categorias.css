@@ -29,7 +29,6 @@
   height: auto;
   margin: 0 auto;
   width: 100%;
-  /* background-color: var(--colorSection); */
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   z-index: 1;
   min-height: 100vh;
@@ -78,7 +77,6 @@
   height: auto;
   margin: 0 auto;
   width: 100%;
-  /* background-color: var(--colorSection); */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
   z-index: 1;
   min-height: 100vh;
@@ -89,7 +87,6 @@
   height: auto;
   margin: 0 auto;
   width: 100%;
-  /* background-color: var(--colorSection); */
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   z-index: 1;
   min-height: 100vh;
@@ -109,7 +106,6 @@
   justify-content: center;
   object-fit: contain;
   gap: 10px;
-  /* overflow: hidden; */
 }
 
 .img-peli-des{
@@ -130,7 +126,6 @@
   height: 80vh;
   margin: 0 auto;
   width: 100%;
-  /* background-color: var(--colorSection); */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
   z-index: 1;
 }
@@ -140,7 +135,7 @@
   flex-direction: column;
   gap: 20px;
   text-align: center;
-  height: 30vh;
+  height: 45vh;
 }
 
 .card-estrenos-categorias{
@@ -157,7 +152,6 @@
   width: 170px;
   height: 200px;
   padding: 10px 0px;
-  /* object-fit: fill; */
 }
 
 .card-img-top img{
@@ -171,18 +165,18 @@
 /* BARRA DE SCROLL ESTRENOS */
 
 .d-flex::-webkit-scrollbar {
-  height: 10px; /* Altura de la barra */
+  height: 10px;
 }
 
 .d-flex::-webkit-scrollbar-track {
-  background: #1a1a1a; /* Color del fondo de la barra */
+  background: #1a1a1a;
   border-radius: 10px;
 }
 
 .d-flex::-webkit-scrollbar-thumb {
-  background-color: #521a86; /* Color del scroll */
+  background-color: #521a86;
   border-radius: 10px;
-  border: 2px solid #1a1a1a; /* Borde interior */
+  border: 2px solid #1a1a1a;
 }
 
 .d-flex::-webkit-scrollbar-thumb:hover {
@@ -196,10 +190,8 @@
   height: 130vh;
   margin: 0 auto;
   width: 100%;
-  /* background-color: var(--colorSection); */
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   z-index: 1;
-  /* min-height: 100vh; */
 }
 
 .contenedor-ranking{
@@ -252,6 +244,10 @@
   /* ESTRENOS */
   .container-section-categorias-estrenos{
     height: 60vh;
+  }
+
+  .card-estrenos{
+    height: 30vh;
   }
 
   /* RANKING */
