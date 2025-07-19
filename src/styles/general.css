@@ -47,6 +47,7 @@ main{
 
 footer{
   max-height:200vh;
+  
   height: auto;
   width: 100%;
   z-index: 1;
