@@ -73,7 +73,7 @@
 /* GALERIA PELIS DESTACADAS */
 
 .container-section-peliculas-destacadas{
-  max-height: 200vh;
+  max-height: 300vh;
   height: auto;
   margin: 0 auto;
   width: 100%;
@@ -187,7 +187,7 @@
 
 .container-section-2-ranking-semanal{
   max-height: 200vh;
-  height: 130vh;
+  height: auto;
   margin: 0 auto;
   width: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
@@ -221,12 +221,20 @@
 
 /* TABLET RESPONSIVE */
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (max-width: 768px)  {
   /* CARRUSEL PRINCIPAL */
-  .container-section-2-carrusel-principal{
-    height: auto;
-    min-height: 40vh;
-  }
+
+
+#mainCarouselCategorias .carousel-item img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+
+
   /* PELICULAS DESTACADAS */
   .container-section-peliculas-destacadas{
     max-height: 100%;
@@ -252,7 +260,7 @@
 
   /* RANKING */
   .container-section-2-ranking-semanal{
-    height: 80vh;
+    height: auto;
   }
 }
 
@@ -305,6 +313,16 @@
   }
 
   .container-section-2-ranking-semanal{
-    height: 100vh;
+    height: auto;
   }
+#mainCarouselCategorias .carousel-item img{
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+ 
+  display: block;
+}
+
+
+
 }
