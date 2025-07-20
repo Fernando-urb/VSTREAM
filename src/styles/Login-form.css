@@ -1,5 +1,5 @@
 .body-form{
-   background-image: url(/src/img/fondos/3473660.jpg);
+   background-image: url(/src/img/fondos/formularios.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,6 +30,7 @@ border-radius: 10px;
 display: flex;
 flex-direction: column;
 gap: 2rem;
+margin-top: -60px
 }
 
 /* form */
@@ -52,20 +53,20 @@ gap: 2rem;
 
 
 .login-form button {
-  padding: 12px;
-  background: var(--color-bg-botones);
-  color: whitesmoke;
-  font-weight: bold;
-  border: none;
+  font-size: 0.8rem;
+  background-image: var(--color-bg-botones);
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
   /* border-color: crimson; */
-  border-radius: 4px;
-  cursor: pointer;
+  &:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
 }
-
-/* .login-form button:hover {
-  background: var(--color-bg-botones);
-} */
-
 
 /* opciones y check */
 .opciones{

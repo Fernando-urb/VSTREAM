@@ -184,6 +184,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .container-pelis-similares{
@@ -213,31 +214,48 @@
 
 /* CONTENEDOR DE DESCRIPCION-PELI */
 
-.pelicula-presentation{
-    display: ;
+.container-section-detalles-peli {
+  max-height: 100vh;
+  height: auto;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
 }
 
-
-
+.pelicula-presentation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 /* DESCRIPCION */
 
 .descriptions-container{
-    height: 100%;
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    z-index: 2;
-
+    justify-content: center;
+    background-color: antiquewhite;
 }
 
 /* IMAGEN */
 
+.descriptions-container img{
+    margin: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .img-movie{
-    display: ;
+    display: none;
 
 }
+
+
 
 
 }
