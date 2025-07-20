@@ -74,6 +74,22 @@
   align-items: center;
   margin: 0 auto;
 }
+.descriptions-container-trailer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
 }
 
 /* PARA MOVIL  */
@@ -99,6 +115,21 @@
 .ver-trailer {
   iframe{
     width: 100%;
+  }
+}
+.descriptions-container-trailer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }
 
