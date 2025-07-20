@@ -38,19 +38,19 @@
                 <p>Completa los siguientes datos.</p>
                     <label for="name">
                     </label>
-                    <input type="text" id="name" required placeholder="Nombre"required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,30}$" title="Solo letras y espacios. Mínimo 2 y máximo 30 caracteres.">
+                    <input type="text" id="name" placeholder="Nombre" minlength="2" maxlength="30" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,30}$" title="Solo letras y espacios. Mínimo 2 y máximo 30 caracteres.">
                     <label for="apellido">
                     </label>
-                    <input type="text" id="apellido" required placeholder="Apellido" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,30}$" title="Solo letras y espacios. Mínimo 2 y máximo 30 caracteres.">
+                    <input type="text" id="apellido" placeholder="Apellido" minlength="2" maxlength="30" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,30}$" title="Solo letras y espacios. Mínimo 2 y máximo 30 caracteres.">
                     <label for="email">
                     </label>
-                    <input type="email" id="email" placeholder="Correo Electrónico" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Ingresá un correo válido. Ej: ejemplo@mail.com"> 
+                    <input type="email" id="email" placeholder="Correo Electrónico" maxlength="30" required pattern=pattern="^[a-z0-9!#$%&'+/=?^_{|}~]+(?:\.[a-z0-9!#$%&'+/=?^_{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" title="Ingresá un correo válido. Ej: ejemplo@gmail.com"> 
                     <label for="password">
                     </label>
-                    <input type="password" id="password" placeholder="Contraseña" required pattern=".{6,}" title="La contraseña debe contener letras, números y un carácter especial. Mínimo 6 carácteres.">     
+                    <input type="password" id="password" placeholder="Contraseña" minlength="6" maxlength="20" required pattern=".{6,20}" title="La contraseña debe contener letras, números y un carácter especial. Mínimo 6 carácteres">     
                     <label for="password2">
                     </label>
-                    <input type="password2" id="password2" placeholder="Repetir Contraseña" required pattern=".{6,}" title="Repetir contraseña"> 
+                    <input type="password" id="password2" placeholder="Repetir Contraseña" minlength="6" maxlength="20" required pattern=".{6,20}" title="Repetir contraseña"> 
 
                     <!-- checkbox -->
                     <label class="container-checkbox">
@@ -75,10 +75,10 @@
         <img src="/src/img/logos/logo-v-2.png" alt="VSTREAM" width="120" class="mb-3">
         <p>El mejor contenido en streaming las 24 horas del día, los 365 días del año.</p>
         <div class="social-icons mt-3">
-            <a href="#" class="text-blue me-3" title="none"><i class="fab fa-facebook-f fa-lg"></i></a>
-            <a href="#" class="text-black me-3" title="none"><i class="fab fa-x fa-lg"></i></a>
-            <a href="#" class="text-danger me-3" title="none"><i class="fab fa-instagram fa-lg"></i></a>
-            <a href="#" class="text-danger" title="none"><i class="fab fa-youtube fa-lg"></i></a>
+            <a href="#" class="text-blue me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="text-black me-3"><i class="fab fa-x fa-lg"></i></a>
+            <a href="#" class="text-danger me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-danger"><i class="fab fa-youtube fa-lg"></i></a>
         </div>
         </div>
         
@@ -123,6 +123,7 @@
         </div>
         </div>
     </div>
-        </footer>
+</footer>
+        
 </body>
 </html>

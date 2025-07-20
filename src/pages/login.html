@@ -33,8 +33,8 @@
   <section class="login-form">
     <h1>Iniciar sesión</h1>
     <form action="/src/pages/error-404.html">
-      <input type="email" placeholder="Correo electrónico" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Ingresá un correo válido. Ej: ejemplo@mail.com"/>
-      <input type="password" placeholder="Contraseña" required pattern=".{6,}" title="La contraseña debe contener letras, números y un carácter especial. Mínimo 6 carácteres."/>
+      <input type="email" id="email" placeholder="Correo Electrónico" maxlength="30" required pattern=pattern="^[a-z0-9!#$%&'+/=?^_{|}~]+(?:\.[a-z0-9!#$%&'+/=?^_{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" title="Ingresá un correo válido. Ej: ejemplo@gmail.com">
+      <input type="password" id="password" placeholder="Contraseña" minlength="6" maxlength="20" required pattern=".{6,20}" title="La contraseña debe contener letras, números y un carácter especial. Mínimo 6 carácteres"> 
       <button type="submit" class="w-90 btn btn-lg login text-light fs-5">Iniciar sesión</button>
       <div class="opciones">
         <label><input type="checkbox" /> Recordarme</label>
