@@ -1,0 +1,342 @@
+.container-section-detalles-peli {
+  max-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  /* background-color: var(--colorSection); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+  z-index: 1;
+  min-height: 100vh;
+}
+
+.serie-presentation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* contenedor-contenido */
+
+.descriptions-container-serie{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    background: linear-gradient(to right, #000000 100%, transparent);
+}
+
+/* informacion */
+
+.descriptions-container-serie img{
+    margin-top: 20px;
+    height: 150px;
+}
+
+.info-container-serie{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edad-serie h3{
+    display: flex;
+    align-items: center;
+}
+
+.space-info-serie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-play-serie i{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color: bisque;
+    &:hover{
+        color: rgb(193, 24, 154);
+    }
+}
+
+/* puntuacion */
+
+
+.contenedor-hover-serie{ 
+    width: 100%;
+    display: flex;
+}
+
+.cartel-hover-serie{
+    width: 100%;
+ 
+    color: rgb(248, 232, 232);
+    display: flex;
+    align-items: center;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.contenedor-hover-serie:hover .cartel-hover-serie {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.cartel-hover-serie h3{
+    font-size: 2rem;
+}
+
+.estrellas-serie {
+  margin: 30px;  
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-size: 3rem;
+  display: flex;
+}
+
+.estrellas-serie input {
+  display: none;
+}
+
+.estrellas-serie label {
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.estrellas-serie input:checked ~ label {
+  color: rgb(255, 7, 156);
+}
+
+.estrellas-serie label:hover,
+.estrellas-serie label:hover ~ label {
+  color: rgb(255, 254, 253);
+}
+
+
+/* img-play */
+
+.img-movie-serie{
+    position: relative;
+}
+
+.img-movie-serie img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-movie-serie::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background: linear-gradient(to right, black, transparent);
+    pointer-events: none;
+}
+
+/* PELICULA PARA VER */
+
+.ver-pelicula-serie{
+    padding-top: 50px;
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serie-en-si iframe{
+    padding-top: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* GALERIA PELIS DESTACADAS */
+
+.container-section-serie-capitulos{
+    max-height: 200vh;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+    z-index: 1;
+}
+
+
+.titulo-2-serie{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-serie-similares{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  object-fit: contain;
+  gap: 10px;
+}
+
+.card-capitulos{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    font-size: small;
+    padding-bottom: 10px;
+}
+
+.img-serie-similares{
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  &:hover {
+    scale: 105%;
+  }
+}
+
+/* PARA TABLET */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+/* DESCRIPCION */
+
+.serie-presentation{
+    display: flex;
+}
+
+.descriptions-container-serie{
+    padding: 0px 20px;
+
+}
+
+.descriptions-container-serie img{
+    
+    height: 200px;
+    width: 500px;
+}
+
+.info-container-serie{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* IMAGEN */
+
+.img-movie-serie{
+    display: none;
+}
+
+.serie-en-si iframe{
+    height: 500px;
+    width: 750px;
+}
+
+
+}
+
+/* PARA MOBILE */
+
+@media (max-width: 480px) {
+
+/* DESCRIPCION */
+
+.descriptions-container-serie{
+    padding: 0px 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.serie-presentation{
+    display: flex;
+}
+
+/* informacion */
+
+.descriptions-container-serie img{
+    height: 200px;
+    width: 400px;
+}
+
+.info-container-serie{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-container-serie h3{
+    font-size: 1rem;
+}
+
+.space-info-serie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-play-serie i{
+    padding: 30px;
+    font-size: 2rem;
+    
+}
+
+/* puntuacion */
+
+.contenedor-hover-serie:hover .cartel-hover-serie {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.cartel-hover-serie h3{
+    font-size: 1.25rem;
+}
+
+/* IMAGEN */
+
+.img-movie-serie{
+    display: none;
+}
+
+/* PELICULA */
+
+.ver-pelicula-serie iframe{
+    height: 350px;
+    width: 400px;
+}
+
+/* PELICULAS RELACIONADAS */
+
+.card-capitulos span{
+    font-size: 10px;
+}
+
+.img-serie-similares{
+    width: 150px;
+}
+
+}
