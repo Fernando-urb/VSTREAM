@@ -1,6 +1,5 @@
 .container-section-detalles-peli {
   max-height: 200vh;
-
   height: auto;
   margin: 0 auto;
   width: 100%;
@@ -34,17 +33,17 @@
     background: linear-gradient(to right, #000000 100%, transparent);
 }
 
-
-
 /* informacion */
 
 .descriptions-container img{
-    height: 200px;
+    margin-top: 20px;
+    height: 150px;
 }
 
 .info-container{
     display: flex;
     width: 100%;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -59,9 +58,6 @@
     align-items: center;
 }
 
-
-
-
 .button-play i{
     font-size: 2rem;
     display: flex;
@@ -75,13 +71,9 @@
 /* puntuacion */
 
 
-.contenedor-hover{
-
-   
+.contenedor-hover{ 
     width: 100%;
-  
     display: flex;
-
 }
 
 .cartel-hover{
@@ -157,8 +149,8 @@
 /* PELICULA PARA VER */
 
 .ver-pelicula{
+    padding-top: 50px;
     height: auto;
-  
     width: 100%;
     background-color: #000000;
     display: flex;
@@ -174,9 +166,18 @@
 
 /* GALERIA PELIS DESTACADAS */
 
+.container-section-peliculas-relacionadas{
+    max-height: 200vh;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
+    z-index: 1;
+}
+
 .titulo-2{
     width: 100%;
-    height: 200px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,7 +187,7 @@
 .container-pelis-similares{
   display: flex;
   width: 100%;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   object-fit: contain;
   gap: 10px;
@@ -208,51 +209,78 @@
 
 @media (max-width: 480px) {
 
-/* CONTENEDOR DE DESCRIPCION-PELI */
-
-.container-section-detalles-peli {
-  max-height: 100vh;
-  height: auto;
-  width: 100%;
-  min-height: 100vh;
-  background-color: rgb(255, 255, 255);
-}
-
-.pelicula-presentation{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
 /* DESCRIPCION */
 
 .descriptions-container{
+    padding: 0px 20px;
     height: auto;
-    width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+/* informacion */
+
+.descriptions-container img{
+    height: 200px;
+    width: 400px;
+}
+
+.info-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
+}
+
+.info-container h3{
+    font-size: 1rem;
+}
+
+.space-info{
+    display: flex;
     justify-content: center;
-    background-color: antiquewhite;
+    align-items: center;
+}
+
+.button-play i{
+    padding: 30px;
+    font-size: 2rem;
+    
+}
+
+/* puntuacion */
+
+.contenedor-hover h3{
+    font-size: 1rem;
+}
+
+.contenedor-hover:hover .cartel-hover {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.cartel-hover h3{
+    font-size: 2rem;
 }
 
 /* IMAGEN */
 
-.descriptions-container img{
-    margin: 30px;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .img-movie{
     display: none;
-
 }
 
+/* PELICULA */
 
+.ver-pelicula iframe{
+    height: 350px;
+    width: 100%;
+}
 
+/* PELICULAS RELACIONADAS */
+
+.img-peli-similares{
+    width: 170px;
+}
 
 }
 
@@ -260,6 +288,36 @@
 
 @media (min-width: 768px) and (max-width: 1199px) {
 
+/* DESCRIPCION */
+
+.pelicula-presentation{
+    display: flex;
+}
+
+.descriptions-container{
+    padding: 0px 20px;
+
+}
+
+.descriptions-container img{
+    
+    height: 200px;
+    width: 500px;
+}
+
+.info-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
+/* IMAGEN */
+
+.img-movie{
+    display: none;
+}
+
+
+}
