@@ -270,18 +270,18 @@
   /* CARRUSEL PRINCIPAL */
   .container-section-2-carrusel-principal{
     height: auto;
-    min-height: 25vh;
+    min-height: 50vh;
   }
 
   /* SECCIONES DESTACADAS */
   .container-section-peliculas-destacadas{
     max-height: 250vh;
-    height: 225vh;
+    height: auto;
   }
 
   .container-section-2-series-destacadas{
     max-height: 250vh;
-    height: 210vh;
+    height: auto;
   }
 
   .container-titulo-btn{
@@ -321,6 +321,25 @@
   object-fit: cover;
  
   display: block;
+}
+.carousel-de-fondo{
+   position: none;       
+  top: 10%;
+  left: 0;
+  width: 100vw;          
+  height: 100vh;        
+  z-index: -1;           
+  object-fit: cover;     
+  overflow: none;  
+
+}
+.container-titulo-btn 
+a{
+
+  font-size: 1¿0.5rem;
+}
+h3{
+  font-size: 1rem;
 }
 
 

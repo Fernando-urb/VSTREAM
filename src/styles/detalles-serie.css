@@ -168,7 +168,7 @@
 /* GALERIA PELIS DESTACADAS */
 
 .container-section-serie-capitulos{
-    max-height: 200vh;
+    max-height: 400vh;
     height: auto;
     margin: 0 auto;
     width: 100%;
@@ -216,7 +216,7 @@
 
 /* PARA TABLET */
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (max-width: 998px)  {
 
 /* DESCRIPCION */
 
@@ -232,7 +232,7 @@
 .descriptions-container-serie img{
     
     height: 200px;
-    width: 500px;
+   
 }
 
 .info-container-serie{
@@ -240,6 +240,10 @@
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
+}
+.descriptions-container-serie img{
+    margin-top: 0;
+    height: 150px;
 }
 
 
