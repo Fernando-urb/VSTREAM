@@ -28,7 +28,7 @@
 }
 /* estos son los estilos de los contenedores de las sectiones  degradado bottom */
 .container-section {
-  max-height: 200vh;
+  max-height: 300vh;
   height: auto;
   margin: 0 auto;
   width: 100%;
@@ -345,12 +345,8 @@
 
 /* Breakpoints tablet  */
 @media (max-width: 998px) {
-     .container-section{
-   max-height: 300vh;
-   min-height: 50vh;
-   height: auto;
 
-  }
+
     .container-section-2{
    max-height: 300vh;
    min-height: 50vh;
@@ -363,13 +359,13 @@
     width: 100%;
     margin-top: 4rem;
     h1 {
-      font-size: 2rem;
-    h2 {
       font-size: 1.5rem;
+    h2 {
+      font-size: 0.8rem;
       font-weight: lighter;
     }
     p {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
   }
@@ -485,7 +481,7 @@
   margin: 0 auto;
 }
 .container-planes{
- max-height: 400vh;
+ max-height: 600vh;
 }
 .series-premieres{
   max-height: 400vh;
