@@ -130,6 +130,12 @@
 
 /*Breakpoints  movil  */
 @media (max-width: 480px) {
+  .navbar-inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+}
   .dropdown-toggle {
     display: none;
   }

@@ -73,7 +73,7 @@
 /* GALERIA PELIS DESTACADAS */
 
 .container-section-peliculas-destacadas{
-  max-height: 300vh;
+  max-height: 400vh;
   height: auto;
   margin: 0 auto;
   width: 100%;
@@ -83,7 +83,7 @@
 }
 
 .container-section-2-series-destacadas{
-  max-height: 200vh;
+  max-height: 300vh;
   height: auto;
   margin: 0 auto;
   width: 100%;
@@ -122,7 +122,7 @@
 /* ESTRENOS */
 
 .container-section-categorias-estrenos{
-  max-height: 200vh;
+  max-height: 300vh;
   height: 80vh;
   margin: 0 auto;
   width: 100%;
@@ -186,7 +186,7 @@
 /* RANKING */
 
 .container-section-2-ranking-semanal{
-  max-height: 200vh;
+  max-height: 300vh;
   height: auto;
   margin: 0 auto;
   width: 100%;
