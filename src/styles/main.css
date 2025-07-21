@@ -344,14 +344,15 @@
 
 
 /* Breakpoints tablet  */
-@media (max-width: 768px) {
+@media (max-width: 998px) {
      .container-section{
-   max-height: 200vh;
+   max-height: 300vh;
    min-height: 50vh;
+   height: auto;
 
   }
     .container-section-2{
-   max-height: 200vh;
+   max-height: 300vh;
    min-height: 50vh;
 
   }
@@ -491,6 +492,7 @@
   margin: 0;
   height: auto;
 }
+
 
 
 }
