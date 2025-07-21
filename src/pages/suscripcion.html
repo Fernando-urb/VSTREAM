@@ -38,19 +38,19 @@
                 <p>Completa los siguientes datos.</p>
                     <label for="name">
                     </label>
-                    <input type="text" id="name" required placeholder="Nombre"required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,30}$" title="Solo letras y espacios. Mínimo 2 y máximo 30 caracteres.">
+                    <input type="text" id="name" placeholder="Nombre" minlength="2" maxlength="30" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,30}$" title="Solo letras y espacios. Mínimo 2 y máximo 30 caracteres.">
                     <label for="apellido">
                     </label>
-                    <input type="text" id="apellido" required placeholder="Apellido" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,30}$" title="Solo letras y espacios. Mínimo 2 y máximo 30 caracteres.">
+                    <input type="text" id="apellido" placeholder="Apellido" minlength="2" maxlength="30" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,30}$" title="Solo letras y espacios. Mínimo 2 y máximo 30 caracteres.">
                     <label for="email">
                     </label>
-                    <input type="email" id="email" placeholder="Correo Electrónico" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Ingresá un correo válido. Ej: ejemplo@mail.com"> 
+                    <input type="email" id="email" placeholder="Correo Electrónico" maxlength="30" required pattern=pattern="^[a-z0-9!#$%&'+/=?^_{|}~]+(?:\.[a-z0-9!#$%&'+/=?^_{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" title="Ingresá un correo válido. Ej: ejemplo@gmail.com"> 
                     <label for="password">
                     </label>
-                    <input type="password" id="password" placeholder="Contraseña" required pattern=".{6,}" title="La contraseña debe tener mínimo 6 caracteres">     
+                    <input type="password" id="password" placeholder="Contraseña" minlength="6" maxlength="20" required pattern=".{6,20}" title="La contraseña debe contener letras, números y un carácter especial. Mínimo 6 carácteres">     
                     <label for="password2">
                     </label>
-                    <input type="password2" id="mail" placeholder="Repetir Contraseña" required pattern=".{6,}" title="La contraseña debe tener mínimo 6 caracteres"> 
+                    <input type="password" id="password2" placeholder="Repetir Contraseña" minlength="6" maxlength="20" required pattern=".{6,20}" title="Repetir contraseña"> 
 
                     <!-- checkbox -->
                     <label class="container-checkbox">

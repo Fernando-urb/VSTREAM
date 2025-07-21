@@ -49,7 +49,7 @@
   display: none;
 }
 .offcanvas-body {
-  background-image: url(/src/img/fondos/3203685.jpg);
+  background-image: url(/src/img/fondos/body.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,7 +103,6 @@
  .menu-movil{
   display: none;
  }
-
 
 
 /* Breakpoints tablet  */

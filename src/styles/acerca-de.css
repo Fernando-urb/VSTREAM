@@ -179,7 +179,7 @@
 @media (min-width: 768px) and (max-width: 1199px) {
 
     .banner-content-abt{
-        width: 70%;
+        width: 90%;
         margin: 150px 0 0 30px;
     }
 
@@ -235,5 +235,15 @@
 
     .banner-image-container{
         display: none;
+    }
+
+    .participant-row1,
+    .participant-row2,
+    .participant-row3{
+        display:initial ;
+        img{
+            width: 200px;
+            height: 200px;
+        }
     }
 }

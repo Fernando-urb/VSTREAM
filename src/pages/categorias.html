@@ -49,9 +49,9 @@
 
         <!-- Enlaces / botones navbar -->
         <div class=" my-3 dropdown  menu-navbar ">
-          <a class="btn px-3  " href="#" >Peliculas</a>
-          <a class="btn px-3  " href="#">Series</a>
-          <a class="btn px-3  " href="#">Estrenos</a>
+          <a class="btn px-3  " href="#peliculas" >Peliculas</a>
+          <a class="btn px-3  " href="#series">Series</a>
+          <a class="btn px-3  " href="#estrenos">Estrenos</a>
         </div>
 
         <!-- off canvas movil -->
@@ -66,10 +66,10 @@
           </div>
           <div class="offcanvas-body ">
             <ul >
-              <li><a href="#main" class=" text-light"><i class="fa-solid fa-house"></i> Inicio</a></li>  
-              <li><a href="#" class=" text-light"><i class="fa-solid fa-video"></i> Series</a></li>
-              <li><a href="#" class=" text-light"><i class="fa-solid fa-film"></i>Peliculas</a></li>
-              <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-clapperboard"></i>Ultimos estrenos</a></li>
+              <li><a href="/src/pages/categorias.html" class=" text-light"><i class="fa-solid fa-house"></i> Inicio</a></li>  
+              <li><a href="#series" class=" text-light"><i class="fa-solid fa-video"></i> Series</a></li>
+              <li><a href="#peliculas" class=" text-light"><i class="fa-solid fa-film"></i>Peliculas</a></li>
+              <li><a href="#estrenos" class=" text-light"><i class="fa-solid fa-clapperboard"></i>Ultimos estrenos</a></li>
                <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-ticket-simple"></i>Mis Listas</a></li>
                 <li><a href="/src/pages/error-404.html" class=" text-light"><i class="fa-solid fa-magnifying-glass"></i>Buscar Series</a></li>
                 <li><a href="/src/pages/contacto.html" class=" text-light"><i class="fa-solid fa-envelope"></i> Contacto</a>
@@ -101,7 +101,7 @@
         <!-- cuenta de usuario -->
     
         <button class=" m-2 btn dropdown-toggle text-light  usuario" data-bs-toggle="dropdown" aria-expanded="false"
-          title="none"><i class="fa-solid fa-circle-user fs-1"></i></button>
+          title="none"><i class="fa-solid fa-circle-user fs-1 "></i></button>
         <ul class="dropdown-menu bg-dark ">
           <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Administrar perfil</a></li>
           <li><a class="dropdown-item text-light" href="/src/pages/error-404.html">Cuenta</a>
@@ -151,14 +151,14 @@
       <div class="baner-separacion">
 
       <!-- PELÍCULAS DESTACADAS -->
-       <section class="container-section-peliculas-destacadas text-light py-5">
+       <section class="container-section-peliculas-destacadas text-light py-5" id="peliculas">
         <div>
           <h1 class="text-center text-light fs-1 py-5 fw-bold">Disfruta de tus peliculas y series favoritas</h1>
         </div>
         <div class=" text-light">
             <div class="container-titulo-btn pb-2">
                 <h3>Películas destacadas</h3>
-                <a href="#" class="btn btn-outline-light btn-sm">Ver todos los géneros</a>
+                <a href="/src/pages/error-404.html" class="btn btn-outline-light btn-sm">Ver más</a>
             </div>
             <div class="container-pelis-destacadas pb-5">
                 <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.pelis/day-shift.jpg" alt="day-shift"></a>
@@ -172,6 +172,7 @@
         <div class=" text-light">
             <div class="container-titulo-btn pb-2">
                 <h3>Genero de acción</h3>
+                 <a href="/src/pages/error-404.html" class="btn btn-outline-light btn-sm">Ver más</a>
             </div>
             <div class="container-pelis-destacadas pb-5">
                 <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.accion/rapidos-y-furiosos-X.jpeg" alt="rapidos-y-furiosos-X"></a>
@@ -185,6 +186,7 @@
         <div class=" text-light">
             <div class="container-titulo-btn pb-2">
                 <h3>Genero de comedia</h3>
+                 <a href="/src/pages/error-404.html" class="btn btn-outline-light btn-sm">Ver más</a>
             </div>
             <div class="container-pelis-destacadas pb-5">
                 <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.comedia/baywatch.jpg" alt="baywatch"></a>
@@ -198,6 +200,7 @@
         <div class=" text-light">
             <div class="container-titulo-btn pb-2">
                 <h3>Genero ciencia ficción</h3>
+                 <a href="/src/pages/error-404.html" class="btn btn-outline-light btn-sm">Ver más</a>
             </div>
             <div class="container-pelis-destacadas pb-5">
                 <a href="/src/pages/error-404.html"><img  class="img-peli-des"  src="/src/img/img.ciencia-ficcion/back-to-the-future-movies.jpg" alt="back-to-the-future-movies"></a>
@@ -212,11 +215,11 @@
 
       <!-- SERIES DESTACADAS -->
 
-       <section class="container-section-2-series-destacadas text-light py-5">
+       <section class="container-section-2-series-destacadas text-light py-5" id="series">
         <div class=" text-light">
             <div class="container-titulo-btn pb-2">
                 <h3>Series destacadas</h3>
-                <a href="#" class="btn btn-outline-light btn-sm">Ver todos los géneros</a>
+                 <a href="/src/pages/error-404.html" class="btn btn-outline-light btn-sm">Ver más</a>
             </div>
             <div class="container-pelis-destacadas pb-5">
                 <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.pelis/Arrow.jpg" alt="Arrow"></a>
@@ -231,6 +234,7 @@
         <div class=" text-light">
             <div class="container-titulo-btn pb-2">
                 <h3>Genero de acción</h3>
+                 <a href="/src/pages/error-404.html" class="btn btn-outline-light btn-sm">Ver más</a>
             </div>
             <div class="container-pelis-destacadas pb-5">
                 <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.accion/Gotham-serie.jpg" alt="Gotham-serie"></a>
@@ -245,6 +249,7 @@
         <div class=" text-light">
             <div class="container-titulo-btn pb-2">
                 <h3>Genero de comedia</h3>
+                 <a href="/src/pages/error-404.html" class="btn btn-outline-light btn-sm">Ver más</a>
             </div>
             <div class="container-pelis-destacadas pb-5">
                 <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.comedia/Brooklyn Nine Nine-serie.jpg" alt="Brooklyn"></a>
@@ -258,6 +263,7 @@
         <div class=" text-light">
             <div class="container-titulo-btn pb-2">
                 <h3>Genero ciencia ficción</h3>
+                 <a href="/src/pages/error-404.html" class="btn btn-outline-light btn-sm">Ver más</a>
             </div>
             <div class="container-pelis-destacadas pb-5">
                 <a href="/src/pages/error-404.html"><img class="img-peli-des" src="/src/img/img.ciencia-ficcion/The-walking-dead-DEADCITY-serie.jpg" alt="The-walking-dead-DEADCITY-serie"></a>
@@ -272,7 +278,7 @@
 
         <!-- ESTRENOS RECIENTES -->
          
-      <section class="container-section-categorias-estrenos text-light py-5">
+      <section class="container-section-categorias-estrenos text-light py-5" id="estrenos">
 
         <div class="contenedor-estrenos-categorias">
           <h3 class=" text-light fs-3 px-3">Estrenos recientes</h3>
@@ -366,6 +372,8 @@
           </ol>
         </div>
       </section>
+
+
       </div>
     </main>
 
@@ -378,10 +386,10 @@
         <img src="/src/img/logos/logo-v-2.png" alt="VSTREAM" width="120" class="mb-3">
         <p>El mejor contenido en streaming las 24 horas del día, los 365 días del año.</p>
         <div class="social-icons mt-3">
-            <a href="#" class="text-blue me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
-            <a href="#" class="text-black me-3"><i class="fab fa-x fa-lg"></i></a>
-            <a href="#" class="text-danger me-3"><i class="fab fa-instagram fa-lg"></i></a>
-            <a href="#" class="text-danger"><i class="fab fa-youtube fa-lg"></i></a>
+            <a href="#" class="text-blue me-3" title="none"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="text-black me-3" title="none"><i class="fab fa-x fa-lg"></i></a>
+            <a href="#" class="text-danger me-3" title="none"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-danger" title="none"><i class="fab fa-youtube fa-lg"></i></a>
         </div>
         </div>
         
