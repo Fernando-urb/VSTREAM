@@ -217,38 +217,46 @@
 
         
             <!-- catalogo Series -->
-        <section class=" container-section series-premieres d-flex flex-column flex-lg-row align-items-center justify-content-between py-5">
+        <section class="container-section series-premieres d-flex flex-column flex-lg-row align-items-center justify-content-between py-5">
     <div class="col-12 col-lg-4 text-center text-lg-center ps-lg-5 order-first mb-4 mb-lg-0 text-light">
         <h2 class="text-light fw-bold display-5 mb-4 ">Las Mejores Series de Estreno</h2>
         <a href="/src/pages/categorias.html" class="btn login d-lg-none text-light" target="_blank">Ver todas las Series</a>
     </div>
-    <div class="col-12 col-lg-8 order-lg-first ">
+    
+    <div class="col-12 col-lg-8 order-lg-first">
         <div id="seriesCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item">
-                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg"
-                        alt="Poster Película 1" class="img-fluid poster-img">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg" 
+                         alt="Poster Película 1" 
+                         class="img-fluid poster-img">
                     <div class="carousel-overlay d-none d-lg-flex">
                         <a class=" mb-3 text-light btn  px-1 mx-3 login" href="/src/pages/categorias.html" target="_blank">Ver Más</a>
                     </div>
                 </div>
+                
                 <div class="carousel-item active">
-                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vHqeLzYl3dEAutojCO26g0LIkom.jpg"
-                        alt="Poster Película 2" class="img-fluid poster-img">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vHqeLzYl3dEAutojCO26g0LIkom.jpg" 
+                         alt="Poster Película 2" 
+                         class="img-fluid poster-img">
                     <div class="carousel-overlay d-none d-lg-flex">
                         <a class=" mb-3 text-light btn  px-1 mx-3 login" href="/src/pages/categorias.html" target="_blank">Ver Más</a>
                     </div>
                 </div>
+                
                 <div class="carousel-item">
-                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8BbZGH0kmkSWqWUmy4zaJAlVbfe.jpg"
-                        alt="Poster Película 3" class="img-fluid poster-img">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8BbZGH0kmkSWqWUmy4zaJAlVbfe.jpg" 
+                         alt="Poster Película 3" 
+                         class="img-fluid poster-img">
                     <div class="carousel-overlay d-none d-lg-flex">
                         <a class=" mb-3 text-light btn  px-1 mx-3 login" href="/src/pages/categorias.html" target="_blank">Ver Más</a>
                     </div>
                 </div>
+                
                 <div class="carousel-item">
-                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/WGRQ8FpjkDTzivQJ43t94bOuY0.jpg"
-                        alt="Poster Película 4" class="img-fluid poster-img">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/WGRQ8FpjkDTzivQJ43t94bOuY0.jpg" 
+                         alt="Poster Película 4" 
+                         class="img-fluid poster-img">
                     <div class="carousel-overlay d-none d-lg-flex">
                         <a class=" mb-3 text-light btn  px-1 mx-3 login" href="/src/pages/categorias.html" target="_blank">Ver Más</a>
                     </div>
@@ -256,104 +264,86 @@
             </div>
         </div>
     </div>
-            </section>
+</section>
 
             <!-- section de tarjetas de planes   -->
             <section class="container-planes tarjeta-section text-light py-5 mt-5 mb-lg-0">
-                <div class="container">
-                    <h2 class="text-center p-5">Elige tu plan ideal</h2>
-                    <div class="row g-4 justify-content-center">
-                        <!-- Plan Básico -->
-                        <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="card pricing-card h-100 w-100 border-tarjetas border-5">
-                                <div class="card-header  text-dark text-center py-3">
-                                    <h3 class="fw-bold mb-0 text-light">Estándar con anuncios</h3>
-                                </div>
-                                <div class="card-body text-center bg-dark text-light">
-                                    <h4 class="card-title pricing-card-title">$4.999/mes (final)*</h4>
-                                    <ul class="list-unstyled mt-3 mb-4 text-start">
-                                        <li class="py-2"><i class="fas fa-check text-success me-2"></i> Calidad HD</li>
-                                        <li class="py-2"><i class="fas fa-check text-success me-2"></i> 1 pantalla de
-                                            reproduccion</li>
-                                        <li class="py-2"><i class="fas fa-check text-success me-2"></i> Acceso a
-                                            catálogo completo</li>
-                                        <li class="py-2"><i class="fas fa-times text-danger me-2"></i> Sin descargas en
-                                            dispositivo</li>
-                                    </ul>
-                                    <button  class="w-90 btn btn-lg login text-light fs-5" onclick="window.location.href='src/pages/error-404.html'">Seleccionar</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Plan Estándar (Destacado) -->
-                        <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="card pricing-card h-100 w-100 border-tarjetas">
-                                <div class="card-header  text-light text-center py-3">
-                                    <h3 class="fw-bold mb-0">ESTANDAR</h3>
-                                    <span class="badge bg-dark text-white mt-2">MásPopular</span>
-                                </div>
-                                <div class="card-body text-center bg-dark text-light">
-                                    <h4 class="card-title pricing-card-title">$5.500/mes (final)*<small
-                                            class="text-muted fw-light">/mes</small></h4>
-                                    <ul class="list-unstyled mt-3 mb-4 text-start">
-                                        <li class="py-2"><i class="fas fa-check text-success me-2"></i> Calidad Full HD
-                                        </li>
-                                        <li class="py-2"><i class="fas fa-check text-success me-2"></i> 2 pantallas
-                                            simultáneas</li>
-                                        <li class="py-2"><i class="fas fa-check text-success me-2"></i> Acceso a
-                                            catálogo completo</li>
-                                        <li class="py-2"><i class="fas fa-check text-success me-2"></i> Descargas en 1
-                                            dispositivo</li>
-                                    </ul>
-                                    <button  class="w-90 btn btn-lg login text-light fs-5" onclick="window.location.href='src/pages/error-404.html'">Seleccionar</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Plan Premium -->
-                        <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="card pricing-card h-100 w-100 border-tarjetas">
-                                <div class="card-header  text-light text-center py-3">
-                                    <h3 class="fw-bold mb-0">PREMIUM</h3>
-                                    <span class="badge bg-dark text-white mt-2">Más Completo</span>
-                                </div>
-                                <div class="card-body text-center bg-dark text-light">
-                                    <h4 class="card-title pricing-card-title">$7.000/mes (final)*<small
-                                            class="text-muted fw-light">/mes</small></h4>
-                                    <ul class="list-unstyled mt-3 mb-4 text-start">
-                                        <li class="py-2"><i class="fas fa-check text-success me-2"></i> Calidad Full HD
-                                        </li>
-                                        <li class="py-2"><i class="fas fa-check text-success me-2"></i> 3 pantallas
-                                            simultáneas</li>
-                                        <li class="py-2"><i class="fas fa-check text-success me-2"></i> Acceso a
-                                            catálogo completo</li>
-                                        <li class="py-2"><i class="fas fa-check text-success me-2"></i> Descargas en 3
-                                            dispositivo</li>
-                                    </ul>
-                                   <button  class="w-90 btn btn-lg login text-light fs-5" onclick="window.location.href='src/pages/error-404.html'">Seleccionar</button>
-                                </div>
-                            </div>
-                        </div>
+    <div class="container">
+        <h2 class="text-center p-5">Elige tu plan ideal</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Plan Básico -->
+            <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="card pricing-card h-100 w-100 border-tarjetas border-5">
+                    <div class="card-header text-dark text-center py-3">
+                        <h3 class="fw-bold mb-0 text-light">Estándar con anuncios</h3>
                     </div>
-
-                    <div class="text-center mt-5 text-light">
-                        <p class="lead">Todos los planes incluyen 30 días de prueba gratuita. Cancela cuando quieras.
-                        </p>
-                        <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
-                            <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa"
-                                style="height: 70px;">
-                            <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard"
-                                style="height: 70px;">
-                            <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="American Express"
-                                style="height: 70px;">
-
-                        </div>
+                    <div class="card-body text-center bg-dark text-light">
+                        <h4 class="card-title pricing-card-title">$4.999/mes (final)*</h4>
+                        <ul class="list-unstyled mt-3 mb-4 text-start">
+                            <li class="py-2"><i class="fas fa-check text-success me-2"></i> Calidad HD</li>
+                            <li class="py-2"><i class="fas fa-check text-success me-2"></i> 1 pantalla de reproducción</li>
+                            <li class="py-2"><i class="fas fa-check text-success me-2"></i> Acceso a catálogo completo</li>
+                            <li class="py-2"><i class="fas fa-times text-danger me-2"></i> Sin descargas en dispositivo</li>
+                        </ul>
+                        <button class="w-90 btn btn-lg login text-light fs-5">Seleccionar</button>
                     </div>
                 </div>
-            </section>
+            </div>
+
+            <!-- Plan Estándar (Destacado) -->
+            <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="card pricing-card h-100 w-100 border-tarjetas">
+                    <div class="card-header text-light text-center py-3">
+                        <h3 class="fw-bold mb-0">ESTANDAR</h3>
+                        <span class="badge bg-dark text-white mt-2">MásPopular</span>
+                    </div>
+                    <div class="card-body text-center bg-dark text-light">
+                        <h4 class="card-title pricing-card-title">$5.500/mes (final)*<small class="text-muted fw-light">/mes</small></h4>
+                        <ul class="list-unstyled mt-3 mb-4 text-start">
+                            <li class="py-2"><i class="fas fa-check text-success me-2"></i> Calidad Full HD</li>
+                            <li class="py-2"><i class="fas fa-check text-success me-2"></i> 2 pantallas simultáneas</li>
+                            <li class="py-2"><i class="fas fa-check text-success me-2"></i> Acceso a catálogo completo</li>
+                            <li class="py-2"><i class="fas fa-check text-success me-2"></i> Descargas en 1 dispositivo</li>
+                        </ul>
+                        <button class="w-90 btn btn-lg login text-light fs-5">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan Premium -->
+            <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="card pricing-card h-100 w-100 border-tarjetas">
+                    <div class="card-header text-light text-center py-3">
+                        <h3 class="fw-bold mb-0">PREMIUM</h3>
+                        <span class="badge bg-dark text-white mt-2">Más Completo</span>
+                    </div>
+                    <div class="card-body text-center bg-dark text-light">
+                        <h4 class="card-title pricing-card-title">$7.000/mes (final)*<small class="text-muted fw-light">/mes</small></h4>
+                        <ul class="list-unstyled mt-3 mb-4 text-start">
+                            <li class="py-2"><i class="fas fa-check text-success me-2"></i> Calidad Full HD</li>
+                            <li class="py-2"><i class="fas fa-check text-success me-2"></i> 3 pantallas simultáneas</li>
+                            <li class="py-2"><i class="fas fa-check text-success me-2"></i> Acceso a catálogo completo</li>
+                            <li class="py-2"><i class="fas fa-check text-success me-2"></i> Descargas en 3 dispositivos</li>
+                        </ul>
+                        <button class="w-90 btn btn-lg login text-light fs-5">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 text-light">
+            <p class="lead">Todos los planes incluyen 30 días de prueba gratuita. Cancela cuando quieras.</p>
+            <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" style="height: 70px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard" style="height: 70px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="American Express" style="height: 70px;">
+            </div>
+        </div>
+    </div>
+</section>
 
             <!-- section uso de la plataforma   -->
-            <section class="container-section nosotros-container text-light py-5  mt-n5 mt-md-0 pt-5" id="ayuda">
+            <section class="container-section nosotros-container text-light py-5 mt-n5 mt-md-0 pt-5" id="ayuda">
     <div class="container">
         <h2 class="text-center mb-4">Uso de la Plataforma</h2>
         <div class="row justify-content-center">
@@ -368,8 +358,7 @@
                                 <i class="fas fa-user-plus me-3"></i> ¿Cómo me registro?
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionAyuda">
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionAyuda">
                             <div class="accordion-body bg-dar">
                                 <p>VSTREAM está disponible en VSTREAM.com.ar. Puedes contactar a tu operador local para
                                 obtener más detalles.</p>
@@ -387,8 +376,7 @@
                                 <i class="fas fa-list-check me-3"></i> ¿Qué incluye VSTREAM?
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionAyuda">
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionAyuda">
                             <div class="accordion-body bg-darker">
                                 <p>Beneficios de la suscripción a VSTREAM:</p>
                                 <ul class="fa-ul">
@@ -422,8 +410,7 @@
                                 <i class="fas fa-question-circle me-3"></i> ¿Cómo cancelo mi suscripción?
                             </button>
                         </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionAyuda">
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionAyuda">
                             <div class="accordion-body bg-darker">
                                 <p>Puedes cancelar tu suscripción en cualquier momento desde la sección "Mi cuenta" en la plataforma.</p>
                                 <p>Tu suscripción permanecerá activa hasta el final del período de facturación actual.</p>
@@ -433,148 +420,143 @@
                     </div>
 
                     <!-- Item 4 -->
-<div class="accordion-item bg-dark text-white mb-3 rounded-3 overflow-hidden">
-    <h2 class="accordion-header">
-        <button class="accordion-button collapsed bg-dark text-white fs-5" type="button"
-            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
-            aria-controls="flush-collapseFour">
-            <i class="fas fa-tv me-3"></i> ¿En qué dispositivos puedo ver VSTREAM?
-        </button>
-    </h2>
-    <div id="flush-collapseFour" class="accordion-collapse collapse"
-        data-bs-parent="#accordionAyuda">
-        <div class="accordion-body bg-darker">
-            <p>VSTREAM es compatible con una amplia variedad de dispositivos:</p>
-            <ul class="fa-ul">
-                <li class="mb-2">
-                    <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
-                    Smart TVs (Android TV, Samsung Tizen, LG webOS)
-                </li>
-                <li class="mb-2">
-                    <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
-                    Dispositivos streaming (Chromecast, Apple TV, Fire TV, Roku)
-                </li>
-                <li class="mb-2">
-                    <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
-                    Consolas (PlayStation, Xbox)
-                </li>
-                <li class="mb-2">
-                    <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
-                    Móviles y tablets (iOS y Android)
-                </li>
-                <li class="mb-2">
-                    <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
-                    Navegadores web (Chrome, Safari, Edge, Firefox)
-                </li>
-            </ul>
-            <a href="/src/pages/error-404.html" class="btn btn-danger mt-2">Ver lista completa</a>
-        </div>
-    </div>
-</div>
+                    <div class="accordion-item bg-dark text-white mb-3 rounded-3 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-dark text-white fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                <i class="fas fa-tv me-3"></i> ¿En qué dispositivos puedo ver VSTREAM?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionAyuda">
+                            <div class="accordion-body bg-darker">
+                                <p>VSTREAM es compatible con una amplia variedad de dispositivos:</p>
+                                <ul class="fa-ul">
+                                    <li class="mb-2">
+                                        <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
+                                        Smart TVs (Android TV, Samsung Tizen, LG webOS)
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
+                                        Dispositivos streaming (Chromecast, Apple TV, Fire TV, Roku)
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
+                                        Consolas (PlayStation, Xbox)
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
+                                        Móviles y tablets (iOS y Android)
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
+                                        Navegadores web (Chrome, Safari, Edge, Firefox)
+                                    </li>
+                                </ul>
+                                <a href="/src/pages/error-404.html" class="btn btn-danger mt-2">Ver lista completa</a>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Item 5 -->
-<div class="accordion-item bg-dark text-white mb-3 rounded-3 overflow-hidden">
-    <h2 class="accordion-header">
-        <button class="accordion-button collapsed bg-dark text-white fs-5" type="button"
-            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
-            aria-controls="flush-collapseFive">
-            <i class="fas fa-child me-3"></i> ¿Cómo funciona el control parental?
-        </button>
-    </h2>
-    <div id="flush-collapseFive" class="accordion-collapse collapse"
-        data-bs-parent="#accordionAyuda">
-        <div class="accordion-body bg-darker">
-            <p>VSTREAM ofrece herramientas para controlar lo que ven los más pequeños:</p>
-            <ul class="fa-ul">
-                <li class="mb-2">
-                    <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
-                    Perfiles infantiles con contenido apropiado por edad
-                </li>
-                <li class="mb-2">
-                    <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
-                    Clasificación por niveles de madurez (G, PG, PG-13, etc.)
-                </li>
-                <li class="mb-2">
-                    <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
-                    PIN de seguridad para restringir acceso a contenido para adultos
-                </li>
-                <li class="mb-2">
-                    <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
-                    Límites de tiempo de visualización
-                </li>
-            </ul>
-            <p>Puedes configurarlo desde "Ajustes" > "Control parental" en tu perfil.</p>
-            <a href="/src/pages/error-404.html" class="btn btn-outline-danger mt-2">Configurar ahora</a>
-        </div>
-    </div>
-</div>
+                    <!-- Item 5 -->
+                    <div class="accordion-item bg-dark text-white mb-3 rounded-3 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-dark text-white fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                <i class="fas fa-child me-3"></i> ¿Cómo funciona el control parental?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionAyuda">
+                            <div class="accordion-body bg-darker">
+                                <p>VSTREAM ofrece herramientas para controlar lo que ven los más pequeños:</p>
+                                <ul class="fa-ul">
+                                    <li class="mb-2">
+                                        <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
+                                        Perfiles infantiles con contenido apropiado por edad
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
+                                        Clasificación por niveles de madurez (G, PG, PG-13, etc.)
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
+                                        PIN de seguridad para restringir acceso a contenido para adultos
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fa-li"><i class="fas fa-check text-danger"></i></span>
+                                        Límites de tiempo de visualización
+                                    </li>
+                                </ul>
+                                <p>Puedes configurarlo desde "Ajustes" > "Control parental" en tu perfil.</p>
+                                <a href="/src/pages/error-404.html" class="btn btn-outline-danger mt-2">Configurar ahora</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-            </section>
-            </div>
+</section>
 
 
         </main>
 
-        <footer id="footer" class="footer py-2 bg-dark  text-light" >
+ 
+        <!-- footer -->
+            <footer id="footer" class="footer py-2 bg-dark text-light">
     <div class="container">
-
         <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-        <img src="/src/img/logos/logo-v-2.png" alt="VSTREAM" width="120" class="mb-3">
-        <p>El mejor contenido en streaming las 24 horas del día, los 365 días del año.</p>
-        <div class="social-icons mt-3">
-            <a href="#" class="text-blue me-3" title="none"><i class="fab fa-facebook-f fa-lg"></i></a>
-            <a href="#" class="text-black me-3" title="none"><i class="fab fa-x fa-lg"></i></a>
-            <a href="#" class="text-danger me-3" title="none"><i class="fab fa-instagram fa-lg"></i></a>
-            <a href="#" class="text-danger" title="none"><i class="fab fa-youtube fa-lg"></i></a>
-        </div>
-        </div>
-        
-        <div class="col-lg-2 col-6 mb-4 mb-md-0">
-        <h5 class="text-light mb-4">Navegación</h5>
-        <ul class="list-unstyled">
-            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Inicio</a></li>
-            <li class="mb-2"><a href="/src/pages/categorias.html" class="text-light text-decoration-none">Películas</a></li>
-            <li class="mb-2"><a href="/src/pages/categorias.html" class="text-light text-decoration-none">Series</a></li>
-            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Novedades</a></li>
-        </ul>
-        </div>
-        
-        <div class="col-lg-2 col-6 mb-4 mb-md-0">
-        <h5 class="text-light mb-4">Legal</h5>
-        <ul class="list-unstyled">
-            <li class="mb-2"><a href="/src/pages/terminos.html" class="text-light text-decoration-none">Términos</a></li>
-            <li class="mb-2"><a href="/src/pages/privacidad.html" class="text-light text-decoration-none">Privacidad</a></li>
-            <li class="mb-2"><a href="/src/pages/cookies.html" class="text-light text-decoration-none">Cookies</a></li>
-            <li class="mb-2"><a href="/src/pages/faq.html" class="text-light text-decoration-none">FAQ</a></li>
-        </ul>
-        </div>
-        
-        <div class="col-lg-4">
-        <h5 class="text-light mb-4">Newsletter</h5>
-        <p>Suscríbete para recibir las últimas novedades y ofertas especiales.</p>
-        <form class="mt-3" action="/src/pages/error-404.html" method="GET">
-            <div class="input-group">
-
-            <input type="email" class="form-control bg-light border-light" placeholder="Tu email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Por favor, introduce un correo electrónico válido (ejemplo: usuario@dominio.com)">
-
-            <button class="btn btn-outline-light border-light" type="submit">Enviar</button>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="/src/img/logos/logo-v-2.png" alt="VSTREAM" width="120" class="mb-3">
+                <p>El mejor contenido en streaming las 24 horas del día, los 365 días del año.</p>
+                <div class="social-icons mt-3">
+                    <a href="#" class="text-blue me-3" title="none"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-black me-3" title="none"><i class="fab fa-x fa-lg"></i></a>
+                    <a href="#" class="text-danger me-3" title="none"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-danger" title="none"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
             </div>
-        </form>
-
-        </div>
+            
+            <div class="col-lg-2 col-6 mb-4 mb-md-0">
+                <h5 class="text-light mb-4">Navegación</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Inicio</a></li>
+                    <li class="mb-2"><a href="/src/pages/contacto.html" class="text-light text-decoration-none">Contacto</a></li>
+                    <li class="mb-2"><a href="/src/pages/acerca-de.html" class="text-light text-decoration-none">Nosotros</a></li>
+                    <li class="mb-2"><a href="#" class="text-light text-decoration-none">Novedades</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-2 col-6 mb-4 mb-md-0">
+                <h5 class="text-light mb-4">Legal</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/src/pages/terminos.html" class="text-light text-decoration-none">Términos</a></li>
+                    <li class="mb-2"><a href="/src/pages/privacidad.html" class="text-light text-decoration-none">Privacidad</a></li>
+                    <li class="mb-2"><a href="/src/pages/cookies.html" class="text-light text-decoration-none">Cookies</a></li>
+                    <li class="mb-2"><a href="/src/pages/faq.html" class="text-light text-decoration-none">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-4">
+                <h5 class="text-light mb-4">Newsletter</h5>
+                <p>Suscríbete para recibir las últimas novedades y ofertas especiales.</p>
+                <form class="mt-3" action="/src/pages/error-404.html" method="GET">
+                    <div class="input-group">
+                        <input type="email" class="form-control bg-light border-light" placeholder="Tu email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Por favor, introduce un correo electrónico válido (ejemplo: usuario@dominio.com)">
+                        <button class="btn btn-outline-light border-light" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div class="row">
-        <div class="col-md-6 text-center text-md-start">
-        <p class="mb-0">&copy; 2025 VSTREAM. Todos los derechos reservados.</p>
-        </div>
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0">&copy; 2025 VSTREAM. Todos los derechos reservados.</p>
+            </div>
         </div>
     </div>
-        </footer>
+</footer>
         
 
 
