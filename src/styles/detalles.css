@@ -295,13 +295,14 @@
 
 .pelicula-presentation{
     display: flex;
+    
 }
 
 .pelicula-presentation{
   
     max-height: 200vh;
     min-height:100vh ;
-    height: 150vh;
+    height: auto;
     overflow: hidden;
 }
 
@@ -334,8 +335,12 @@
     
     height: 100vh;
     width: 100%;
-    min-height: 200vh;
+    max-height: 200vh;
+    iframe{
+        padding-top:  10rem ;
+    }
 }
+
 
 
 }
