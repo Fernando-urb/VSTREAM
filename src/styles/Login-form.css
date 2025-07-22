@@ -12,7 +12,6 @@ align-self: flex-start;
 }
 
 .login-main{
-/* background-color: crimson; */
 flex: 1;
 display: flex;
 align-items: center;
@@ -60,7 +59,6 @@ margin-top: -60px
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  /* border-color: crimson; */
   &:hover {
     background-position: right center;
     color: #fff;
