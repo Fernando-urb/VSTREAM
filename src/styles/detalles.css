@@ -1,5 +1,5 @@
 .container-section-detalles-peli {
-  max-height: 200vh;
+  max-height: 300vh;
   height: auto;
   margin: 0 auto;
   width: 100%;
@@ -15,7 +15,7 @@
     grid-template-columns: 1fr 1fr;
     max-height: 200vh;
     min-height:100vh ;
-    height: auto;
+    /* height: 150vh; */
     overflow: hidden;
 }
 
@@ -150,8 +150,8 @@
 /* PELICULA PARA VER */
 
 .ver-pelicula{
-    /* padding-top: 50px; */
-    height: auto;
+    
+    height: 100vh;
     width: 100%;
     background-color: #000000;
     display: flex;
@@ -297,6 +297,15 @@
     display: flex;
 }
 
+.pelicula-presentation{
+  
+    max-height: 200vh;
+    min-height:100vh ;
+    height: 150vh;
+    overflow: hidden;
+}
+
+
 .descriptions-container{
     padding: 0px 20px;
 
@@ -320,6 +329,12 @@
 
 .img-movie{
     display: none;
+}
+.ver-pelicula{
+    
+    height: 100vh;
+    width: 100%;
+    min-height: 200vh;
 }
 
 

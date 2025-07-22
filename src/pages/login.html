@@ -33,8 +33,9 @@
   <section class="login-form">
     <h1>Iniciar sesión</h1>
     <form action="/src/pages/error-404.html">
-      <input type="email" id="email" placeholder="Correo Electrónico" maxlength="30" required pattern=pattern="^[a-z0-9!#$%&'+/=?^_{|}~]+(?:\.[a-z0-9!#$%&'+/=?^_{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" title="Ingresá un correo válido. Ej: ejemplo@gmail.com">
-      <input type="password" id="password" placeholder="Contraseña" minlength="6" maxlength="20" required pattern=".{6,20}" title="La contraseña debe contener letras, números y un carácter especial. Mínimo 6 carácteres"> 
+      <input type="email" id="email" placeholder="Correo Electrónico" maxlength="30" required pattern="^[a-z0-9!#$%&'+/=?^_{|}~]+(?:\.[a-z0-9!#$%&'+/=?^_{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" title="Ingresá un correo válido. Ej: ejemplo@gmail.com">
+
+      <input type="password" id="password" placeholder="Contraseña" minlength="8" maxlength="20" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"  title="Debe tener al menos 8 caracteres, una mayúscula, una minúscula y un número"> 
       <button type="submit" class="w-90 btn btn-lg login text-light fs-5">Iniciar sesión</button>
       <div class="opciones">
         <label><input type="checkbox" /> Recordarme</label>

@@ -212,6 +212,7 @@
   &:hover {
     scale: 105%;
   }
+
 }
 
 /* PARA TABLET */
@@ -257,6 +258,16 @@
     height: 500px;
     width: 750px;
 }
+.img-movie-serie{
+    display: none;
+}
+.ver-pelicula-serie{
+    
+    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+}
+
 
 
 }
@@ -342,5 +353,8 @@
 .img-peli-similares{
     width: 170px;
 }
+
+    
+
 
 }
