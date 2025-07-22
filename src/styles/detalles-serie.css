@@ -1,13 +1,13 @@
 .container-section-detalles-peli {
-  max-height: 100vh;
-  height: auto;
+  max-height: 200vh;
+  height: 100vh;
   margin: 0 auto;
   width: 100%;
   display: flex;
   /* background-color: var(--colorSection); */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0,0 ));
   z-index: 1;
-  min-height: 100vh;
+
 }
 
 .serie-presentation{
@@ -267,7 +267,7 @@
 
 /* DESCRIPCION */
 
-.descriptions-container-serie{
+.descriptions-container{
     padding: 0px 20px;
     width: 100%;
     height: auto;
@@ -275,35 +275,35 @@
     flex-direction: column;
 }
 
-.serie-presentation{
+.pelicula-presentation{
     display: flex;
 }
 
 /* informacion */
 
-.descriptions-container-serie img{
+.descriptions-container img{
     height: 200px;
     width: 400px;
 }
 
-.info-container-serie{
+.info-container{
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-.info-container-serie h3{
+.info-container h3{
     font-size: 1rem;
 }
 
-.space-info-serie{
+.space-info{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.button-play-serie i{
+.button-play i{
     padding: 30px;
     font-size: 2rem;
     
@@ -311,36 +311,36 @@
 
 /* puntuacion */
 
-.contenedor-hover-serie:hover .cartel-hover-serie {
+.contenedor-hover h3{
+    font-size: 1rem;
+}
+
+.contenedor-hover:hover .cartel-hover {
     transform: translateY(0%);
     opacity: 1;
 }
 
-.cartel-hover-serie h3{
+.cartel-hover h3{
     font-size: 1.25rem;
 }
 
 /* IMAGEN */
 
-.img-movie-serie{
+.img-movie{
     display: none;
 }
 
 /* PELICULA */
 
-.ver-pelicula-serie iframe{
+.ver-pelicula iframe{
     height: 350px;
-    width: 400px;
+    width: 100%;
 }
 
 /* PELICULAS RELACIONADAS */
 
-.card-capitulos span{
-    font-size: 10px;
-}
-
-.img-serie-similares{
-    width: 150px;
+.img-peli-similares{
+    width: 170px;
 }
 
 }
