@@ -183,6 +183,10 @@
     cursor: pointer;
   }
 }
+.img-gituhb{
+  width: 20px;
+  height: 20px;
+}
 
 @media (max-width: 998px) {
   .banner-abt {
